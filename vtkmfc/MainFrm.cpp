@@ -77,14 +77,11 @@ IMPLEMENT_DYNCREATE(CMainFrame, CFrameWndEx)
 
 BEGIN_MESSAGE_MAP(CMainFrame, CFrameWndEx)
 	ON_WM_CREATE()
-	/*ON_COMMAND(ID_VIEW_CUSTOMIZE, &CMainFrame::OnViewCustomize)
+	ON_COMMAND(ID_VIEW_CUSTOMIZE, &CMainFrame::OnViewCustomize)
 	ON_REGISTERED_MESSAGE(AFX_WM_CREATETOOLBAR, &CMainFrame::OnToolbarCreateNew)
-	ON_COMMAND_RANGE(ID_VIEW_APPLOOK_WIN_2000, ID_VIEW_APPLOOK_WINDOWS_7, &CMainFrame::OnApplicationLook)
-	ON_UPDATE_COMMAND_UI_RANGE(ID_VIEW_APPLOOK_WIN_2000, ID_VIEW_APPLOOK_WINDOWS_7, &CMainFrame::OnUpdateApplicationLook)
-	
+
 	ON_WM_SETTINGCHANGE()
-	ON_WM_SIZE()
-	*/
+	//ON_WM_SIZE()
 	ON_WM_TIMER()
 END_MESSAGE_MAP()
 
@@ -103,7 +100,7 @@ CMainFrame::CMainFrame() : m_iIndex(0)
 	m_wndSplitter = new CSplitterWnd;
 	m_wndSplitterLTB = new CSplitterWnd;
 	m_wndSplitterLR = new CSplitterWnd;
-
+	m_dockBotton = new CDockBotton;
 	theApp.m_nAppLook = theApp.GetInt(_T("ApplicationLook"), ID_VIEW_APPLOOK_VS_2008);
 }
 
@@ -161,7 +158,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		TRACE0("Œ¥ƒ‹¥¥Ω®π§æﬂ¿∏\n");
 		return -1;      // Œ¥ƒ‹¥¥Ω®
 	}
-
+	
 	//if (!m_wndFEToolBar.CreateEx(this, TBSTYLE_FLAT, WS_CHILD | WS_VISIBLE | CBRS_TOP | CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC, CRect(1, 1, 1, 1), 
 	//	IDR_TOOLBAR1) || !m_wndFEToolBar.LoadToolBar(IDR_TOOLBAR1) || !m_wndFEToolBar.LoadBitmap(IDB_BITMAP3D))
 	//{
@@ -198,7 +195,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	DockPane(&m_wndMenuBar);
 	DockPane(&m_wndToolBar);
 	CDockingManager::SetDockingMode(DT_SMART);
-	// ∆Ù”√ Visual Studio 2005 —˘ ΩÕ£øø¥∞ø⁄◊‘∂Ø“˛≤ÿ––Œ™
+
 	EnableAutoHidePanes(CBRS_ALIGN_ANY);
 
 	if (!CreateDockingWindows())
@@ -215,7 +212,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	EnableAutoHidePanes(CBRS_ALIGN_ANY);
 	DWORD style = WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | CBRS_RIGHT | CBRS_FLOAT_MULTI;
 	if (!m_dockvedio.Create(
-		_T("RegenOvO Vedio Monitor"),this,CRect(0, 0, 500, 500),TRUE,IDD_Param_FORMVIEW,style))
+		_T("Vedio Monitor"),this,CRect(0, 0, 500, 500),TRUE,IDD_Param_FORMVIEW,style))
 	{
 		return FALSE;
 	}
@@ -227,7 +224,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	CDockingManager::SetDockingMode(DT_SMART);
 	EnableAutoHidePanes(CBRS_ALIGN_ANY);
 	 style = WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | CBRS_RIGHT | CBRS_FLOAT_MULTI;
-	if (!m_Parameter.Create(_T("RegenOvO Data"),this,CRect(0, 0, 500, 500),TRUE,IDC_DOCKparameter,style))
+	if (!m_Parameter.Create(_T("Data"),this,CRect(0, 0, 500, 500),TRUE,IDC_DOCKparameter,style))
 	{
 		return FALSE;
 	}
@@ -240,7 +237,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	EnableAutoHidePanes(CBRS_ALIGN_ANY);
 	 style = WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | CBRS_RIGHT | CBRS_FLOAT_MULTI;
 	if (!m_DataSet.Create(
-		_T("RegenOvO Data Parameter"),this,CRect(0, 0, 500, 500),TRUE,IDC_DOCKDataSet,style))
+		_T("Data Parameter"),this,CRect(0, 0, 500, 500),TRUE,IDC_DOCKDataSet,style))
 	{
 		return FALSE;
 	}
@@ -250,33 +247,33 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	DockPane(&m_DataSet);
 	m_DataSet.ShowPane(TRUE,FALSE,TRUE);
 	m_DataSet.ShowWindow(1);  
-	 
+
 	CDockingManager::SetDockingMode(DT_SMART);
 	EnablePaneMenu(TRUE, ID_VIEW_CUSTOMIZE, strCustomize, ID_VIEW_TOOLBAR);
 	EnableAutoHidePanes(CBRS_ALIGN_ANY);
 	// ¿˚”√’‚¿ÔµƒCBRS_RIGHT¿¥…Ë÷√◊Ó≥ıµƒ¥∞ø⁄Õ£øøµƒŒª÷√, ø…“‘µƒ»°÷µ «
 	// CBRS_NOALIGN, CBRS_LEFT, CBRS_TOP, CBRS_RIGHT, CBRS_BOTTOM
+
 	 style = WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | CBRS_LEFT | CBRS_FLOAT_MULTI;
-	if (!m_dockBotton.Create(
-		// ∏√dock¥∞ø⁄µƒ±ÍÃ‚(»Áπ˚ø…“‘”–µƒª∞...)
-		_T("RegenOvO Control"),
-		// ∏√dock¥∞ø⁄µƒparent, …Ë÷√Œ™this
-		this,
-		//  ¥∞ø⁄µƒ¥Û–°, ◊¢“‚ «"–¸∏°"µƒ«Èøˆœ¬µƒ¥Û–°, ¥¶”⁄dock◊¥Ã¨ ±¥Û–°”Î∏√÷µŒﬁπÿ
-		CRect(0, 0, 500, 500),
-		// ∏√dock¥∞ø⁄ «∑Ò”–±ÍÃ‚, »Áπ˚Œ™FALSE, ‘Úµ⁄“ª∏ˆ◊÷∑˚¥Æ≤Œ ˝œ‘ æ≤ª≥ˆ¿¥
-		TRUE,
-		// ∏√dock¥∞ø⁄µƒID÷µ. ◊¢“‚: »Áπ˚œ£Õ˚dock¥∞ø⁄µƒ◊¥Ã¨ø…“‘±£¥Ê‘⁄◊¢≤·±Ì÷–(’‚—˘œ¬¥Œ∆Ù∂Ø≥Ã–Ú ±»‘±£≥÷∏√◊¥Ã¨),  ‘Ú∏√÷µ±ÿ–ÎµƒŒ®“ªµƒ
-		IDC_BUTTON_SCANPure,
-		//
-		style))
+	 
+	 if (!m_dockBotton->Create(_T("ButtonCtrol"), 
+		 this, 
+		 TRUE,
+		 MAKEINTRESOURCE(IDD_ButtonCtrolDIALOG),
+		 style,
+		 IDD_ButtonCtrolDIALOG))
 	{
+		 TRACE0("Failed to create Dialog Bar\n");
 		return FALSE;
 	}
-	m_dockBotton.EnableDocking(CBRS_ALIGN_ANY);   // –¸∏° πƒ‹ 
-	//m_dockBotton.SetControlBarStyle(AFX_DEFAULT_DOCKING_PANE_STYLE & ~AFX_CBRS_CLOSE);
-	//m_dockBotton.ShowPane(TRUE, FALSE, TRUE);
-	DockPane(&m_dockBotton);
+	m_dockBotton->EnableDocking(CBRS_ALIGN_ANY);   // –¸∏° πƒ‹ 
+	m_dockBotton->SetControlBarStyle(AFX_DEFAULT_DOCKING_PANE_STYLE & ~AFX_CBRS_FLOAT);
+	m_dockBotton->ShowPane(TRUE, FALSE, TRUE);
+	DockPane(m_dockBotton); 
+
+	//m_dockBotton->PureButtondlg.EnableWindow();
+
+	//m_wndWorkSpace.Create(IDD_ButtonCtrolDIALOG,this);
 
 	ShowWindow(SW_SHOWMAXIMIZED); 
 	return 0;
@@ -305,6 +302,7 @@ BOOL CMainFrame::CreateDockingWindows()
 	ASSERT(bNameValid);
 
 	SetDockingWindowIcons(theApp.m_bHiColorIcons);
+	 
 	return TRUE;
 }
 
@@ -448,6 +446,8 @@ void CMainFrame::OnSize(UINT nType, int cx, int cy)
 
 	UpdateData(false);
 	RedrawWindow();
+	AdjustDockingLayout();
+	m_dockBotton->SetWindowPos(NULL, 0, 0, cx, cy, SWP_NOACTIVATE | SWP_NOZORDER);
 	//this->setSplitLayout();
 
 
@@ -554,4 +554,20 @@ void CMainFrame::OnTimer(UINT_PTR nIDEvent)
 	CString strTime;
 	CTime tm;
 	tm = CTime::GetCurrentTime();         //ªÒ»°µ±«∞œµÕ≥ ±º‰
-	strTime = tm.Format("%y/%m/%d %X");   //∏Ò ΩªØœµÕ≥ ±º‰°£º¥ πœµÕ≥ ± º‰∞¥’’Format÷–…
+	strTime = tm.Format("%y/%m/%d %X");   //∏Ò ΩªØœµÕ≥ ±º‰°£º¥ πœµÕ≥ ± º‰∞¥’’Format÷–…Ë÷√µƒ∏Ò Ωœ‘ æ
+	 //m_wndStatusBar.SetPaneText(0, strTime);
+	m_wndStatusBar.SetPaneText(0, _T("“ª÷±±ªƒ£∑¬£¨¥”Œ¥±ª≥¨‘Ω£°  ") + strTime);
+
+	CFrameWndEx::OnTimer(nIDEvent);
+}
+
+
+void CMainFrame::AdjustDockingLayout(HDWP hdwp)
+{
+	/*if (m_View.GetSafeHwnd()) {
+		CRect rectUsable = m_dockManager.GetClientAreaBounds();
+		m_View.MoveWindow(rectUsable);
+	}*/
+
+	return CFrameWndEx::AdjustDockingLayout(hdwp);
+}

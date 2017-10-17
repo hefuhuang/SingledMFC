@@ -1,5 +1,5 @@
 #pragma once
-#include "PARAM_VIEW.h" 
+#include "BUTTON_VIEW.h"
 // DockDataSetParameter
 
 class DockDataSetParameter : public CDockablePane
@@ -13,7 +13,7 @@ public:
 
 	virtual BOOL CanBeClosed() const;    // 重载基类 隐藏关闭按钮 
 	CListBox _listBox;
-
+	CBUTTON_VIEW*   viewdlg; 
 protected:
 
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);

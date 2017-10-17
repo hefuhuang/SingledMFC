@@ -19,8 +19,11 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV Ö§³Ö
 	//virtual BOOL OnInitDialog();
 
+
 	DECLARE_MESSAGE_MAP()
 public:
+
+	virtual BOOL OnInitDialog();
 	afx_msg void OnBnClickedButtonScanpure();
 	afx_msg void OnBnClickedButtonDynamicpure();
 	afx_msg void OnBnClickedButton3dshowpure();

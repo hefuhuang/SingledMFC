@@ -98,6 +98,10 @@
 #define IDR_TOOLBAR1                    326
 #define IDB_BITMAP1                     327
 #define IDD_ButtonCtrolDIALOG           328
+#define IDD_DIALOG_BAR                  329
+#define IDD_DIALOG_DATA                 330
+#define IDD_DIALOG2                     331
+#define IDD_DIALOG_Param                331
 #define IDC_BUTTON_SCAN                 1000
 #define IDC_BUTTON_DYNAMIC              1002
 #define IDC_BUTTON_3DSHOW               1012
@@ -113,14 +117,17 @@
 #define IDC_SPLIT1                      1020
 #define IDC_RADIO1                      1023
 #define IDC_SLIDER2                     1024
+#define IDC_TREE1                       1026
+#define IDC_TREECTRL                    1026
+#define IDC_DOCKButtonWindow            1027
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        329
+#define _APS_NEXT_RESOURCE_VALUE        332
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1026
+#define _APS_NEXT_CONTROL_VALUE         1027
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif

@@ -164,13 +164,13 @@
   <ItemGroup>
     <ClInclude Include="..\dock\Cdockvedio.h" />
     <ClInclude Include="..\dock\DockBotton.h" />
+    <ClInclude Include="..\dock\DockButtonDlg.h" />
     <ClInclude Include="..\dock\DockCapturedDataSet.h" />
     <ClInclude Include="..\dock\DockDataSetParameter.h" />
     <ClInclude Include="..\responsevtk\vtkClientServerInterpreterInternals.h" />
     <ClInclude Include="BUTTON_VIEW.h" />
     <ClInclude Include="ChildFrameSpliter.h" />
     <ClInclude Include="ClassView.h" />
-    <ClInclude Include="DockButtonDlg.h" />
     <ClInclude Include="FileView.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="MyButtonSpliter.h" />
@@ -189,13 +189,13 @@
   <ItemGroup>
     <ClCompile Include="..\dock\Cdockvedio.cpp" />
     <ClCompile Include="..\dock\DockBotton.cpp" />
+    <ClCompile Include="..\dock\DockButtonDlg.cpp" />
     <ClCompile Include="..\dock\DockCapturedDataSet.cpp" />
     <ClCompile Include="..\dock\DockDataSetParameter.cpp" />
     <ClCompile Include="..\responsevtk\vtkClientServerInterpreterInternals.cpp" />
     <ClCompile Include="BUTTON_VIEW.cpp" />
     <ClCompile Include="ChildFrameSpliter.cpp" />
     <ClCompile Include="ClassView.cpp" />
-    <ClCompile Include="DockButtonDlg.cpp" />
     <ClCompile Include="FileView.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="MyButtonSpliter.cpp" />

@@ -10,7 +10,6 @@
 
 #include "ChildFrameSpliter.h"
 #include "vtkMFCWindow.h" 
-#include "ButtonView.h"
 #include "MyButtonSpliter.h"
 #include "BUTTON_VIEW.h"
 #include "PARAM_VIEW.h"
@@ -57,7 +56,9 @@ public:
 protected:  // 控件条嵌入成员
 
 	int m_nshowCurrent;
-	CDockBotton       m_dockBotton ; 
+	DockButtonDlg     m_wndWorkSpace;
+
+	CDockBotton*       m_dockBotton ; 
 
 	Cdockvedio        m_dockvedio;
 
@@ -77,7 +78,8 @@ protected:  // 控件条嵌入成员
 
 	CSplitterWnd 	*m_wndSplitterLTB;
 
-	CSplitterWnd 	*m_wndSplitterLR;
+	CSplitterWnd 	*m_wndSplitterLR; 
+
 
 // 生成的消息映射函数
 private:
@@ -105,6 +107,7 @@ public:
 	virtual BOOL OnCloseMiniFrame(CPaneFrameWnd* pWnd);
 	virtual BOOL OnCloseDockingPane(CDockablePane* pWnd);
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 };
 
 

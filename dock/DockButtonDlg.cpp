@@ -12,7 +12,7 @@
 IMPLEMENT_DYNAMIC(DockButtonDlg, CDialog)
 
 DockButtonDlg::DockButtonDlg(CWnd* pParent /*=NULL*/)
-	: CDialog(DockButtonDlg::IDD, pParent)
+: CDialog(DockButtonDlg::IDD, pParent)
 {
 	//AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -28,6 +28,7 @@ void DockButtonDlg::DoDataExchange(CDataExchange* pDX)
 
 
 BEGIN_MESSAGE_MAP(DockButtonDlg, CDialog)
+
 	ON_BN_CLICKED(IDC_BUTTON_SCANPure, &DockButtonDlg::OnBnClickedButtonScanpure)
 	ON_BN_CLICKED(IDC_BUTTON_DYNAMICPure, &DockButtonDlg::OnBnClickedButtonDynamicpure)
 	ON_BN_CLICKED(IDC_BUTTON_3DSHOWPure, &DockButtonDlg::OnBnClickedButton3dshowpure)
@@ -36,6 +37,17 @@ END_MESSAGE_MAP()
 
 
 // DockButtonDlg 消息处理程序
+
+
+
+BOOL DockButtonDlg::OnInitDialog()
+{
+	
+	CDialog::OnInitDialog();
+
+	return TRUE;  // return TRUE unless you set the focus to a control
+	// 异常:  OCX 属性页应返回 FALSE
+}
 
 
 void DockButtonDlg::OnBnClickedButtonScanpure()

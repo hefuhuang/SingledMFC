@@ -96,8 +96,8 @@
     <ClInclude Include="..\dock\DockBotton.h">
       <Filter>Dock</Filter>
     </ClInclude>
-    <ClInclude Include="DockButtonDlg.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="..\dock\DockButtonDlg.h">
+      <Filter>Dock</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -158,8 +158,8 @@
     <ClCompile Include="..\dock\DockBotton.cpp">
       <Filter>Dock</Filter>
     </ClCompile>
-    <ClCompile Include="DockButtonDlg.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="..\dock\DockButtonDlg.cpp">
+      <Filter>Dock</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
