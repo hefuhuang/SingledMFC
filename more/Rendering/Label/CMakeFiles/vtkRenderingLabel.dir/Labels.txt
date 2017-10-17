@@ -1,0 +1,31 @@
+# Target labels
+ vtkRenderingLabel
+# Source files and their labels
+F:/VTK8.0/VTK/Rendering/Label/vtkLabeledDataMapper.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabeledTreeMapDataMapper.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyAlgorithm.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyCompositeIterator.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchy.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyIterator.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelPlacementMapper.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelPlacer.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelRenderStrategy.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelSizeCalculator.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkFreeTypeLabelRenderStrategy.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkDynamic2DLabelMapper.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkPointSetToLabelHierarchy.cxx
+F:/VTK8.0/VTK/Rendering/Label/vtkLabeledDataMapper.h
+F:/VTK8.0/VTK/Rendering/Label/vtkLabeledTreeMapDataMapper.h
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyAlgorithm.h
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyCompositeIterator.h
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchy.h
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyIterator.h
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelPlacementMapper.h
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelPlacer.h
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelRenderStrategy.h
+F:/VTK8.0/VTK/Rendering/Label/vtkLabelSizeCalculator.h
+F:/VTK8.0/VTK/Rendering/Label/vtkFreeTypeLabelRenderStrategy.h
+F:/VTK8.0/VTK/Rendering/Label/vtkDynamic2DLabelMapper.h
+F:/VTK8.0/VTK/Rendering/Label/vtkPointSetToLabelHierarchy.h
+F:/vtk/Rendering/Label/vtkRenderingLabelModule.h
+F:/VTK8.0/VTK/Rendering/Label/CMakeLists.txt

@@ -1,0 +1,24 @@
+# Target labels
+ vtkIOMINC
+# Source files and their labels
+F:/vtk/IO/MINC/vtkMINCImageAttributes.cxx
+F:/vtk/IO/MINC/vtkMINCImageReader.cxx
+F:/vtk/IO/MINC/vtkMINCImageWriter.cxx
+F:/vtk/IO/MINC/vtkMNIObjectReader.cxx
+F:/vtk/IO/MINC/vtkMNIObjectWriter.cxx
+F:/vtk/IO/MINC/vtkMNITagPointReader.cxx
+F:/vtk/IO/MINC/vtkMNITagPointWriter.cxx
+F:/vtk/IO/MINC/vtkMNITransformReader.cxx
+F:/vtk/IO/MINC/vtkMNITransformWriter.cxx
+F:/vtk/IO/MINC/vtkMINC.h
+F:/vtk/IO/MINC/vtkMINCImageAttributes.h
+F:/vtk/IO/MINC/vtkMINCImageReader.h
+F:/vtk/IO/MINC/vtkMINCImageWriter.h
+F:/vtk/IO/MINC/vtkMNIObjectReader.h
+F:/vtk/IO/MINC/vtkMNIObjectWriter.h
+F:/vtk/IO/MINC/vtkMNITagPointReader.h
+F:/vtk/IO/MINC/vtkMNITagPointWriter.h
+F:/vtk/IO/MINC/vtkMNITransformReader.h
+F:/vtk/IO/MINC/vtkMNITransformWriter.h
+F:/vtk/IO/MINC/vtkIOMINCModule.h
+F:/vtk/IO/MINC/CMakeLists.txt

@@ -1,0 +1,131 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkFreeTypeStringToImage.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkFreeTypeTools.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkMathTextFreeTypeTextRenderer.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkMathTextUtilities.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkTextRendererStringToImage.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkScaledTextActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkVectorText.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/FreeType/vtkRenderingFreeTypeObjectFactory.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_arial_bold.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_arial_bold_italic.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_arial.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_arial_italic.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_courier_bold.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_courier_bold_italic.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_courier.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_courier_italic.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_times_bold.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_times_bold_italic.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_times.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_times_italic.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkFreeTypeStringToImage.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkFreeTypeTools.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkMathTextFreeTypeTextRenderer.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkMathTextUtilities.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkTextRendererStringToImage.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkScaledTextActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/vtkVectorText.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/FreeType/vtkRenderingFreeTypeObjectFactory.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/FreeType/vtkRenderingFreeTypeModule.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/FreeType/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingFreeType" ],
+		"name" : "vtkRenderingFreeType"
+	}
+}

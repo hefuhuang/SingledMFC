@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\vtk\IO\Core\Testing\Cxx\vtkIOCoreCxxTests.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Core\Testing\Cxx\TestArrayDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Core\Testing\Cxx\TestArrayDenormalized.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Core\Testing\Cxx\TestArraySerialization.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Core\Testing\Cxx\TestCompressLZ4.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Core\Testing\Cxx\TestCompressZLib.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\vtk\IO\Core\Testing\Cxx\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{797F6FAB-C225-346D-8F45-B54B8994F519}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

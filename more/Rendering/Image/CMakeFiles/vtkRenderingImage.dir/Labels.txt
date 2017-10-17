@@ -1,0 +1,13 @@
+# Target labels
+ vtkRenderingImage
+# Source files and their labels
+F:/VTK8.0/VTK/Rendering/Image/vtkDepthImageToPointCloud.cxx
+F:/VTK8.0/VTK/Rendering/Image/vtkImageResliceMapper.cxx
+F:/VTK8.0/VTK/Rendering/Image/vtkImageSliceCollection.cxx
+F:/VTK8.0/VTK/Rendering/Image/vtkImageStack.cxx
+F:/VTK8.0/VTK/Rendering/Image/vtkDepthImageToPointCloud.h
+F:/VTK8.0/VTK/Rendering/Image/vtkImageResliceMapper.h
+F:/VTK8.0/VTK/Rendering/Image/vtkImageSliceCollection.h
+F:/VTK8.0/VTK/Rendering/Image/vtkImageStack.h
+F:/vtk/Rendering/Image/vtkRenderingImageModule.h
+F:/VTK8.0/VTK/Rendering/Image/CMakeLists.txt

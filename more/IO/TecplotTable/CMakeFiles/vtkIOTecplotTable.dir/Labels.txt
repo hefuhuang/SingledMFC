@@ -1,0 +1,7 @@
+# Target labels
+ vtkIOTecplotTable
+# Source files and their labels
+F:/vtk/IO/TecplotTable/vtkTecplotTableReader.cxx
+F:/vtk/IO/TecplotTable/vtkTecplotTableReader.h
+F:/vtk/IO/TecplotTable/vtkIOTecplotTableModule.h
+F:/vtk/IO/TecplotTable/CMakeLists.txt

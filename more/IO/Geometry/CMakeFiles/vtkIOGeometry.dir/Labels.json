@@ -1,0 +1,227 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkAVSucdReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkBYUReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkBYUWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkChacoReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkFacetWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkFLUENTReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkGAMBITReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkGaussianCubeReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkHoudiniPolyDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkIVWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkMCubesReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkMCubesWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkMFIXReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkMoleculeReaderBase.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkOBJReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkOpenFOAMReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkParticleReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkPDBReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkProStarReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkPTSReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkSTLReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkSTLWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkTecplotReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkUGFacetReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkWindBladeReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkXYZMolReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkAVSucdReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkBYUReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkBYUWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkChacoReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkFacetWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkFLUENTReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkGAMBITReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkGaussianCubeReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkHoudiniPolyDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkIVWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkMCubesReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkMCubesWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkMFIXReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkMoleculeReaderBase.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkOBJReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkOpenFOAMReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkParticleReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkPDBReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkProStarReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkPTSReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkSTLReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkSTLWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkTecplotReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkUGFacetReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkWindBladeReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkXYZMolReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/vtkIOGeometryModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Geometry/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOGeometry" ],
+		"name" : "vtkIOGeometry"
+	}
+}

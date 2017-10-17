@@ -1,0 +1,251 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkCompositeDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkCompositeDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataObjectReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataObjectWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataSetReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataSetWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkGenericDataObjectReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkGenericDataObjectWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkGraphReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkGraphWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkPixelExtentIO.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkPolyDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkPolyDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkRectilinearGridReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkRectilinearGridWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkSimplePointsReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkSimplePointsWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkStructuredGridReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkStructuredGridWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkStructuredPointsReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkStructuredPointsWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkTableReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkTableWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkTreeReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkTreeWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkUnstructuredGridReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkUnstructuredGridWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkCompositeDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkCompositeDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataObjectReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataObjectWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataSetReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataSetWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkGenericDataObjectReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkGenericDataObjectWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkGraphReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkGraphWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkPixelExtentIO.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkPolyDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkPolyDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkRectilinearGridReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkRectilinearGridWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkSimplePointsReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkSimplePointsWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkStructuredGridReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkStructuredGridWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkStructuredPointsReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkStructuredPointsWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkTableReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkTableWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkTreeReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkTreeWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkUnstructuredGridReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkUnstructuredGridWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/vtkIOLegacyModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Legacy/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOLegacy" ],
+		"name" : "vtkIOLegacy"
+	}
+}

@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{42A77DD2-37A4-38FA-B129-77009FA83F83}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>vtkRenderingCoreCxxTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\vtk\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtkRenderingCoreCxxTests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtkRenderingCoreCxxTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\vtk\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtkRenderingCoreCxxTests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtkRenderingCoreCxxTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\vtk\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtkRenderingCoreCxxTests.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtkRenderingCoreCxxTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\vtk\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtkRenderingCoreCxxTests.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtkRenderingCoreCxxTests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;vtkRenderingCore_INCLUDE="F:/vtk/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;vtkRenderingCore_INCLUDE=\"F:/vtk/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Debug\vtkFiltersProgrammable-8.1.lib;..\..\..\..\lib\Debug\vtkIOExodus-8.1.lib;..\..\..\..\lib\Debug\vtkIOParallel-8.1.lib;..\..\..\..\lib\Debug\vtkFiltersParallel-8.1.lib;..\..\..\..\lib\Debug\vtkFiltersModeling-8.1.lib;..\..\..\..\lib\Debug\vtkParallelCore-8.1.lib;..\..\..\..\lib\Debug\vtkIOGeometry-8.1.lib;..\..\..\..\lib\Debug\vtkIONetCDF-8.1.lib;..\..\..\..\lib\Debug\vtknetcdf_c++.lib;..\..\..\..\lib\Debug\vtkjsoncpp-8.1.lib;..\..\..\..\lib\Debug\vtkIOXML-8.1.lib;..\..\..\..\lib\Debug\vtkImagingSources-8.1.lib;..\..\..\..\lib\Debug\vtkInteractionStyle-8.1.lib;..\..\..\..\lib\Debug\vtkRenderingAnnotation-8.1.lib;..\..\..\..\lib\Debug\vtkImagingColor-8.1.lib;..\..\..\..\lib\Debug\vtkRenderingFreeType-8.1.lib;..\..\..\..\lib\Debug\vtkfreetype-8.1.lib;..\..\..\..\lib\Debug\vtkRenderingOpenGL2-8.1.lib;..\..\..\..\lib\Debug\vtkglew-8.1.lib;..\..\..\..\lib\Debug\vtkTestingRendering-8.1.lib;..\..\..\..\lib\Debug\vtkexoIIc-8.1.lib;..\..\..\..\lib\Debug\vtkIOLegacy-8.1.lib;..\..\..\..\lib\Debug\vtkNetCDF-8.1.lib;..\..\..\..\lib\Debug\vtkhdf5_hl-8.1.lib;..\..\..\..\lib\Debug\vtkhdf5-8.1.lib;..\..\..\..\lib\Debug\vtkIOXMLParser-8.1.lib;..\..\..\..\lib\Debug\vtkIOCore-8.1.lib;..\..\..\..\lib\Debug\vtklz4-8.1.lib;..\..\..\..\lib\Debug\vtkexpat-8.1.lib;..\..\..\..\lib\Debug\vtkFiltersExtraction-8.1.lib;..\..\..\..\lib\Debug\vtkFiltersStatistics-8.1.lib;..\..\..\..\lib\Debug\vtkImagingFourier-8.1.lib;..\..\..\..\lib\Debug\vtkalglib-8.1.lib;..\..\..\..\lib\Debug\vtkImagingCore-8.1.lib;..\..\..\..\lib\Debug\vtkRenderingCore-8.1.lib;..\..\..\..\lib\Debug\vtkFiltersSources-8.1.lib;..\..\..\..\lib\Debug\vtkFiltersGeneral-8.1.lib;..\..\..\..\lib\Debug\vtkCommonComputationalGeometry-8.1.lib;..\..\..\..\lib\Debug\vtkFiltersGeometry-8.1.lib;..\..\..\..\lib\Debug\vtkFiltersCore-8.1.lib;..\..\..\..\lib\Debug\vtkCommonColor-8.1.lib;..\..\..\..\lib\Debug\vtkIOImage-8.1.lib;..\..\..\..\lib\Debug\vtkCommonExecutionModel-8.1.lib;..\..\..\..\lib\Debug\vtkCommonDataModel-8.1.lib;..\..\..\..\lib\Debug\vtkCommonTransforms-8.1.lib;..\..\..\..\lib\Debug\vtkCommonMisc-8.1.lib;..\..\..\..\lib\Debug\vtkCommonMath-8.1.lib;..\..\..\..\lib\Debug\vtkCommonSystem-8.1.lib;..\..\..\..\lib\Debug\vtkCommonCore-8.1.lib;..\..\..\..\lib\Debug\vtksys-8.1.lib;ws2_32.lib;Psapi.lib;..\..\..\..\lib\Debug\vtkDICOMParser-8.1.lib;..\..\..\..\lib\Debug\vtkmetaio-8.1.lib;comctl32.lib;wsock32.lib;..\..\..\..\lib\Debug\vtkpng-8.1.lib;..\..\..\..\lib\Debug\vtktiff-8.1.lib;..\..\..\..\lib\Debug\vtkzlib-8.1.lib;..\..\..\..\lib\Debug\vtkjpeg-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/vtk/lib/Debug/vtkRenderingCoreCxxTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/vtk/bin/Debug/vtkRenderingCoreCxxTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingCore_INCLUDE="F:/vtk/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingCore_INCLUDE=\"F:/vtk/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Release\vtkFiltersProgrammable-8.1.lib;..\..\..\..\lib\Release\vtkIOExodus-8.1.lib;..\..\..\..\lib\Release\vtkIOParallel-8.1.lib;..\..\..\..\lib\Release\vtkFiltersParallel-8.1.lib;..\..\..\..\lib\Release\vtkFiltersModeling-8.1.lib;..\..\..\..\lib\Release\vtkParallelCore-8.1.lib;..\..\..\..\lib\Release\vtkIOGeometry-8.1.lib;..\..\..\..\lib\Release\vtkIONetCDF-8.1.lib;..\..\..\..\lib\Release\vtknetcdf_c++.lib;..\..\..\..\lib\Release\vtkjsoncpp-8.1.lib;..\..\..\..\lib\Release\vtkIOXML-8.1.lib;..\..\..\..\lib\Release\vtkImagingSources-8.1.lib;..\..\..\..\lib\Release\vtkInteractionStyle-8.1.lib;..\..\..\..\lib\Release\vtkRenderingAnnotation-8.1.lib;..\..\..\..\lib\Release\vtkImagingColor-8.1.lib;..\..\..\..\lib\Release\vtkRenderingFreeType-8.1.lib;..\..\..\..\lib\Release\vtkfreetype-8.1.lib;..\..\..\..\lib\Release\vtkRenderingOpenGL2-8.1.lib;..\..\..\..\lib\Release\vtkglew-8.1.lib;..\..\..\..\lib\Release\vtkTestingRendering-8.1.lib;..\..\..\..\lib\Release\vtkexoIIc-8.1.lib;..\..\..\..\lib\Release\vtkIOLegacy-8.1.lib;..\..\..\..\lib\Release\vtkNetCDF-8.1.lib;..\..\..\..\lib\Release\vtkhdf5_hl-8.1.lib;..\..\..\..\lib\Release\vtkhdf5-8.1.lib;..\..\..\..\lib\Release\vtkIOXMLParser-8.1.lib;..\..\..\..\lib\Release\vtkIOCore-8.1.lib;..\..\..\..\lib\Release\vtklz4-8.1.lib;..\..\..\..\lib\Release\vtkexpat-8.1.lib;..\..\..\..\lib\Release\vtkFiltersExtraction-8.1.lib;..\..\..\..\lib\Release\vtkFiltersStatistics-8.1.lib;..\..\..\..\lib\Release\vtkImagingFourier-8.1.lib;..\..\..\..\lib\Release\vtkalglib-8.1.lib;..\..\..\..\lib\Release\vtkImagingCore-8.1.lib;..\..\..\..\lib\Release\vtkRenderingCore-8.1.lib;..\..\..\..\lib\Release\vtkFiltersSources-8.1.lib;..\..\..\..\lib\Release\vtkFiltersGeneral-8.1.lib;..\..\..\..\lib\Release\vtkCommonComputationalGeometry-8.1.lib;..\..\..\..\lib\Release\vtkFiltersGeometry-8.1.lib;..\..\..\..\lib\Release\vtkFiltersCore-8.1.lib;..\..\..\..\lib\Release\vtkCommonColor-8.1.lib;..\..\..\..\lib\Release\vtkIOImage-8.1.lib;..\..\..\..\lib\Release\vtkCommonExecutionModel-8.1.lib;..\..\..\..\lib\Release\vtkCommonDataModel-8.1.lib;..\..\..\..\lib\Release\vtkCommonTransforms-8.1.lib;..\..\..\..\lib\Release\vtkCommonMisc-8.1.lib;..\..\..\..\lib\Release\vtkCommonMath-8.1.lib;..\..\..\..\lib\Release\vtkCommonSystem-8.1.lib;..\..\..\..\lib\Release\vtkCommonCore-8.1.lib;..\..\..\..\lib\Release\vtksys-8.1.lib;ws2_32.lib;Psapi.lib;..\..\..\..\lib\Release\vtkDICOMParser-8.1.lib;..\..\..\..\lib\Release\vtkmetaio-8.1.lib;comctl32.lib;wsock32.lib;..\..\..\..\lib\Release\vtkpng-8.1.lib;..\..\..\..\lib\Release\vtktiff-8.1.lib;..\..\..\..\lib\Release\vtkzlib-8.1.lib;..\..\..\..\lib\Release\vtkjpeg-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/vtk/lib/Release/vtkRenderingCoreCxxTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/vtk/bin/Release/vtkRenderingCoreCxxTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingCore_INCLUDE="F:/vtk/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingCore_INCLUDE=\"F:/vtk/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\MinSizeRel\vtkFiltersProgrammable-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkIOExodus-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkIOParallel-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkFiltersParallel-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkFiltersModeling-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkParallelCore-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkIOGeometry-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkIONetCDF-8.1.lib;..\..\..\..\lib\MinSizeRel\vtknetcdf_c++.lib;..\..\..\..\lib\MinSizeRel\vtkjsoncpp-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkIOXML-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkImagingSources-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkInteractionStyle-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkRenderingAnnotation-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkImagingColor-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkRenderingFreeType-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkfreetype-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkRenderingOpenGL2-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkglew-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkTestingRendering-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkexoIIc-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkIOLegacy-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkNetCDF-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkhdf5_hl-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkhdf5-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkIOXMLParser-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkIOCore-8.1.lib;..\..\..\..\lib\MinSizeRel\vtklz4-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkexpat-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkFiltersExtraction-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkFiltersStatistics-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkImagingFourier-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkalglib-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkImagingCore-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkRenderingCore-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkFiltersSources-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkFiltersGeneral-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkCommonComputationalGeometry-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkFiltersGeometry-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkFiltersCore-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkCommonColor-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkIOImage-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkCommonExecutionModel-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkCommonDataModel-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkCommonTransforms-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkCommonMisc-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkCommonMath-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkCommonSystem-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkCommonCore-8.1.lib;..\..\..\..\lib\MinSizeRel\vtksys-8.1.lib;ws2_32.lib;Psapi.lib;..\..\..\..\lib\MinSizeRel\vtkDICOMParser-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkmetaio-8.1.lib;comctl32.lib;wsock32.lib;..\..\..\..\lib\MinSizeRel\vtkpng-8.1.lib;..\..\..\..\lib\MinSizeRel\vtktiff-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkzlib-8.1.lib;..\..\..\..\lib\MinSizeRel\vtkjpeg-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/vtk/lib/MinSizeRel/vtkRenderingCoreCxxTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/vtk/bin/MinSizeRel/vtkRenderingCoreCxxTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingCore_INCLUDE="F:/vtk/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkRenderingCore_INCLUDE=\"F:/vtk/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\Filters\Programmable;F:\VTK8.0\VTK\Filters\Programmable;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\IO\Exodus;F:\VTK8.0\VTK\IO\Exodus;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;F:\vtk\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\exodusII;F:\VTK8.0\VTK\ThirdParty\netcdf\vtknetcdf\include;F:\vtk\ThirdParty\netcdf\vtknetcdf;F:\vtk\ThirdParty\netcdf;F:\VTK8.0\VTK\ThirdParty\netcdf;F:\vtk\ThirdParty\hdf5\vtkhdf5;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;F:\VTK8.0\VTK\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\hdf5;F:\VTK8.0\VTK\ThirdParty\hdf5;F:\vtk\IO\Legacy;F:\VTK8.0\VTK\IO\Legacy;F:\vtk\IO\Parallel;F:\VTK8.0\VTK\IO\Parallel;F:\vtk\Filters\Extraction;F:\VTK8.0\VTK\Filters\Extraction;F:\vtk\Filters\Statistics;F:\VTK8.0\VTK\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\VTK8.0\VTK\Imaging\Fourier;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\ThirdParty\alglib;F:\VTK8.0\VTK\ThirdParty\alglib;F:\vtk\Filters\Parallel;F:\VTK8.0\VTK\Filters\Parallel;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Filters\Modeling;F:\VTK8.0\VTK\Filters\Modeling;F:\vtk\Parallel\Core;F:\VTK8.0\VTK\Parallel\Core;F:\vtk\Utilities\HashSource;F:\VTK8.0\VTK\Utilities\HashSource;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\IO\Geometry;F:\VTK8.0\VTK\IO\Geometry;F:\vtk\IO\Image;F:\VTK8.0\VTK\IO\Image;F:\vtk\Utilities\DICOMParser;F:\VTK8.0\VTK\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\VTK8.0\VTK\Utilities\MetaIO;F:\vtk\ThirdParty\jpeg;F:\VTK8.0\VTK\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\VTK8.0\VTK\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\VTK8.0\VTK\ThirdParty\tiff;F:\vtk\IO\NetCDF;F:\VTK8.0\VTK\IO\NetCDF;F:\vtk\ThirdParty\netcdfcpp;F:\VTK8.0\VTK\ThirdParty\netcdfcpp;F:\vtk\ThirdParty\jsoncpp;F:\VTK8.0\VTK\ThirdParty\jsoncpp;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\Imaging\Sources;F:\VTK8.0\VTK\Imaging\Sources;F:\vtk\Interaction\Style;F:\VTK8.0\VTK\Interaction\Style;F:\vtk\Rendering\Annotation;F:\VTK8.0\VTK\Rendering\Annotation;F:\vtk\Imaging\Color;F:\VTK8.0\VTK\Imaging\Color;F:\vtk\Rendering\FreeType;F:\VTK8.0\VTK\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\VTK8.0\VTK\ThirdParty\freetype;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Testing\Core;F:\VTK8.0\VTK\Testing\Core;F:\vtk\Testing\Rendering;F:\VTK8.0\VTK\Testing\Rendering;F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src;F:\vtk\ThirdParty\hdf5\vtkhdf5\src;F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\RelWithDebInfo\vtkFiltersProgrammable-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkIOExodus-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkIOParallel-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkFiltersParallel-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkFiltersModeling-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkParallelCore-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkIOGeometry-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkIONetCDF-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtknetcdf_c++.lib;..\..\..\..\lib\RelWithDebInfo\vtkjsoncpp-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkIOXML-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkImagingSources-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkInteractionStyle-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkRenderingAnnotation-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkImagingColor-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkRenderingFreeType-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkfreetype-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkRenderingOpenGL2-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkglew-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkTestingRendering-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkexoIIc-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkIOLegacy-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkNetCDF-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkhdf5_hl-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkhdf5-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkIOXMLParser-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkIOCore-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtklz4-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkexpat-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkFiltersExtraction-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkFiltersStatistics-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkImagingFourier-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkalglib-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkImagingCore-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkRenderingCore-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkFiltersSources-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkFiltersGeneral-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkCommonComputationalGeometry-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkFiltersGeometry-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkFiltersCore-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkCommonColor-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkIOImage-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkCommonExecutionModel-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkCommonDataModel-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkCommonTransforms-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkCommonMisc-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkCommonMath-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkCommonSystem-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkCommonCore-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtksys-8.1.lib;ws2_32.lib;Psapi.lib;..\..\..\..\lib\RelWithDebInfo\vtkDICOMParser-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkmetaio-8.1.lib;comctl32.lib;wsock32.lib;..\..\..\..\lib\RelWithDebInfo\vtkpng-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtktiff-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkzlib-8.1.lib;..\..\..\..\lib\RelWithDebInfo\vtkjpeg-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/vtk/lib/RelWithDebInfo/vtkRenderingCoreCxxTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/vtk/bin/RelWithDebInfo/vtkRenderingCoreCxxTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/VTK8.0/VTK/Rendering/Core/Testing/Cxx/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/vtk --check-stamp-file F:/vtk/Rendering/Core/Testing/Cxx/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/VTK8.0/VTK/Rendering/Core/Testing/Cxx/CMakeLists.txt;F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\CMakeLists.txt;D:\CMAke\share\cmake-3.9\Templates\TestDriver.cxx.in;F:\VTK8.0\VTK\Rendering\Core\module.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersProgrammable.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOExodus.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtklz4.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkzlib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXMLParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexpat.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexodusII.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtknetcdf.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkhdf5.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOLegacy.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOParallel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersExtraction.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersStatistics.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingFourier.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkalglib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersParallel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersModeling.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkParallelCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesHashSource.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOImage.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkDICOMParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkMetaIO.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkjpeg.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkpng.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtktiff.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIONetCDF.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtknetcdfcpp.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkjsoncpp.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXML.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkInteractionStyle.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingAnnotation.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingFreeType.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkfreetype.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkTestingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkTestingRendering.cmake;D:\CMAke\share\cmake-3.9\Modules\CMakeConfigurableFile.in;F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\vtk\Rendering\Core\Testing\Cxx\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/VTK8.0/VTK/Rendering/Core/Testing/Cxx/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/vtk --check-stamp-file F:/vtk/Rendering/Core/Testing/Cxx/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/VTK8.0/VTK/Rendering/Core/Testing/Cxx/CMakeLists.txt;F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\CMakeLists.txt;D:\CMAke\share\cmake-3.9\Templates\TestDriver.cxx.in;F:\VTK8.0\VTK\Rendering\Core\module.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersProgrammable.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOExodus.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtklz4.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkzlib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXMLParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexpat.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexodusII.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtknetcdf.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkhdf5.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOLegacy.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOParallel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersExtraction.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersStatistics.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingFourier.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkalglib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersParallel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersModeling.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkParallelCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesHashSource.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOImage.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkDICOMParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkMetaIO.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkjpeg.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkpng.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtktiff.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIONetCDF.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtknetcdfcpp.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkjsoncpp.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXML.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkInteractionStyle.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingAnnotation.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingFreeType.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkfreetype.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkTestingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkTestingRendering.cmake;D:\CMAke\share\cmake-3.9\Modules\CMakeConfigurableFile.in;F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\vtk\Rendering\Core\Testing\Cxx\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/VTK8.0/VTK/Rendering/Core/Testing/Cxx/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/vtk --check-stamp-file F:/vtk/Rendering/Core/Testing/Cxx/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/VTK8.0/VTK/Rendering/Core/Testing/Cxx/CMakeLists.txt;F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\CMakeLists.txt;D:\CMAke\share\cmake-3.9\Templates\TestDriver.cxx.in;F:\VTK8.0\VTK\Rendering\Core\module.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersProgrammable.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOExodus.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtklz4.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkzlib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXMLParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexpat.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexodusII.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtknetcdf.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkhdf5.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOLegacy.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOParallel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersExtraction.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersStatistics.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingFourier.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkalglib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersParallel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersModeling.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkParallelCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesHashSource.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOImage.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkDICOMParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkMetaIO.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkjpeg.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkpng.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtktiff.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIONetCDF.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtknetcdfcpp.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkjsoncpp.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXML.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkInteractionStyle.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingAnnotation.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingFreeType.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkfreetype.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkTestingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkTestingRendering.cmake;D:\CMAke\share\cmake-3.9\Modules\CMakeConfigurableFile.in;F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\vtk\Rendering\Core\Testing\Cxx\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/VTK8.0/VTK/Rendering/Core/Testing/Cxx/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/vtk --check-stamp-file F:/vtk/Rendering/Core/Testing/Cxx/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/VTK8.0/VTK/Rendering/Core/Testing/Cxx/CMakeLists.txt;F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\CMakeLists.txt;D:\CMAke\share\cmake-3.9\Templates\TestDriver.cxx.in;F:\VTK8.0\VTK\Rendering\Core\module.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersProgrammable.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOExodus.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtklz4.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkzlib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXMLParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexpat.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexodusII.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtknetcdf.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkhdf5.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOLegacy.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOParallel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersExtraction.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersStatistics.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingFourier.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkalglib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersParallel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersModeling.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkParallelCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesHashSource.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOImage.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkDICOMParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkMetaIO.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkjpeg.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkpng.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtktiff.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIONetCDF.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtknetcdfcpp.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkjsoncpp.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXML.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkInteractionStyle.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingAnnotation.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingFreeType.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkfreetype.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkTestingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkTestingRendering.cmake;D:\CMAke\share\cmake-3.9\Modules\CMakeConfigurableFile.in;F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\vtk\Rendering\Core\Testing\Cxx\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\vtk\Rendering\Core\Testing\Cxx\vtkRenderingCoreCxxTests.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestCompositePolyDataMapper2.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestCompositePolyDataMapper2Picking.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestCompositePolyDataMapper2Scalars.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestCompositePolyDataMapper2CellScalars.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestCompositePolyDataMapper2MixedGeometryCellScalars.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestCompositePolyDataMapper2MixedGeometryEdges.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGlyph3DMapperTreeIndexingCompositeGlyphs.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestMultiBlockPartialArrayPointData.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestMultiBlockPartialArrayFieldData.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTranslucentLUTAlphaBlending.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTranslucentLUTTextureAlphaBlending.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestAreaSelections.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestValuePassFloatingPoint.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestToggleOSWithInteractor.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\otherCoordinate.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\FrustumClip.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\Mace.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\RGrid.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestActor2D.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestActor2DTextures.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestActorLightingFlag.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestAnimationScene.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestAssemblyBounds.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestBackfaceCulling.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestBareScalarsToColors.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestBlockOpacity.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestColorByCellDataStringArray.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestColorByPointDataStringArray.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestColorByStringArrayDefaultLookupTable.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestColorByStringArrayDefaultLookupTable2D.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestColorTransferFunction.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestColorTransferFunctionStringArray.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestDirectScalarsToColors.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestDiscretizableColorTransferFunction.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestDiscretizableColorTransferFunctionStringArray.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestEdgeFlags.cxx" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VTK_OPENGL2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VTK_OPENGL2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">VTK_OPENGL2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">VTK_OPENGL2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestFollowerPicking.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGlyph3DMapper.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGlyph3DMapper2.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGlyph3DMapperArrow.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGlyph3DMapperIndexing.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGlyph3DMapperMasking.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGlyph3DMapperOrientationArray.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGlyph3DMapperPicking.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGlyph3DMapperTreeIndexing.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestGradientBackground.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestHiddenLineRemovalPass.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestHomogeneousTransformOfActor.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestImageAndAnnotations.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestInteractorStyleImageProperty.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestInteractorTimers.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestLabeledContourMapper.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestLabeledContourMapperWithActorMatrix.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestPickingManager.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestManyActors.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestMapVectorsAsRGBColors.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestMapVectorsToColors.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestOffAxisStereo.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestOrderedTriangulator.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestOpacity.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestOSConeCxx.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestPickTextActor.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestPointSelection.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestPolygonSelection.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestResetCameraVerticalAspectRatio.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestResetCameraVerticalAspectRatioParallel.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestSplitViewportStereoHorizontal.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTexturedBackground.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTextureSize.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTextureRGBA.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTextureRGBADepthPeeling.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTilingCxx.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTransformCoordinateUseDouble.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTranslucentImageActorAlphaBlending.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTranslucentImageActorDepthPeeling.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTranslucentLUTDepthPeeling.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTranslucentLUTTextureDepthPeeling.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTStripsColorsTCoords.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTStripsNormalsColorsTCoords.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTStripsNormalsTCoords.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestTStripsTCoords.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\TestWindowToImageFilter.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\otherLookupTable.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\otherLookupTableWithEnabling.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\RenderNonFinite.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Core\Testing\Cxx\SurfacePlusEdges.cxx"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\vtk\ZERO_CHECK.vcxproj">
+      <Project>{C18D1431-FD01-3827-A299-075AD4970C53}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\Color\vtkCommonColor.vcxproj">
+      <Project>{5E940A41-A65F-396C-9EA3-AF605B7A4928}</Project>
+      <Name>vtkCommonColor</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\ComputationalGeometry\vtkCommonComputationalGeometry.vcxproj">
+      <Project>{881CAC54-55C0-3ADE-8623-8E17D2976854}</Project>
+      <Name>vtkCommonComputationalGeometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\Core\vtkCommonCore.vcxproj">
+      <Project>{13D02184-23E0-3620-BDE3-EBF3CACD24FA}</Project>
+      <Name>vtkCommonCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\DataModel\vtkCommonDataModel.vcxproj">
+      <Project>{649F6E45-7213-38DD-B1CA-1FC2D7B2A46C}</Project>
+      <Name>vtkCommonDataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\ExecutionModel\vtkCommonExecutionModel.vcxproj">
+      <Project>{D995C315-5F9B-39CE-A4AD-A0DC2B65EFE3}</Project>
+      <Name>vtkCommonExecutionModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\Math\vtkCommonMath.vcxproj">
+      <Project>{EDB1D71A-6DA0-35AD-8F16-5190F43C34BF}</Project>
+      <Name>vtkCommonMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\Misc\vtkCommonMisc.vcxproj">
+      <Project>{E714F5C2-6658-3C61-9B42-981B0DCA4002}</Project>
+      <Name>vtkCommonMisc</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\System\vtkCommonSystem.vcxproj">
+      <Project>{85D59B2B-1053-3FEE-8F38-7D862FAC3737}</Project>
+      <Name>vtkCommonSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\Transforms\vtkCommonTransforms.vcxproj">
+      <Project>{EE0D572C-E6E3-3D09-977E-B38D4A5E0D77}</Project>
+      <Name>vtkCommonTransforms</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Utilities\DICOMParser\vtkDICOMParser.vcxproj">
+      <Project>{B106AE4F-CB8C-386F-8165-9D4069052F57}</Project>
+      <Name>vtkDICOMParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Core\vtkFiltersCore.vcxproj">
+      <Project>{B5B9897B-17AD-33C0-8BD3-496B2AF46F04}</Project>
+      <Name>vtkFiltersCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Extraction\vtkFiltersExtraction.vcxproj">
+      <Project>{50F9D689-1FB0-3889-865C-0588996ACD32}</Project>
+      <Name>vtkFiltersExtraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\General\vtkFiltersGeneral.vcxproj">
+      <Project>{871884B4-0131-38EE-B889-D5E3270CB349}</Project>
+      <Name>vtkFiltersGeneral</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Geometry\vtkFiltersGeometry.vcxproj">
+      <Project>{2199CC2A-5E7D-3A48-999E-A9AD940D4D3D}</Project>
+      <Name>vtkFiltersGeometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Modeling\vtkFiltersModeling.vcxproj">
+      <Project>{DB95022B-1B51-3BD2-AE04-D5CD06293A95}</Project>
+      <Name>vtkFiltersModeling</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Parallel\vtkFiltersParallel.vcxproj">
+      <Project>{A7C87759-0957-3B58-BE54-B07CF96950B8}</Project>
+      <Name>vtkFiltersParallel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Programmable\vtkFiltersProgrammable.vcxproj">
+      <Project>{03410991-9750-3FFF-A4FE-03A2DCCC75A4}</Project>
+      <Name>vtkFiltersProgrammable</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Sources\vtkFiltersSources.vcxproj">
+      <Project>{86EF06CC-35CA-3663-B7B8-DC8BF29AF36C}</Project>
+      <Name>vtkFiltersSources</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Statistics\vtkFiltersStatistics.vcxproj">
+      <Project>{8A4F4366-FCF8-385F-9F48-CFF2BE1FE36F}</Project>
+      <Name>vtkFiltersStatistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\IO\Core\vtkIOCore.vcxproj">
+      <Project>{926F4BC4-0691-332D-A503-A7FF40D4D290}</Project>
+      <Name>vtkIOCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\IO\Exodus\vtkIOExodus.vcxproj">
+      <Project>{0615DF27-2223-3459-BA3D-410FDE9EBDA7}</Project>
+      <Name>vtkIOExodus</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\IO\Geometry\vtkIOGeometry.vcxproj">
+      <Project>{0905C989-FC0D-3F77-B527-89FB185A63F9}</Project>
+      <Name>vtkIOGeometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\IO\Image\vtkIOImage.vcxproj">
+      <Project>{F326F7EA-7282-35B2-AF11-886B3FD45208}</Project>
+      <Name>vtkIOImage</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\IO\Legacy\vtkIOLegacy.vcxproj">
+      <Project>{C4E16603-BFDC-3033-BA47-40B798455D70}</Project>
+      <Name>vtkIOLegacy</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\IO\NetCDF\vtkIONetCDF.vcxproj">
+      <Project>{5DD04DA2-04A0-3758-AD35-D0B356816CBD}</Project>
+      <Name>vtkIONetCDF</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\IO\Parallel\vtkIOParallel.vcxproj">
+      <Project>{2D2A29C0-5AB4-38CA-A148-D3C1D4B36EA9}</Project>
+      <Name>vtkIOParallel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\IO\XML\vtkIOXML.vcxproj">
+      <Project>{4F9D3687-4577-379B-981A-96E10127FC16}</Project>
+      <Name>vtkIOXML</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\IO\XMLParser\vtkIOXMLParser.vcxproj">
+      <Project>{5A45BEAE-A305-386D-A864-530BFBF574FF}</Project>
+      <Name>vtkIOXMLParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Imaging\Color\vtkImagingColor.vcxproj">
+      <Project>{186E2E46-D9C0-3B92-83C3-99049847CBAE}</Project>
+      <Name>vtkImagingColor</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Imaging\Core\vtkImagingCore.vcxproj">
+      <Project>{3535B4C5-25B6-338F-9B62-637A00338ED9}</Project>
+      <Name>vtkImagingCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Imaging\Fourier\vtkImagingFourier.vcxproj">
+      <Project>{DEFF4FA0-7637-34D4-BD99-E5D7BFAFC6CB}</Project>
+      <Name>vtkImagingFourier</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Imaging\Sources\vtkImagingSources.vcxproj">
+      <Project>{84713BFE-01D5-3CF5-8DED-8B9FF460D313}</Project>
+      <Name>vtkImagingSources</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Interaction\Style\vtkInteractionStyle.vcxproj">
+      <Project>{1FB28E0A-375E-3D77-808B-CAA82D0D24A3}</Project>
+      <Name>vtkInteractionStyle</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\netcdf\vtknetcdf\vtkNetCDF.vcxproj">
+      <Project>{0D1E2A6B-FF91-375B-AEBD-7976BEB6A6D7}</Project>
+      <Name>vtkNetCDF</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Parallel\Core\vtkParallelCore.vcxproj">
+      <Project>{5CE0EC34-09C8-358D-81AF-F332F446AA5C}</Project>
+      <Name>vtkParallelCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Rendering\Annotation\vtkRenderingAnnotation.vcxproj">
+      <Project>{FA863F69-AF0E-3D92-9802-E98177273D24}</Project>
+      <Name>vtkRenderingAnnotation</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Rendering\Core\vtkRenderingCore.vcxproj">
+      <Project>{DBBB3F3B-FDAD-3685-B2C3-7C61F90A77E3}</Project>
+      <Name>vtkRenderingCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Rendering\FreeType\vtkRenderingFreeType.vcxproj">
+      <Project>{D011507B-AB2E-3E85-8EED-0796D2080435}</Project>
+      <Name>vtkRenderingFreeType</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Rendering\OpenGL2\vtkRenderingOpenGL2.vcxproj">
+      <Project>{840FF9B5-CA58-3894-8FFA-B9F93995BD7B}</Project>
+      <Name>vtkRenderingOpenGL2</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Testing\Rendering\vtkTestingRendering.vcxproj">
+      <Project>{5827B5E2-0CDC-3A0A-A699-037F2FF7CEDF}</Project>
+      <Name>vtkTestingRendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\alglib\vtkalglib.vcxproj">
+      <Project>{01F47349-8EDE-3A73-883E-966545594613}</Project>
+      <Name>vtkalglib</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\exodusII\vtkexodusII\vtkexoIIc.vcxproj">
+      <Project>{DBB886D0-71B5-39BA-B1B6-CC9ED2C51704}</Project>
+      <Name>vtkexoIIc</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\expat\vtkexpat\vtkexpat.vcxproj">
+      <Project>{2956A60D-6605-3D3E-A6EF-EA5DDCF90023}</Project>
+      <Name>vtkexpat</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\freetype\vtkfreetype\vtkfreetype.vcxproj">
+      <Project>{4EC36AB8-70E3-3F70-A7A5-7A919AE31FC8}</Project>
+      <Name>vtkfreetype</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\glew\vtkglew\vtkglew.vcxproj">
+      <Project>{DC4380BE-E4A4-3283-88DA-292CCA62495E}</Project>
+      <Name>vtkglew</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\hdf5\vtkhdf5\src\vtkhdf5.vcxproj">
+      <Project>{D7AAD2B2-57B7-3379-ADB8-31D89BBC358F}</Project>
+      <Name>vtkhdf5</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\hdf5\vtkhdf5\hl\src\vtkhdf5_hl.vcxproj">
+      <Project>{EB7D597E-1E12-3A31-B516-03D64383451C}</Project>
+      <Name>vtkhdf5_hl</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\jpeg\vtkjpeg\vtkjpeg.vcxproj">
+      <Project>{9E6A4FEF-75B9-3790-A17F-260F3D8D570F}</Project>
+      <Name>vtkjpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\jsoncpp\vtkjsoncpp\vtkjsoncpp.vcxproj">
+      <Project>{767D88F3-8A60-3F70-8182-E588E4CE3EDA}</Project>
+      <Name>vtkjsoncpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\lz4\vtklz4\vtklz4.vcxproj">
+      <Project>{519888EA-4AA8-3F4F-8012-8FFC32CD81D5}</Project>
+      <Name>vtklz4</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Utilities\MetaIO\vtkmetaio\vtkmetaio.vcxproj">
+      <Project>{EF68E03F-4EF6-38B2-BEC4-5EB3F6D9756C}</Project>
+      <Name>vtkmetaio</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\netcdfcpp\vtknetcdfcpp\vtknetcdfcpp.vcxproj">
+      <Project>{5C031761-371D-3B83-8D18-18663D0C5E29}</Project>
+      <Name>vtknetcdfcpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\png\vtkpng\vtkpng.vcxproj">
+      <Project>{AEB3BA05-2918-3515-BC59-500A8ACBA69A}</Project>
+      <Name>vtkpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Utilities\KWSys\vtksys\vtksys.vcxproj">
+      <Project>{77740868-7004-3AF1-85CD-6515CC7D941F}</Project>
+      <Name>vtksys</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\tiff\vtktiff\libtiff\vtktiff.vcxproj">
+      <Project>{35E952C8-421B-3260-A92F-7F63361DA3CC}</Project>
+      <Name>vtktiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\zlib\vtkzlib\vtkzlib.vcxproj">
+      <Project>{42F14FBE-B23C-3345-8779-0EFC3F745072}</Project>
+      <Name>vtkzlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

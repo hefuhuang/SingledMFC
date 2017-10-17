@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\vtk\IO\SQL\Testing\Cxx\vtkIOSQLCxxTests.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\SQL\Testing\Cxx\TestSQLDatabaseSchema.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\SQL\Testing\Cxx\TestSQLiteDatabase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\SQL\Testing\Cxx\TestSQLiteTableReadWrite.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\vtk\IO\SQL\Testing\Cxx\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{797F6FAB-C225-346D-8F45-B54B8994F519}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,75 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkMPASReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkNetCDFCAMReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkNetCDFCFReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkNetCDFPOPReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkNetCDFReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkSLACParticleReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkSLACReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkMPASReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkNetCDFCAMReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkNetCDFCFReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkNetCDFPOPReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkNetCDFReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkSLACParticleReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkSLACReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/vtkIONetCDFModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/NetCDF/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIONetCDF" ],
+		"name" : "vtkIONetCDF"
+	}
+}

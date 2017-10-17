@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\vtkIOGeometryCxxTests.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestDataObjectIO.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestIncrementalOctreePointLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\UnstructuredGridCellGradients.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\UnstructuredGridFastGradients.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\UnstructuredGridGradients.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestOBJReaderRelative.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestOBJReaderNormalsTCoords.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestOpenFOAMReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestOpenFOAMReader64BitFloats.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestProStarReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestTecplotReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestAMRReadWrite.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestSimplePointsReaderWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestHoudiniPolyDataWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\UnitTestSTLWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestSTLReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestPTSReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\IO\Geometry\Testing\Cxx\TestAVSucdReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\vtk\IO\Geometry\Testing\Cxx\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{797F6FAB-C225-346D-8F45-B54B8994F519}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

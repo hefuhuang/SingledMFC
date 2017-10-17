@@ -1,0 +1,37 @@
+# Target labels
+ vtkIOInfovis
+# Source files and their labels
+F:/vtk/IO/Infovis/vtkBiomTableReader.cxx
+F:/vtk/IO/Infovis/vtkChacoGraphReader.cxx
+F:/vtk/IO/Infovis/vtkDelimitedTextReader.cxx
+F:/vtk/IO/Infovis/vtkDIMACSGraphReader.cxx
+F:/vtk/IO/Infovis/vtkDIMACSGraphWriter.cxx
+F:/vtk/IO/Infovis/vtkFixedWidthTextReader.cxx
+F:/vtk/IO/Infovis/vtkISIReader.cxx
+F:/vtk/IO/Infovis/vtkMultiNewickTreeReader.cxx
+F:/vtk/IO/Infovis/vtkNewickTreeReader.cxx
+F:/vtk/IO/Infovis/vtkNewickTreeWriter.cxx
+F:/vtk/IO/Infovis/vtkPhyloXMLTreeReader.cxx
+F:/vtk/IO/Infovis/vtkPhyloXMLTreeWriter.cxx
+F:/vtk/IO/Infovis/vtkRISReader.cxx
+F:/vtk/IO/Infovis/vtkTulipReader.cxx
+F:/vtk/IO/Infovis/vtkXGMLReader.cxx
+F:/vtk/IO/Infovis/vtkXMLTreeReader.cxx
+F:/vtk/IO/Infovis/vtkBiomTableReader.h
+F:/vtk/IO/Infovis/vtkChacoGraphReader.h
+F:/vtk/IO/Infovis/vtkDelimitedTextReader.h
+F:/vtk/IO/Infovis/vtkDIMACSGraphReader.h
+F:/vtk/IO/Infovis/vtkDIMACSGraphWriter.h
+F:/vtk/IO/Infovis/vtkFixedWidthTextReader.h
+F:/vtk/IO/Infovis/vtkISIReader.h
+F:/vtk/IO/Infovis/vtkMultiNewickTreeReader.h
+F:/vtk/IO/Infovis/vtkNewickTreeReader.h
+F:/vtk/IO/Infovis/vtkNewickTreeWriter.h
+F:/vtk/IO/Infovis/vtkPhyloXMLTreeReader.h
+F:/vtk/IO/Infovis/vtkPhyloXMLTreeWriter.h
+F:/vtk/IO/Infovis/vtkRISReader.h
+F:/vtk/IO/Infovis/vtkTulipReader.h
+F:/vtk/IO/Infovis/vtkXGMLReader.h
+F:/vtk/IO/Infovis/vtkXMLTreeReader.h
+F:/vtk/IO/Infovis/vtkIOInfovisModule.h
+F:/vtk/IO/Infovis/CMakeLists.txt

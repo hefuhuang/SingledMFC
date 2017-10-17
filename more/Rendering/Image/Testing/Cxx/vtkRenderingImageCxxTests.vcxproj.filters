@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\vtk\Rendering\Image\Testing\Cxx\vtkRenderingImageCxxTests.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestCellPickerImage.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageSliceMapperAlpha.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageResliceMapperAlpha.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageSliceMapperBackground.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageResliceMapperBackground.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageSliceMapperBorder.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageResliceMapperBorder.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageSliceMapperInterpolation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageResliceMapperInterpolation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageSliceMapperOrient2D.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageResliceMapperOffAxis.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageSliceMapperOrient3D.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageResliceMapperOrient3D.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageStack.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\TestImageResliceMapperSlab.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\VTK8.0\VTK\Rendering\Image\Testing\Cxx\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{797F6FAB-C225-346D-8F45-B54B8994F519}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+# Target labels
+ vtkIOMovie
+# Source files and their labels
+F:/vtk/IO/Movie/vtkGenericMovieWriter.cxx
+F:/vtk/IO/Movie/vtkOggTheoraWriter.cxx
+F:/vtk/IO/Movie/vtkAVIWriter.cxx
+F:/vtk/IO/Movie/vtkIOMovieConfigure.h
+F:/vtk/IO/Movie/vtkGenericMovieWriter.h
+F:/vtk/IO/Movie/vtkOggTheoraWriter.h
+F:/vtk/IO/Movie/vtkAVIWriter.h
+F:/vtk/IO/Movie/vtkIOMovieModule.h
+F:/vtk/IO/Movie/CMakeLists.txt

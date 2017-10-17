@@ -1,0 +1,39 @@
+# Target labels
+ vtkIOExport
+# Source files and their labels
+F:/vtk/IO/Export/vtkExporter.cxx
+F:/vtk/IO/Export/vtkGL2PSExporter.cxx
+F:/vtk/IO/Export/vtkIVExporter.cxx
+F:/vtk/IO/Export/vtkOBJExporter.cxx
+F:/vtk/IO/Export/vtkOOGLExporter.cxx
+F:/vtk/IO/Export/vtkPDFContextDevice2D.cxx
+F:/vtk/IO/Export/vtkPDFExporter.cxx
+F:/vtk/IO/Export/vtkPOVExporter.cxx
+F:/vtk/IO/Export/vtkRIBExporter.cxx
+F:/vtk/IO/Export/vtkRIBLight.cxx
+F:/vtk/IO/Export/vtkRIBProperty.cxx
+F:/vtk/IO/Export/vtkVRMLExporter.cxx
+F:/vtk/IO/Export/vtkX3D.cxx
+F:/vtk/IO/Export/vtkX3DExporter.cxx
+F:/vtk/IO/Export/vtkX3DExporterFIWriter.cxx
+F:/vtk/IO/Export/vtkX3DExporterWriter.cxx
+F:/vtk/IO/Export/vtkX3DExporterXMLWriter.cxx
+F:/vtk/IO/Export/vtkExporter.h
+F:/vtk/IO/Export/vtkGL2PSExporter.h
+F:/vtk/IO/Export/vtkIVExporter.h
+F:/vtk/IO/Export/vtkOBJExporter.h
+F:/vtk/IO/Export/vtkOOGLExporter.h
+F:/vtk/IO/Export/vtkPDFContextDevice2D.h
+F:/vtk/IO/Export/vtkPDFExporter.h
+F:/vtk/IO/Export/vtkPOVExporter.h
+F:/vtk/IO/Export/vtkRIBExporter.h
+F:/vtk/IO/Export/vtkRIBLight.h
+F:/vtk/IO/Export/vtkRIBProperty.h
+F:/vtk/IO/Export/vtkVRMLExporter.h
+F:/vtk/IO/Export/vtkX3D.h
+F:/vtk/IO/Export/vtkX3DExporter.h
+F:/vtk/IO/Export/vtkX3DExporterFIWriter.h
+F:/vtk/IO/Export/vtkX3DExporterWriter.h
+F:/vtk/IO/Export/vtkX3DExporterXMLWriter.h
+F:/vtk/IO/Export/vtkIOExportModule.h
+F:/vtk/IO/Export/CMakeLists.txt

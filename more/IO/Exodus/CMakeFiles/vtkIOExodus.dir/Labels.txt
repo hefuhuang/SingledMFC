@@ -1,0 +1,24 @@
+# Target labels
+ vtkIOExodus
+# Source files and their labels
+F:/vtk/IO/Exodus/vtkCPExodusIIElementBlock.cxx
+F:/vtk/IO/Exodus/vtkCPExodusIIInSituReader.cxx
+F:/vtk/IO/Exodus/vtkCPExodusIINodalCoordinatesTemplate.txx
+F:/vtk/IO/Exodus/vtkCPExodusIIResultsArrayTemplate.txx
+F:/vtk/IO/Exodus/vtkExodusIICache.cxx
+F:/vtk/IO/Exodus/vtkExodusIIReader.cxx
+F:/vtk/IO/Exodus/vtkExodusIIReaderParser.cxx
+F:/vtk/IO/Exodus/vtkExodusIIReaderVariableCheck.cxx
+F:/vtk/IO/Exodus/vtkExodusIIWriter.cxx
+F:/vtk/IO/Exodus/vtkModelMetadata.cxx
+F:/vtk/IO/Exodus/vtkCPExodusIINodalCoordinatesTemplate.h
+F:/vtk/IO/Exodus/vtkCPExodusIIResultsArrayTemplate.h
+F:/vtk/IO/Exodus/vtkCPExodusIIElementBlock.h
+F:/vtk/IO/Exodus/vtkCPExodusIIInSituReader.h
+F:/vtk/IO/Exodus/vtkExodusIICache.h
+F:/vtk/IO/Exodus/vtkExodusIIReader.h
+F:/vtk/IO/Exodus/vtkExodusIIReaderParser.h
+F:/vtk/IO/Exodus/vtkExodusIIWriter.h
+F:/vtk/IO/Exodus/vtkModelMetadata.h
+F:/vtk/IO/Exodus/vtkIOExodusModule.h
+F:/vtk/IO/Exodus/CMakeLists.txt

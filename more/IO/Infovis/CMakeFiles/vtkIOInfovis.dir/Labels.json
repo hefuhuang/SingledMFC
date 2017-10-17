@@ -1,0 +1,147 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkBiomTableReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkChacoGraphReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkDelimitedTextReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkDIMACSGraphReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkDIMACSGraphWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkFixedWidthTextReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkISIReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkMultiNewickTreeReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkNewickTreeReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkNewickTreeWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkPhyloXMLTreeReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkPhyloXMLTreeWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkRISReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkTulipReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkXGMLReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkXMLTreeReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkBiomTableReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkChacoGraphReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkDelimitedTextReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkDIMACSGraphReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkDIMACSGraphWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkFixedWidthTextReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkISIReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkMultiNewickTreeReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkNewickTreeReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkNewickTreeWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkPhyloXMLTreeReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkPhyloXMLTreeWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkRISReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkTulipReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkXGMLReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkXMLTreeReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/vtkIOInfovisModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Infovis/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOInfovis" ],
+		"name" : "vtkIOInfovis"
+	}
+}

@@ -1,0 +1,35 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/LOD/vtkLODActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/LOD/vtkQuadricLODActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/LOD/vtkLODActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/LOD/vtkQuadricLODActor.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/LOD/vtkRenderingLODModule.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/LOD/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingLOD" ],
+		"name" : "vtkRenderingLOD"
+	}
+}

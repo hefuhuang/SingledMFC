@@ -1,0 +1,22 @@
+# CMake generation dependency list for this directory.
+F:/vtk/IO/Movie/CMakeLists.txt
+F:/vtk/CMake/vtkTestVideoForWindows.cmake
+F:/vtk/CMake/vtkTestvfw32.cxx
+F:/vtk/CMake/vtkTestvfw32Capture.cxx
+F:/vtk/IO/Movie/vtkIOMovieConfigure.h.in
+F:/vtk/IO/Movie/module.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtkCommonCore.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtkkwiml.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtksys.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtkCommonDataModel.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtkCommonMath.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtkCommonMisc.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtkCommonSystem.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtkCommonTransforms.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtkCommonExecutionModel.cmake
+F:/vtk/lib/cmake/vtk-8.1/Modules/vtkoggtheora.cmake
+F:/vtk/CMake/vtkexportheader.cmake.in
+F:/vtk/IO/Movie/module.cmake
+F:/vtk/CMake/vtkModuleInfo.cmake.in
+F:/vtk/CMake/vtkModuleInfo.cmake.in
+F:/vtk/CMake/vtkModuleHeaders.cmake.in

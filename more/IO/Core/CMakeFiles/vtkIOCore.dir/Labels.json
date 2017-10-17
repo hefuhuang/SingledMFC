@@ -1,0 +1,211 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkAbstractParticleWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkArrayReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkArrayWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkASCIITextCodec.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkBase64InputStream.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkBase64OutputStream.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkBase64Utilities.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkDataCompressor.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkDelimitedTextWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkGlobFileNames.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkInputStream.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkJavaScriptDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkLZ4DataCompressor.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkOutputStream.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkSortFileNames.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkTextCodec.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkTextCodecFactory.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkUTF16TextCodec.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkUTF8TextCodec.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkAbstractPolyDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkZLibDataCompressor.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkArrayDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkArrayDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkAbstractParticleWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkArrayReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkArrayWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkASCIITextCodec.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkBase64InputStream.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkBase64OutputStream.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkBase64Utilities.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkDataCompressor.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkDelimitedTextWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkGlobFileNames.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkInputStream.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkJavaScriptDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkLZ4DataCompressor.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkOutputStream.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkSortFileNames.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkTextCodec.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkTextCodecFactory.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkUTF16TextCodec.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkUTF8TextCodec.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkAbstractPolyDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkZLibDataCompressor.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkArrayDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkArrayDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/vtkIOCoreModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Core/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOCore" ],
+		"name" : "vtkIOCore"
+	}
+}

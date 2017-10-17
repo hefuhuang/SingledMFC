@@ -1,0 +1,16 @@
+# Target labels
+ vtkIOImport
+# Source files and their labels
+F:/vtk/IO/Import/vtk3DSImporter.cxx
+F:/vtk/IO/Import/vtkImporter.cxx
+F:/vtk/IO/Import/vtkVRMLImporter.cxx
+F:/vtk/IO/Import/vtkOBJImporter.cxx
+F:/vtk/IO/Import/vtkOBJImporterInternals.cxx
+F:/vtk/IO/Import/vtk3DS.h
+F:/vtk/IO/Import/vtk3DSImporter.h
+F:/vtk/IO/Import/vtkImporter.h
+F:/vtk/IO/Import/vtkVRMLImporter.h
+F:/vtk/IO/Import/vtkOBJImporter.h
+F:/vtk/IO/Import/vtkOBJImporterInternals.h
+F:/vtk/IO/Import/vtkIOImportModule.h
+F:/vtk/IO/Import/CMakeLists.txt

@@ -1,0 +1,51 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Image/vtkDepthImageToPointCloud.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Image/vtkImageResliceMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Image/vtkImageSliceCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Image/vtkImageStack.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Image/vtkDepthImageToPointCloud.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Image/vtkImageResliceMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Image/vtkImageSliceCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Image/vtkImageStack.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/Image/vtkRenderingImageModule.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Image/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingImage" ],
+		"name" : "vtkRenderingImage"
+	}
+}

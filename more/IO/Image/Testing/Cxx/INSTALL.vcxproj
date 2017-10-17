@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{09EE3DA7-8BB8-3C7D-AD9F-71467CB056B7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>INSTALL</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\IO\Image;F:\vtk\Common\Core;F:\vtk\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\vtk\Common\DataModel;F:\vtk\Common\Math;F:\vtk\Common\Misc;F:\vtk\Common\System;F:\vtk\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\vtk\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\vtk\ThirdParty\zlib;F:\vtk\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\vtk\IO\Legacy;F:\vtk\IO\Core;F:\vtk\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\vtk\Imaging\Math;F:\vtk\Imaging\Sources;F:\vtk\Imaging\Core;F:\vtk\Interaction\Image;F:\vtk\Imaging\Color;F:\vtk\Interaction\Style;F:\vtk\Filters\Extraction;F:\vtk\Filters\Core;F:\vtk\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\vtk\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\vtk\ThirdParty\alglib;F:\vtk\Filters\Sources;F:\vtk\Rendering\Core;F:\vtk\Common\Color;F:\vtk\Filters\Geometry;F:\vtk\Interaction\Widgets;F:\vtk\Filters\Hybrid;F:\vtk\Filters\Modeling;F:\vtk\Imaging\General;F:\vtk\Imaging\Hybrid;F:\vtk\Rendering\Annotation;F:\vtk\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\vtk\Rendering\Volume;F:\vtk\IO\XML;F:\vtk\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\vtk\Rendering\ContextOpenGL2;F:\vtk\Rendering\Context2D;F:\vtk\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\vtk\Testing\Core;F:\vtk\Testing\Rendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\CMAke\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\IO\Image;F:\vtk\Common\Core;F:\vtk\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\vtk\Common\DataModel;F:\vtk\Common\Math;F:\vtk\Common\Misc;F:\vtk\Common\System;F:\vtk\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\vtk\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\vtk\ThirdParty\zlib;F:\vtk\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\vtk\IO\Legacy;F:\vtk\IO\Core;F:\vtk\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\vtk\Imaging\Math;F:\vtk\Imaging\Sources;F:\vtk\Imaging\Core;F:\vtk\Interaction\Image;F:\vtk\Imaging\Color;F:\vtk\Interaction\Style;F:\vtk\Filters\Extraction;F:\vtk\Filters\Core;F:\vtk\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\vtk\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\vtk\ThirdParty\alglib;F:\vtk\Filters\Sources;F:\vtk\Rendering\Core;F:\vtk\Common\Color;F:\vtk\Filters\Geometry;F:\vtk\Interaction\Widgets;F:\vtk\Filters\Hybrid;F:\vtk\Filters\Modeling;F:\vtk\Imaging\General;F:\vtk\Imaging\Hybrid;F:\vtk\Rendering\Annotation;F:\vtk\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\vtk\Rendering\Volume;F:\vtk\IO\XML;F:\vtk\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\vtk\Rendering\ContextOpenGL2;F:\vtk\Rendering\Context2D;F:\vtk\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\vtk\Testing\Core;F:\vtk\Testing\Rendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\CMAke\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\IO\Image;F:\vtk\Common\Core;F:\vtk\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\vtk\Common\DataModel;F:\vtk\Common\Math;F:\vtk\Common\Misc;F:\vtk\Common\System;F:\vtk\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\vtk\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\vtk\ThirdParty\zlib;F:\vtk\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\vtk\IO\Legacy;F:\vtk\IO\Core;F:\vtk\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\vtk\Imaging\Math;F:\vtk\Imaging\Sources;F:\vtk\Imaging\Core;F:\vtk\Interaction\Image;F:\vtk\Imaging\Color;F:\vtk\Interaction\Style;F:\vtk\Filters\Extraction;F:\vtk\Filters\Core;F:\vtk\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\vtk\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\vtk\ThirdParty\alglib;F:\vtk\Filters\Sources;F:\vtk\Rendering\Core;F:\vtk\Common\Color;F:\vtk\Filters\Geometry;F:\vtk\Interaction\Widgets;F:\vtk\Filters\Hybrid;F:\vtk\Filters\Modeling;F:\vtk\Imaging\General;F:\vtk\Imaging\Hybrid;F:\vtk\Rendering\Annotation;F:\vtk\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\vtk\Rendering\Volume;F:\vtk\IO\XML;F:\vtk\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\vtk\Rendering\ContextOpenGL2;F:\vtk\Rendering\Context2D;F:\vtk\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\vtk\Testing\Core;F:\vtk\Testing\Rendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\CMAke\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\IO\Image;F:\vtk\Common\Core;F:\vtk\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\vtk\Common\DataModel;F:\vtk\Common\Math;F:\vtk\Common\Misc;F:\vtk\Common\System;F:\vtk\Common\Transforms;F:\vtk\Common\ExecutionModel;F:\vtk\Utilities\DICOMParser;F:\vtk\Utilities\MetaIO\vtkmetaio;F:\vtk\Utilities\MetaIO;F:\vtk\ThirdParty\zlib;F:\vtk\ThirdParty\jpeg;F:\vtk\ThirdParty\png;F:\vtk\ThirdParty\tiff\vtktiff\libtiff;F:\vtk\ThirdParty\tiff;F:\vtk\IO\Legacy;F:\vtk\IO\Core;F:\vtk\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\vtk\Imaging\Math;F:\vtk\Imaging\Sources;F:\vtk\Imaging\Core;F:\vtk\Interaction\Image;F:\vtk\Imaging\Color;F:\vtk\Interaction\Style;F:\vtk\Filters\Extraction;F:\vtk\Filters\Core;F:\vtk\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\vtk\Filters\Statistics;F:\vtk\Imaging\Fourier;F:\vtk\ThirdParty\alglib;F:\vtk\Filters\Sources;F:\vtk\Rendering\Core;F:\vtk\Common\Color;F:\vtk\Filters\Geometry;F:\vtk\Interaction\Widgets;F:\vtk\Filters\Hybrid;F:\vtk\Filters\Modeling;F:\vtk\Imaging\General;F:\vtk\Imaging\Hybrid;F:\vtk\Rendering\Annotation;F:\vtk\Rendering\FreeType;F:\vtk\ThirdParty\freetype;F:\vtk\Rendering\Volume;F:\vtk\IO\XML;F:\vtk\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\vtk\Rendering\ContextOpenGL2;F:\vtk\Rendering\Context2D;F:\vtk\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\vtk\Testing\Core;F:\vtk\Testing\Rendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\CMAke\bin\cmake.exe -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\vtk\CMakeFiles\30efa8f3f77907e03dd976177b0737b1\INSTALL_force.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/vtk/CMakeFiles/30efa8f3f77907e03dd976177b0737b1/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\vtk\IO\Image\Testing\Cxx\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/vtk/CMakeFiles/30efa8f3f77907e03dd976177b0737b1/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\vtk\IO\Image\Testing\Cxx\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/vtk/CMakeFiles/30efa8f3f77907e03dd976177b0737b1/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\vtk\IO\Image\Testing\Cxx\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/vtk/CMakeFiles/30efa8f3f77907e03dd976177b0737b1/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\vtk\IO\Image\Testing\Cxx\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\vtk\ZERO_CHECK.vcxproj">
+      <Project>{C18D1431-FD01-3827-A299-075AD4970C53}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\zlib\vtkzlib\ALL_BUILD.vcxproj">
+      <Project>{80DE317D-3F8D-3DC4-99DC-29528737B1F7}</Project>
+      <Name>ALL_BUILD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

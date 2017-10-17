@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CE64BB1F-C8D6-319A-9D75-B6AE4ABBF346}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>vtkGUISupportMFC</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\x64\Debug</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)Debug\lib\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtkGUISupportMFC-8.1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\VTK8.0\MFC\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtkGUISupportMFC.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtkGUISupportMFC-8.1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\VTK8.0\MFC\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtkGUISupportMFC.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtkGUISupportMFC-8.1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\VTK8.0\MFC\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtkGUISupportMFC.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtkGUISupportMFC-8.1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\HHF\Desktop\MFC_OCT\GUISupport\MFC;C:\Program Files\VTK\include\vtk-8.1;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\VTK\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\VTK\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;_AFXDLL;CMAKE_INTDIR="Debug";vtkGUISupportMFC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalOptions>/D "_AFXDLL" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;_AFXDLL;CMAKE_INTDIR=\"Debug\";vtkGUISupportMFC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vtkFiltersCore-8.1.lib;vtkRenderingCore-8.1.lib;vtkRenderingOpenGL2-8.1.lib;DelayImp.lib;vtkCommonExecutionModel-8.1.lib;vtkCommonDataModel-8.1.lib;vtkCommonTransforms-8.1.lib;vtkCommonMisc-8.1.lib;vtkCommonMath-8.1.lib;vtkCommonCore-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\VTK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>vtkGUISupportMFC-8.1.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>
+      </ImportLibrary>
+      <ProgramDataBaseFile>GUISupportMFC/bin/Debug/vtkGUISupportMFC-8.1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;_AFXDLL;CMAKE_INTDIR="Release";vtkGUISupportMFC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;_AFXDLL;CMAKE_INTDIR=\"Release\";vtkGUISupportMFC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\vtkRenderingOpenGL2-8.1.lib;DelayImp.lib;..\..\lib\Release\vtkRenderingCore-8.1.lib;..\..\lib\Release\vtkFiltersCore-8.1.lib;..\..\lib\Release\vtkCommonExecutionModel-8.1.lib;..\..\lib\Release\vtkCommonDataModel-8.1.lib;..\..\lib\Release\vtkCommonTransforms-8.1.lib;..\..\lib\Release\vtkCommonMisc-8.1.lib;..\..\lib\Release\vtkCommonMath-8.1.lib;..\..\lib\Release\vtkCommonCore-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/VTK8.0/MFC/lib/Release/vtkGUISupportMFC-8.1.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/VTK8.0/MFC/bin/Release/vtkGUISupportMFC-8.1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;_AFXDLL;CMAKE_INTDIR="MinSizeRel";vtkGUISupportMFC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;_AFXDLL;CMAKE_INTDIR=\"MinSizeRel\";vtkGUISupportMFC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\vtkRenderingOpenGL2-8.1.lib;DelayImp.lib;..\..\lib\MinSizeRel\vtkRenderingCore-8.1.lib;..\..\lib\MinSizeRel\vtkFiltersCore-8.1.lib;..\..\lib\MinSizeRel\vtkCommonExecutionModel-8.1.lib;..\..\lib\MinSizeRel\vtkCommonDataModel-8.1.lib;..\..\lib\MinSizeRel\vtkCommonTransforms-8.1.lib;..\..\lib\MinSizeRel\vtkCommonMisc-8.1.lib;..\..\lib\MinSizeRel\vtkCommonMath-8.1.lib;..\..\lib\MinSizeRel\vtkCommonCore-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/VTK8.0/MFC/lib/MinSizeRel/vtkGUISupportMFC-8.1.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/VTK8.0/MFC/bin/MinSizeRel/vtkGUISupportMFC-8.1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;_AFXDLL;CMAKE_INTDIR="RelWithDebInfo";vtkGUISupportMFC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;_AFXDLL;CMAKE_INTDIR=\"RelWithDebInfo\";vtkGUISupportMFC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\VTK8.0\MFC\GUISupport\MFC;F:\VTK8.0\VTK\GUISupport\MFC;F:\VTK8.0\MFC\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\VTK8.0\MFC\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\VTK8.0\MFC\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\VTK8.0\MFC\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\VTK8.0\MFC\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\VTK8.0\MFC\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\VTK8.0\MFC\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\VTK8.0\MFC\Common\System;F:\VTK8.0\VTK\Common\System;F:\VTK8.0\MFC\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\VTK8.0\MFC\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\VTK8.0\MFC\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\VTK8.0\MFC\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\VTK8.0\MFC\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\VTK8.0\MFC\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\VTK8.0\MFC\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\VTK8.0\MFC\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\VTK8.0\MFC\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\VTK8.0\MFC\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\VTK8.0\MFC\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\vtkRenderingOpenGL2-8.1.lib;DelayImp.lib;..\..\lib\RelWithDebInfo\vtkRenderingCore-8.1.lib;..\..\lib\RelWithDebInfo\vtkFiltersCore-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonExecutionModel-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonDataModel-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonTransforms-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonMisc-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonMath-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonCore-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/VTK8.0/MFC/lib/RelWithDebInfo/vtkGUISupportMFC-8.1.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/VTK8.0/MFC/bin/RelWithDebInfo/vtkGUISupportMFC-8.1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\VTK8.0\VTK\GUISupport\MFC\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/VTK8.0/VTK/GUISupport/MFC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/VTK8.0/MFC --check-stamp-file F:/VTK8.0/MFC/GUISupport/MFC/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/VTK8.0/VTK/GUISupport/MFC/CMakeLists.txt;F:\VTK8.0\VTK\GUISupport\MFC\CMakeLists.txt;F:\VTK8.0\VTK\GUISupport\MFC\VTKMFCSettings.cmake;F:\VTK8.0\MFC\GUISupport\MFC\VTKMFCSettings.cmake;F:\VTK8.0\VTK\GUISupport\MFC\vtkMFCConfigure.h.in;F:\VTK8.0\VTK\GUISupport\MFC\module.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\VTK8.0\VTK\CMake\vtkexportheader.cmake.in;F:\VTK8.0\VTK\GUISupport\MFC\module.cmake;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleHeaders.cmake.in;F:\VTK8.0\VTK\GUISupport\MFC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\VTK8.0\MFC\GUISupport\MFC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/VTK8.0/VTK/GUISupport/MFC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/VTK8.0/MFC --check-stamp-file F:/VTK8.0/MFC/GUISupport/MFC/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/VTK8.0/VTK/GUISupport/MFC/CMakeLists.txt;F:\VTK8.0\VTK\GUISupport\MFC\CMakeLists.txt;F:\VTK8.0\VTK\GUISupport\MFC\VTKMFCSettings.cmake;F:\VTK8.0\MFC\GUISupport\MFC\VTKMFCSettings.cmake;F:\VTK8.0\VTK\GUISupport\MFC\vtkMFCConfigure.h.in;F:\VTK8.0\VTK\GUISupport\MFC\module.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\VTK8.0\VTK\CMake\vtkexportheader.cmake.in;F:\VTK8.0\VTK\GUISupport\MFC\module.cmake;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleHeaders.cmake.in;F:\VTK8.0\VTK\GUISupport\MFC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\VTK8.0\MFC\GUISupport\MFC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/VTK8.0/VTK/GUISupport/MFC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/VTK8.0/MFC --check-stamp-file F:/VTK8.0/MFC/GUISupport/MFC/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/VTK8.0/VTK/GUISupport/MFC/CMakeLists.txt;F:\VTK8.0\VTK\GUISupport\MFC\CMakeLists.txt;F:\VTK8.0\VTK\GUISupport\MFC\VTKMFCSettings.cmake;F:\VTK8.0\MFC\GUISupport\MFC\VTKMFCSettings.cmake;F:\VTK8.0\VTK\GUISupport\MFC\vtkMFCConfigure.h.in;F:\VTK8.0\VTK\GUISupport\MFC\module.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\VTK8.0\VTK\CMake\vtkexportheader.cmake.in;F:\VTK8.0\VTK\GUISupport\MFC\module.cmake;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleHeaders.cmake.in;F:\VTK8.0\VTK\GUISupport\MFC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\VTK8.0\MFC\GUISupport\MFC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/VTK8.0/VTK/GUISupport/MFC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/VTK8.0/MFC --check-stamp-file F:/VTK8.0/MFC/GUISupport/MFC/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/VTK8.0/VTK/GUISupport/MFC/CMakeLists.txt;F:\VTK8.0\VTK\GUISupport\MFC\CMakeLists.txt;F:\VTK8.0\VTK\GUISupport\MFC\VTKMFCSettings.cmake;F:\VTK8.0\MFC\GUISupport\MFC\VTKMFCSettings.cmake;F:\VTK8.0\VTK\GUISupport\MFC\vtkMFCConfigure.h.in;F:\VTK8.0\VTK\GUISupport\MFC\module.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\VTK8.0\MFC\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\VTK8.0\VTK\CMake\vtkexportheader.cmake.in;F:\VTK8.0\VTK\GUISupport\MFC\module.cmake;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleHeaders.cmake.in;F:\VTK8.0\VTK\GUISupport\MFC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\VTK8.0\MFC\GUISupport\MFC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\VTK8.0\VTK\GUISupport\MFC\vtkMFCWindow.cpp" />
+    <ClInclude Include="vtkGUISupportMFCModule.h" />
+    <ClInclude Include="vtkMFCConfigure.h" />
+    <ClInclude Include="vtkMFCWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\VTK8.0\MFC\ZERO_CHECK.vcxproj">
+      <Project>{9944F369-80F9-3B55-8174-11719ABED85A}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\VTK8.0\MFC\Common\Core\vtkCommonCore.vcxproj">
+      <Project>{75AE79B4-88CF-3D64-B2B9-0EF122587566}</Project>
+      <Name>vtkCommonCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\VTK8.0\MFC\Common\DataModel\vtkCommonDataModel.vcxproj">
+      <Project>{8B8997E0-A38A-33E0-B1D7-ABE456F6FF6A}</Project>
+      <Name>vtkCommonDataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\VTK8.0\MFC\Common\ExecutionModel\vtkCommonExecutionModel.vcxproj">
+      <Project>{3EF229BA-98FA-3AAF-BB22-ED02E6EAF632}</Project>
+      <Name>vtkCommonExecutionModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\VTK8.0\MFC\Common\Math\vtkCommonMath.vcxproj">
+      <Project>{564F8031-891C-3E7C-8440-216B740552D1}</Project>
+      <Name>vtkCommonMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\VTK8.0\MFC\Common\Misc\vtkCommonMisc.vcxproj">
+      <Project>{6938E79F-044C-3B62-A3E8-ACE0D84465F9}</Project>
+      <Name>vtkCommonMisc</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\VTK8.0\MFC\Common\Transforms\vtkCommonTransforms.vcxproj">
+      <Project>{1645528D-9536-3570-846E-E86A9431A3D4}</Project>
+      <Name>vtkCommonTransforms</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\VTK8.0\MFC\Filters\Core\vtkFiltersCore.vcxproj">
+      <Project>{9BC75E23-DD31-3E56-B58D-0726D528654D}</Project>
+      <Name>vtkFiltersCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\VTK8.0\MFC\Rendering\Core\vtkRenderingCore.vcxproj">
+      <Project>{A914C9B1-E126-374E-9667-4743C1D3DCEE}</Project>
+      <Name>vtkRenderingCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\VTK8.0\MFC\Rendering\OpenGL2\vtkRenderingOpenGL2.vcxproj">
+      <Project>{DA96AD8D-D40B-3613-B360-22E2E8BEFF61}</Project>
+      <Name>vtkRenderingOpenGL2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

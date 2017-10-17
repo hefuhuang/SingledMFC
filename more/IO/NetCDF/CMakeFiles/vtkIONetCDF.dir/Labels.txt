@@ -1,0 +1,19 @@
+# Target labels
+ vtkIONetCDF
+# Source files and their labels
+F:/vtk/IO/NetCDF/vtkMPASReader.cxx
+F:/vtk/IO/NetCDF/vtkNetCDFCAMReader.cxx
+F:/vtk/IO/NetCDF/vtkNetCDFCFReader.cxx
+F:/vtk/IO/NetCDF/vtkNetCDFPOPReader.cxx
+F:/vtk/IO/NetCDF/vtkNetCDFReader.cxx
+F:/vtk/IO/NetCDF/vtkSLACParticleReader.cxx
+F:/vtk/IO/NetCDF/vtkSLACReader.cxx
+F:/vtk/IO/NetCDF/vtkMPASReader.h
+F:/vtk/IO/NetCDF/vtkNetCDFCAMReader.h
+F:/vtk/IO/NetCDF/vtkNetCDFCFReader.h
+F:/vtk/IO/NetCDF/vtkNetCDFPOPReader.h
+F:/vtk/IO/NetCDF/vtkNetCDFReader.h
+F:/vtk/IO/NetCDF/vtkSLACParticleReader.h
+F:/vtk/IO/NetCDF/vtkSLACReader.h
+F:/vtk/IO/NetCDF/vtkIONetCDFModule.h
+F:/vtk/IO/NetCDF/CMakeLists.txt

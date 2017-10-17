@@ -1,0 +1,33 @@
+# Target labels
+ vtkRenderingFreeType
+# Source files and their labels
+F:/VTK8.0/VTK/Rendering/FreeType/vtkFreeTypeStringToImage.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/vtkFreeTypeTools.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/vtkMathTextFreeTypeTextRenderer.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/vtkMathTextUtilities.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/vtkTextRendererStringToImage.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/vtkScaledTextActor.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/vtkVectorText.cxx
+F:/vtk/Rendering/FreeType/vtkRenderingFreeTypeObjectFactory.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_arial_bold.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_arial_bold_italic.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_arial.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_arial_italic.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_courier_bold.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_courier_bold_italic.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_courier.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_courier_italic.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_times_bold.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_times_bold_italic.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_times.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/fonts/face_times_italic.cxx
+F:/VTK8.0/VTK/Rendering/FreeType/vtkFreeTypeStringToImage.h
+F:/VTK8.0/VTK/Rendering/FreeType/vtkFreeTypeTools.h
+F:/VTK8.0/VTK/Rendering/FreeType/vtkMathTextFreeTypeTextRenderer.h
+F:/VTK8.0/VTK/Rendering/FreeType/vtkMathTextUtilities.h
+F:/VTK8.0/VTK/Rendering/FreeType/vtkTextRendererStringToImage.h
+F:/VTK8.0/VTK/Rendering/FreeType/vtkScaledTextActor.h
+F:/VTK8.0/VTK/Rendering/FreeType/vtkVectorText.h
+F:/vtk/Rendering/FreeType/vtkRenderingFreeTypeObjectFactory.h
+F:/vtk/Rendering/FreeType/vtkRenderingFreeTypeModule.h
+F:/VTK8.0/VTK/Rendering/FreeType/CMakeLists.txt

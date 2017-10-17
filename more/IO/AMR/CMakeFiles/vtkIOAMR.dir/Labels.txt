@@ -1,0 +1,23 @@
+# Target labels
+ vtkIOAMR
+# Source files and their labels
+F:/vtk/IO/AMR/vtkAMRDataSetCache.cxx
+F:/vtk/IO/AMR/vtkAMRBaseParticlesReader.cxx
+F:/vtk/IO/AMR/vtkAMRBaseReader.cxx
+F:/vtk/IO/AMR/vtkAMREnzoParticlesReader.cxx
+F:/vtk/IO/AMR/vtkAMREnzoReader.cxx
+F:/vtk/IO/AMR/vtkAMREnzoReaderInternal.cxx
+F:/vtk/IO/AMR/vtkAMRFlashParticlesReader.cxx
+F:/vtk/IO/AMR/vtkAMRFlashReader.cxx
+F:/vtk/IO/AMR/vtkAMRFlashReaderInternal.cxx
+F:/vtk/IO/AMR/vtkAMRDataSetCache.h
+F:/vtk/IO/AMR/vtkAMRBaseParticlesReader.h
+F:/vtk/IO/AMR/vtkAMRBaseReader.h
+F:/vtk/IO/AMR/vtkAMREnzoParticlesReader.h
+F:/vtk/IO/AMR/vtkAMREnzoReader.h
+F:/vtk/IO/AMR/vtkAMREnzoReaderInternal.h
+F:/vtk/IO/AMR/vtkAMRFlashParticlesReader.h
+F:/vtk/IO/AMR/vtkAMRFlashReader.h
+F:/vtk/IO/AMR/vtkAMRFlashReaderInternal.h
+F:/vtk/IO/AMR/vtkIOAMRModule.h
+F:/vtk/IO/AMR/CMakeLists.txt

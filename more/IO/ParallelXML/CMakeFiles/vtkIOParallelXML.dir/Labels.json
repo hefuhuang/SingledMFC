@@ -1,0 +1,115 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPDataSetWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPImageDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPPolyDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPRectilinearGridWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPStructuredDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPStructuredGridWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPUnstructuredDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPUnstructuredGridWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPHierarchicalBoxDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPMultiBlockDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPUniformGridAMRWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPDataSetWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPImageDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPPolyDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPRectilinearGridWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPStructuredDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPStructuredGridWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPUnstructuredDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPUnstructuredGridWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPHierarchicalBoxDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPMultiBlockDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkXMLPUniformGridAMRWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/vtkIOParallelXMLModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ParallelXML/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOParallelXML" ],
+		"name" : "vtkIOParallelXML"
+	}
+}

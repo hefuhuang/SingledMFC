@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99F8D806-6A1E-3D12-9757-5B798E888CA5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>vtkRenderingVolumeOpenGL2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\vtk\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtkRenderingVolumeOpenGL2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtkRenderingVolumeOpenGL2-8.1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\vtk\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtkRenderingVolumeOpenGL2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtkRenderingVolumeOpenGL2-8.1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\vtk\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtkRenderingVolumeOpenGL2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtkRenderingVolumeOpenGL2-8.1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\vtk\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtkRenderingVolumeOpenGL2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtkRenderingVolumeOpenGL2-8.1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="Debug";vtkRenderingVolumeOpenGL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"Debug\";vtkRenderingVolumeOpenGL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\vtkImagingMath-8.1.lib;..\..\lib\Debug\vtkRenderingOpenGL2-8.1.lib;..\..\lib\Debug\vtkRenderingVolume-8.1.lib;..\..\lib\Debug\vtkglew-8.1.lib;glu32.lib;opengl32.lib;..\..\lib\Debug\vtkImagingCore-8.1.lib;..\..\lib\Debug\vtkRenderingCore-8.1.lib;..\..\lib\Debug\vtkFiltersSources-8.1.lib;..\..\lib\Debug\vtkFiltersGeneral-8.1.lib;..\..\lib\Debug\vtkFiltersCore-8.1.lib;..\..\lib\Debug\vtkCommonExecutionModel-8.1.lib;..\..\lib\Debug\vtkCommonDataModel-8.1.lib;..\..\lib\Debug\vtkCommonTransforms-8.1.lib;..\..\lib\Debug\vtkCommonSystem-8.1.lib;..\..\lib\Debug\vtksys-8.1.lib;ws2_32.lib;Psapi.lib;..\..\lib\Debug\vtkCommonMisc-8.1.lib;..\..\lib\Debug\vtkCommonMath-8.1.lib;..\..\lib\Debug\vtkCommonCore-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/vtk/lib/Debug/vtkRenderingVolumeOpenGL2-8.1.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/vtk/bin/Debug/vtkRenderingVolumeOpenGL2-8.1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="Release";vtkRenderingVolumeOpenGL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"Release\";vtkRenderingVolumeOpenGL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\vtkImagingMath-8.1.lib;..\..\lib\Release\vtkRenderingOpenGL2-8.1.lib;..\..\lib\Release\vtkRenderingVolume-8.1.lib;..\..\lib\Release\vtkglew-8.1.lib;glu32.lib;opengl32.lib;..\..\lib\Release\vtkImagingCore-8.1.lib;..\..\lib\Release\vtkRenderingCore-8.1.lib;..\..\lib\Release\vtkFiltersSources-8.1.lib;..\..\lib\Release\vtkFiltersGeneral-8.1.lib;..\..\lib\Release\vtkFiltersCore-8.1.lib;..\..\lib\Release\vtkCommonExecutionModel-8.1.lib;..\..\lib\Release\vtkCommonDataModel-8.1.lib;..\..\lib\Release\vtkCommonTransforms-8.1.lib;..\..\lib\Release\vtkCommonSystem-8.1.lib;..\..\lib\Release\vtksys-8.1.lib;ws2_32.lib;Psapi.lib;..\..\lib\Release\vtkCommonMisc-8.1.lib;..\..\lib\Release\vtkCommonMath-8.1.lib;..\..\lib\Release\vtkCommonCore-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/vtk/lib/Release/vtkRenderingVolumeOpenGL2-8.1.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/vtk/bin/Release/vtkRenderingVolumeOpenGL2-8.1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="MinSizeRel";vtkRenderingVolumeOpenGL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"MinSizeRel\";vtkRenderingVolumeOpenGL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\vtkImagingMath-8.1.lib;..\..\lib\MinSizeRel\vtkRenderingOpenGL2-8.1.lib;..\..\lib\MinSizeRel\vtkRenderingVolume-8.1.lib;..\..\lib\MinSizeRel\vtkglew-8.1.lib;glu32.lib;opengl32.lib;..\..\lib\MinSizeRel\vtkImagingCore-8.1.lib;..\..\lib\MinSizeRel\vtkRenderingCore-8.1.lib;..\..\lib\MinSizeRel\vtkFiltersSources-8.1.lib;..\..\lib\MinSizeRel\vtkFiltersGeneral-8.1.lib;..\..\lib\MinSizeRel\vtkFiltersCore-8.1.lib;..\..\lib\MinSizeRel\vtkCommonExecutionModel-8.1.lib;..\..\lib\MinSizeRel\vtkCommonDataModel-8.1.lib;..\..\lib\MinSizeRel\vtkCommonTransforms-8.1.lib;..\..\lib\MinSizeRel\vtkCommonSystem-8.1.lib;..\..\lib\MinSizeRel\vtksys-8.1.lib;ws2_32.lib;Psapi.lib;..\..\lib\MinSizeRel\vtkCommonMisc-8.1.lib;..\..\lib\MinSizeRel\vtkCommonMath-8.1.lib;..\..\lib\MinSizeRel\vtkCommonCore-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/vtk/lib/MinSizeRel/vtkRenderingVolumeOpenGL2-8.1.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/vtk/bin/MinSizeRel/vtkRenderingVolumeOpenGL2-8.1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR="RelWithDebInfo";vtkRenderingVolumeOpenGL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;VTK_IN_VTK;CMAKE_INTDIR=\"RelWithDebInfo\";vtkRenderingVolumeOpenGL2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\vtk\Rendering\VolumeOpenGL2;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2;F:\vtk\Common\Core;F:\VTK8.0\VTK\Common\Core;F:\vtk\Utilities\KWIML;F:\VTK8.0\VTK\Utilities\KWIML;F:\vtk\Utilities\KWSys;F:\VTK8.0\VTK\Utilities\KWSys;F:\vtk\Common\DataModel;F:\VTK8.0\VTK\Common\DataModel;F:\vtk\Common\Math;F:\VTK8.0\VTK\Common\Math;F:\vtk\Common\Misc;F:\VTK8.0\VTK\Common\Misc;F:\vtk\Common\System;F:\VTK8.0\VTK\Common\System;F:\vtk\Common\Transforms;F:\VTK8.0\VTK\Common\Transforms;F:\vtk\Filters\Core;F:\VTK8.0\VTK\Filters\Core;F:\vtk\Common\ExecutionModel;F:\VTK8.0\VTK\Common\ExecutionModel;F:\vtk\Filters\General;F:\VTK8.0\VTK\Filters\General;F:\vtk\Common\ComputationalGeometry;F:\VTK8.0\VTK\Common\ComputationalGeometry;F:\vtk\Filters\Sources;F:\VTK8.0\VTK\Filters\Sources;F:\vtk\Imaging\Core;F:\VTK8.0\VTK\Imaging\Core;F:\vtk\Imaging\Math;F:\VTK8.0\VTK\Imaging\Math;F:\vtk\Rendering\Core;F:\VTK8.0\VTK\Rendering\Core;F:\vtk\Common\Color;F:\VTK8.0\VTK\Common\Color;F:\vtk\Filters\Geometry;F:\VTK8.0\VTK\Filters\Geometry;F:\vtk\Rendering\OpenGL2;F:\VTK8.0\VTK\Rendering\OpenGL2;F:\vtk\Utilities\EncodeString;F:\VTK8.0\VTK\Utilities\EncodeString;F:\vtk\ThirdParty\glew;F:\VTK8.0\VTK\ThirdParty\glew;F:\vtk\Rendering\Volume;F:\VTK8.0\VTK\Rendering\Volume;F:\vtk\IO\XML;F:\VTK8.0\VTK\IO\XML;F:\vtk\IO\Core;F:\VTK8.0\VTK\IO\Core;F:\VTK8.0\VTK\ThirdParty\lz4\vtklz4\lib;F:\vtk\ThirdParty\lz4\vtklz4;F:\vtk\ThirdParty\lz4;F:\VTK8.0\VTK\ThirdParty\lz4;F:\vtk\ThirdParty\zlib;F:\VTK8.0\VTK\ThirdParty\zlib;F:\vtk\IO\XMLParser;F:\VTK8.0\VTK\IO\XMLParser;F:\vtk\ThirdParty\expat;F:\VTK8.0\VTK\ThirdParty\expat;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\vtkImagingMath-8.1.lib;..\..\lib\RelWithDebInfo\vtkRenderingOpenGL2-8.1.lib;..\..\lib\RelWithDebInfo\vtkRenderingVolume-8.1.lib;..\..\lib\RelWithDebInfo\vtkglew-8.1.lib;glu32.lib;opengl32.lib;..\..\lib\RelWithDebInfo\vtkImagingCore-8.1.lib;..\..\lib\RelWithDebInfo\vtkRenderingCore-8.1.lib;..\..\lib\RelWithDebInfo\vtkFiltersSources-8.1.lib;..\..\lib\RelWithDebInfo\vtkFiltersGeneral-8.1.lib;..\..\lib\RelWithDebInfo\vtkFiltersCore-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonExecutionModel-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonDataModel-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonTransforms-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonSystem-8.1.lib;..\..\lib\RelWithDebInfo\vtksys-8.1.lib;ws2_32.lib;Psapi.lib;..\..\lib\RelWithDebInfo\vtkCommonMisc-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonMath-8.1.lib;..\..\lib\RelWithDebInfo\vtkCommonCore-8.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/vtk/lib/RelWithDebInfo/vtkRenderingVolumeOpenGL2-8.1.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/vtk/bin/RelWithDebInfo/vtkRenderingVolumeOpenGL2-8.1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/vtk --check-stamp-file F:/vtk/Rendering/VolumeOpenGL2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/CMakeLists.txt;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt;F:\VTK8.0\VTK\CMake\vtkObjectFactory.cmake;F:\VTK8.0\VTK\CMake\vtkObjectFactory.h.in;F:\VTK8.0\VTK\CMake\vtkObjectFactory.cxx.in;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\module.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingVolume.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXML.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtklz4.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkzlib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXMLParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexpat.cmake;F:\VTK8.0\VTK\CMake\vtkexportheader.cmake.in;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\module.cmake;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleHeaders.cmake.in;F:\VTK8.0\VTK\CMake\vtkOpenGL.cmake;D:\CMAke\share\cmake-3.9\Modules\FindOpenGL.cmake;D:\CMAke\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;D:\CMAke\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\vtk\Rendering\VolumeOpenGL2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/vtk --check-stamp-file F:/vtk/Rendering/VolumeOpenGL2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/CMakeLists.txt;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt;F:\VTK8.0\VTK\CMake\vtkObjectFactory.cmake;F:\VTK8.0\VTK\CMake\vtkObjectFactory.h.in;F:\VTK8.0\VTK\CMake\vtkObjectFactory.cxx.in;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\module.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingVolume.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXML.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtklz4.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkzlib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXMLParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexpat.cmake;F:\VTK8.0\VTK\CMake\vtkexportheader.cmake.in;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\module.cmake;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleHeaders.cmake.in;F:\VTK8.0\VTK\CMake\vtkOpenGL.cmake;D:\CMAke\share\cmake-3.9\Modules\FindOpenGL.cmake;D:\CMAke\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;D:\CMAke\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\vtk\Rendering\VolumeOpenGL2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/vtk --check-stamp-file F:/vtk/Rendering/VolumeOpenGL2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/CMakeLists.txt;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt;F:\VTK8.0\VTK\CMake\vtkObjectFactory.cmake;F:\VTK8.0\VTK\CMake\vtkObjectFactory.h.in;F:\VTK8.0\VTK\CMake\vtkObjectFactory.cxx.in;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\module.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingVolume.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXML.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtklz4.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkzlib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXMLParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexpat.cmake;F:\VTK8.0\VTK\CMake\vtkexportheader.cmake.in;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\module.cmake;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleHeaders.cmake.in;F:\VTK8.0\VTK\CMake\vtkOpenGL.cmake;D:\CMAke\share\cmake-3.9\Modules\FindOpenGL.cmake;D:\CMAke\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;D:\CMAke\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\vtk\Rendering\VolumeOpenGL2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMAke\bin\cmake.exe -HF:/VTK8.0/VTK -BF:/vtk --check-stamp-file F:/vtk/Rendering/VolumeOpenGL2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/CMakeLists.txt;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt;F:\VTK8.0\VTK\CMake\vtkObjectFactory.cmake;F:\VTK8.0\VTK\CMake\vtkObjectFactory.h.in;F:\VTK8.0\VTK\CMake\vtkObjectFactory.cxx.in;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\module.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkkwiml.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtksys.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonDataModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonMisc.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonSystem.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonTransforms.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonExecutionModel.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeneral.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonComputationalGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersSources.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkImagingMath.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkCommonColor.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkFiltersGeometry.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingOpenGL2.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkUtilitiesEncodeString.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkglew.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkRenderingVolume.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXML.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOCore.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtklz4.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkzlib.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkIOXMLParser.cmake;F:\vtk\lib\cmake\vtk-8.1\Modules\vtkexpat.cmake;F:\VTK8.0\VTK\CMake\vtkexportheader.cmake.in;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\module.cmake;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleInfo.cmake.in;F:\VTK8.0\VTK\CMake\vtkModuleHeaders.cmake.in;F:\VTK8.0\VTK\CMake\vtkOpenGL.cmake;D:\CMAke\share\cmake-3.9\Modules\FindOpenGL.cmake;D:\CMAke\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;D:\CMAke\share\cmake-3.9\Modules\FindPackageMessage.cmake;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\vtk\Rendering\VolumeOpenGL2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\vtk\CMakeFiles\fd6876f6190548c2d9617dcbee626cf0\raycasterfs.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating raycasterfs.cxx, raycasterfs.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/raycasterfs.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/raycasterfs.glsl raycasterfs --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycasterfs.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\raycasterfs.glsl;F:\vtk\bin\Debug\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.cxx;F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating raycasterfs.cxx, raycasterfs.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/raycasterfs.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/raycasterfs.glsl raycasterfs --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycasterfs.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\raycasterfs.glsl;F:\vtk\bin\Release\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.cxx;F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating raycasterfs.cxx, raycasterfs.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/raycasterfs.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/raycasterfs.glsl raycasterfs --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycasterfs.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\raycasterfs.glsl;F:\vtk\bin\MinSizeRel\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.cxx;F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating raycasterfs.cxx, raycasterfs.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/raycasterfs.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/raycasterfs.glsl raycasterfs --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycasterfs.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\raycasterfs.glsl;F:\vtk\bin\RelWithDebInfo\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.cxx;F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\vtk\CMakeFiles\fd6876f6190548c2d9617dcbee626cf0\raycastervs.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating raycastervs.cxx, raycastervs.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/raycastervs.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/raycastervs.glsl raycastervs --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycastervs.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\raycastervs.glsl;F:\vtk\bin\Debug\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\vtk\Rendering\VolumeOpenGL2\raycastervs.cxx;F:\vtk\Rendering\VolumeOpenGL2\raycastervs.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating raycastervs.cxx, raycastervs.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/raycastervs.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/raycastervs.glsl raycastervs --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycastervs.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\raycastervs.glsl;F:\vtk\bin\Release\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\vtk\Rendering\VolumeOpenGL2\raycastervs.cxx;F:\vtk\Rendering\VolumeOpenGL2\raycastervs.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating raycastervs.cxx, raycastervs.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/raycastervs.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/raycastervs.glsl raycastervs --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycastervs.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\raycastervs.glsl;F:\vtk\bin\MinSizeRel\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\vtk\Rendering\VolumeOpenGL2\raycastervs.cxx;F:\vtk\Rendering\VolumeOpenGL2\raycastervs.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating raycastervs.cxx, raycastervs.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/raycastervs.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/raycastervs.glsl raycastervs --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycastervs.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\raycastervs.glsl;F:\vtk\bin\RelWithDebInfo\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\vtk\Rendering\VolumeOpenGL2\raycastervs.cxx;F:\vtk\Rendering\VolumeOpenGL2\raycastervs.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\vtk\CMakeFiles\fd6876f6190548c2d9617dcbee626cf0\vtkglProjectedTetrahedraVS.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating vtkglProjectedTetrahedraVS.cxx, vtkglProjectedTetrahedraVS.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraVS.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraVS.glsl vtkglProjectedTetrahedraVS --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraVS.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\vtkglProjectedTetrahedraVS.glsl;F:\vtk\bin\Debug\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.cxx;F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating vtkglProjectedTetrahedraVS.cxx, vtkglProjectedTetrahedraVS.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraVS.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraVS.glsl vtkglProjectedTetrahedraVS --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraVS.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\vtkglProjectedTetrahedraVS.glsl;F:\vtk\bin\Release\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.cxx;F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating vtkglProjectedTetrahedraVS.cxx, vtkglProjectedTetrahedraVS.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraVS.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraVS.glsl vtkglProjectedTetrahedraVS --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraVS.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\vtkglProjectedTetrahedraVS.glsl;F:\vtk\bin\MinSizeRel\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.cxx;F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating vtkglProjectedTetrahedraVS.cxx, vtkglProjectedTetrahedraVS.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraVS.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraVS.glsl vtkglProjectedTetrahedraVS --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraVS.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\vtkglProjectedTetrahedraVS.glsl;F:\vtk\bin\RelWithDebInfo\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.cxx;F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\vtk\CMakeFiles\fd6876f6190548c2d9617dcbee626cf0\vtkglProjectedTetrahedraFS.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating vtkglProjectedTetrahedraFS.cxx, vtkglProjectedTetrahedraFS.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraFS.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraFS.glsl vtkglProjectedTetrahedraFS --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraFS.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\vtkglProjectedTetrahedraFS.glsl;F:\vtk\bin\Debug\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.cxx;F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating vtkglProjectedTetrahedraFS.cxx, vtkglProjectedTetrahedraFS.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraFS.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraFS.glsl vtkglProjectedTetrahedraFS --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraFS.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\vtkglProjectedTetrahedraFS.glsl;F:\vtk\bin\Release\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.cxx;F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating vtkglProjectedTetrahedraFS.cxx, vtkglProjectedTetrahedraFS.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraFS.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraFS.glsl vtkglProjectedTetrahedraFS --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraFS.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\vtkglProjectedTetrahedraFS.glsl;F:\vtk\bin\MinSizeRel\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.cxx;F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating vtkglProjectedTetrahedraFS.cxx, vtkglProjectedTetrahedraFS.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\vtkEncodeString-8.1.exe F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraFS.cxx F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraFS.glsl vtkglProjectedTetrahedraFS --build-header VTKRENDERINGVOLUMEOPENGL2_EXPORT vtkRenderingVolumeOpenGL2Module.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraFS.cxx.rule;F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\shaders\vtkglProjectedTetrahedraFS.glsl;F:\vtk\bin\RelWithDebInfo\vtkEncodeString-8.1.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.cxx;F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkMultiBlockVolumeMapper.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLGPUVolumeRayCastMapper.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLProjectedTetrahedraMapper.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLRayCastImageDisplayHelper.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkSmartVolumeMapper.cxx"  />
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkVolumeTexture.cxx"  />
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.cxx"  />
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\raycastervs.cxx"  />
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.cxx"  />
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.cxx"  />
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\vtkRenderingVolumeOpenGL2ObjectFactory.cxx"  />
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkMultiBlockVolumeMapper.h" />
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLGPUVolumeRayCastMapper.h" />
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLProjectedTetrahedraMapper.h" />
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLRayCastImageDisplayHelper.h" />
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkSmartVolumeMapper.h" />
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkVolumeTexture.h" />
+    <ClInclude Include="F:\vtk\Rendering\VolumeOpenGL2\vtkRenderingVolumeOpenGL2ObjectFactory.h" />
+    <ClInclude Include="F:\vtk\Rendering\VolumeOpenGL2\vtkRenderingVolumeOpenGL2Module.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\vtk\ZERO_CHECK.vcxproj">
+      <Project>{C18D1431-FD01-3827-A299-075AD4970C53}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\Core\vtkCommonCore.vcxproj">
+      <Project>{13D02184-23E0-3620-BDE3-EBF3CACD24FA}</Project>
+      <Name>vtkCommonCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\DataModel\vtkCommonDataModel.vcxproj">
+      <Project>{649F6E45-7213-38DD-B1CA-1FC2D7B2A46C}</Project>
+      <Name>vtkCommonDataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\ExecutionModel\vtkCommonExecutionModel.vcxproj">
+      <Project>{D995C315-5F9B-39CE-A4AD-A0DC2B65EFE3}</Project>
+      <Name>vtkCommonExecutionModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\Math\vtkCommonMath.vcxproj">
+      <Project>{EDB1D71A-6DA0-35AD-8F16-5190F43C34BF}</Project>
+      <Name>vtkCommonMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\Misc\vtkCommonMisc.vcxproj">
+      <Project>{E714F5C2-6658-3C61-9B42-981B0DCA4002}</Project>
+      <Name>vtkCommonMisc</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\System\vtkCommonSystem.vcxproj">
+      <Project>{85D59B2B-1053-3FEE-8F38-7D862FAC3737}</Project>
+      <Name>vtkCommonSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Common\Transforms\vtkCommonTransforms.vcxproj">
+      <Project>{EE0D572C-E6E3-3D09-977E-B38D4A5E0D77}</Project>
+      <Name>vtkCommonTransforms</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Utilities\EncodeString\vtkEncodeString.vcxproj">
+      <Project>{E5983C4A-CD12-3A9D-9BB2-B9B28897D3E1}</Project>
+      <Name>vtkEncodeString</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Core\vtkFiltersCore.vcxproj">
+      <Project>{B5B9897B-17AD-33C0-8BD3-496B2AF46F04}</Project>
+      <Name>vtkFiltersCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\General\vtkFiltersGeneral.vcxproj">
+      <Project>{871884B4-0131-38EE-B889-D5E3270CB349}</Project>
+      <Name>vtkFiltersGeneral</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Filters\Sources\vtkFiltersSources.vcxproj">
+      <Project>{86EF06CC-35CA-3663-B7B8-DC8BF29AF36C}</Project>
+      <Name>vtkFiltersSources</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Imaging\Core\vtkImagingCore.vcxproj">
+      <Project>{3535B4C5-25B6-338F-9B62-637A00338ED9}</Project>
+      <Name>vtkImagingCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Imaging\Math\vtkImagingMath.vcxproj">
+      <Project>{DAEA6D9F-AA01-3D01-9A55-81C7748CFF7B}</Project>
+      <Name>vtkImagingMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Rendering\Core\vtkRenderingCore.vcxproj">
+      <Project>{DBBB3F3B-FDAD-3685-B2C3-7C61F90A77E3}</Project>
+      <Name>vtkRenderingCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Rendering\OpenGL2\vtkRenderingOpenGL2.vcxproj">
+      <Project>{840FF9B5-CA58-3894-8FFA-B9F93995BD7B}</Project>
+      <Name>vtkRenderingOpenGL2</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Rendering\Volume\vtkRenderingVolume.vcxproj">
+      <Project>{B1C742ED-192B-3A8A-A479-2E4417E9723A}</Project>
+      <Name>vtkRenderingVolume</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\ThirdParty\glew\vtkglew\vtkglew.vcxproj">
+      <Project>{DC4380BE-E4A4-3283-88DA-292CCA62495E}</Project>
+      <Name>vtkglew</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\vtk\Utilities\KWSys\vtksys\vtksys.vcxproj">
+      <Project>{77740868-7004-3AF1-85CD-6515CC7D941F}</Project>
+      <Name>vtksys</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

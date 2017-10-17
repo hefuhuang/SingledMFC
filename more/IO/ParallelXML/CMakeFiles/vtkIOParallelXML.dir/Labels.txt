@@ -1,0 +1,29 @@
+# Target labels
+ vtkIOParallelXML
+# Source files and their labels
+F:/vtk/IO/ParallelXML/vtkXMLPDataSetWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPDataWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPImageDataWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPPolyDataWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPRectilinearGridWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPStructuredDataWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPStructuredGridWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPUnstructuredDataWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPUnstructuredGridWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPHierarchicalBoxDataWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPMultiBlockDataWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPUniformGridAMRWriter.cxx
+F:/vtk/IO/ParallelXML/vtkXMLPDataSetWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPDataWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPImageDataWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPPolyDataWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPRectilinearGridWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPStructuredDataWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPStructuredGridWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPUnstructuredDataWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPUnstructuredGridWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPHierarchicalBoxDataWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPMultiBlockDataWriter.h
+F:/vtk/IO/ParallelXML/vtkXMLPUniformGridAMRWriter.h
+F:/vtk/IO/ParallelXML/vtkIOParallelXMLModule.h
+F:/vtk/IO/ParallelXML/CMakeLists.txt

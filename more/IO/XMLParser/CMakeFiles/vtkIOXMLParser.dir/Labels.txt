@@ -1,0 +1,11 @@
+# Target labels
+ vtkIOXMLParser
+# Source files and their labels
+F:/vtk/IO/XMLParser/vtkXMLDataParser.cxx
+F:/vtk/IO/XMLParser/vtkXMLParser.cxx
+F:/vtk/IO/XMLParser/vtkXMLUtilities.cxx
+F:/vtk/IO/XMLParser/vtkXMLDataParser.h
+F:/vtk/IO/XMLParser/vtkXMLParser.h
+F:/vtk/IO/XMLParser/vtkXMLUtilities.h
+F:/vtk/IO/XMLParser/vtkIOXMLParserModule.h
+F:/vtk/IO/XMLParser/CMakeLists.txt

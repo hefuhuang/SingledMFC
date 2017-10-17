@@ -1,0 +1,35 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/ExportOpenGL2/vtkOpenGLGL2PSExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ExportOpenGL2/vtkIOExportOpenGL2ObjectFactory.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ExportOpenGL2/vtkOpenGLGL2PSExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ExportOpenGL2/vtkIOExportOpenGL2ObjectFactory.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ExportOpenGL2/vtkIOExportOpenGL2Module.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/ExportOpenGL2/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOExportOpenGL2" ],
+		"name" : "vtkIOExportOpenGL2"
+	}
+}

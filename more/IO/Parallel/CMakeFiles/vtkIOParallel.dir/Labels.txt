@@ -1,0 +1,25 @@
+# Target labels
+ vtkIOParallel
+# Source files and their labels
+F:/vtk/IO/Parallel/vtkEnSightWriter.cxx
+F:/vtk/IO/Parallel/vtkMultiBlockPLOT3DReader.cxx
+F:/vtk/IO/Parallel/vtkMultiBlockPLOT3DReaderInternals.cxx
+F:/vtk/IO/Parallel/vtkPlot3DMetaReader.cxx
+F:/vtk/IO/Parallel/vtkPChacoReader.cxx
+F:/vtk/IO/Parallel/vtkPDataSetReader.cxx
+F:/vtk/IO/Parallel/vtkPDataSetWriter.cxx
+F:/vtk/IO/Parallel/vtkPImageWriter.cxx
+F:/vtk/IO/Parallel/vtkPOpenFOAMReader.cxx
+F:/vtk/IO/Parallel/vtkPSLACReader.cxx
+F:/vtk/IO/Parallel/vtkEnSightWriter.h
+F:/vtk/IO/Parallel/vtkMultiBlockPLOT3DReader.h
+F:/vtk/IO/Parallel/vtkMultiBlockPLOT3DReaderInternals.h
+F:/vtk/IO/Parallel/vtkPlot3DMetaReader.h
+F:/vtk/IO/Parallel/vtkPChacoReader.h
+F:/vtk/IO/Parallel/vtkPDataSetReader.h
+F:/vtk/IO/Parallel/vtkPDataSetWriter.h
+F:/vtk/IO/Parallel/vtkPImageWriter.h
+F:/vtk/IO/Parallel/vtkPOpenFOAMReader.h
+F:/vtk/IO/Parallel/vtkPSLACReader.h
+F:/vtk/IO/Parallel/vtkIOParallelModule.h
+F:/vtk/IO/Parallel/CMakeLists.txt

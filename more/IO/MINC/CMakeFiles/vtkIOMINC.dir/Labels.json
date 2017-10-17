@@ -1,0 +1,95 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMINCImageAttributes.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMINCImageReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMINCImageWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNIObjectReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNIObjectWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNITagPointReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNITagPointWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNITransformReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNITransformWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMINC.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMINCImageAttributes.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMINCImageReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMINCImageWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNIObjectReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNIObjectWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNITagPointReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNITagPointWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNITransformReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkMNITransformWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/vtkIOMINCModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/MINC/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOMINC" ],
+		"name" : "vtkIOMINC"
+	}
+}

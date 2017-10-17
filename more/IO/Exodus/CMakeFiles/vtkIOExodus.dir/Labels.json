@@ -1,0 +1,95 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkCPExodusIIElementBlock.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkCPExodusIIInSituReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkCPExodusIINodalCoordinatesTemplate.txx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkCPExodusIIResultsArrayTemplate.txx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkExodusIICache.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkExodusIIReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkExodusIIReaderParser.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkExodusIIReaderVariableCheck.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkExodusIIWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkModelMetadata.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkCPExodusIINodalCoordinatesTemplate.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkCPExodusIIResultsArrayTemplate.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkCPExodusIIElementBlock.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkCPExodusIIInSituReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkExodusIICache.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkExodusIIReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkExodusIIReaderParser.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkExodusIIWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkModelMetadata.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/vtkIOExodusModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Exodus/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOExodus" ],
+		"name" : "vtkIOExodus"
+	}
+}

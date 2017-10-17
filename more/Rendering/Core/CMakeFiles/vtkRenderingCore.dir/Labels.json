@@ -1,0 +1,1059 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractMapper3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractPicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractVolumeMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkActor2DCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkActor2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkActorCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAssembly.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkBackgroundColorMonitor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkBillboardTextActor3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCameraActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCamera.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCameraInterpolator.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCellCenterDepthSort.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkColorTransferFunction.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCompositeDataDisplayAttributes.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCompositePolyDataMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCoordinate.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCullerCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCuller.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkDataSetMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkDiscretizableColorTransferFunction.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkDistanceToCamera.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkFollower.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkFrameBufferObjectBase.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkFrustumCoverageCuller.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkFXAAOptions.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGenericRenderWindowInteractor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGenericVertexAttributeMapping.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGlyph3DMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGPUInfo.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGPUInfoList.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGraphicsFactory.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGraphMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGraphToGlyphs.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkHardwareSelector.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkHierarchicalPolyDataMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageMapper3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageProperty.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageSlice.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageSliceMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorEventRecorder.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorObserver.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLabeledContourMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLightActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLightCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLight.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLightKit.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLogLookupTable.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLookupTableWithEnabling.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkMapArrayValues.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkMapper2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkMapperCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkObserverMediator.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPolyDataMapper2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPolyDataMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProp3DCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProp3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProp3DFollower.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPropAssembly.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPropCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPropPicker3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProp.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProperty2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProperty.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRendererCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderer.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRendererDelegate.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRendererSource.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderPass.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderState.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderTimerLog.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWindowCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWindow.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWindowInteractor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWindowInteractor3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkSelectVisiblePoints.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkShaderDeviceAdapter2.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkSkybox.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextActor3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTexture.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTexturedActor2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTransformCoordinateSystems.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTransformInterpolator.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTupleInterpolator.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkViewDependentErrorMetric.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkViewport.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkVisibilitySort.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkVolumeCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkVolume.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkVolumeProperty.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkWindowLevelLookupTable.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkWindowToImageFilter.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAssemblyNode.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAssemblyPath.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAssemblyPaths.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAreaPicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractPropPicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPropPicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPickingManager.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLODProp3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkWorldPointPicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCellPicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPointPicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderedAreaPicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkScenePicker.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorStyle.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorStyleSwitchBase.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorStyle3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTDxInteractorStyle.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTDxInteractorStyleCamera.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTDxInteractorStyleSettings.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkStringToImage.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextProperty.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextPropertyCollection.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextRenderer.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractInteractionDevice.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractRenderDevice.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWidget.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPointGaussianMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGPUInfoListArray.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkNoise200x200.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPythagoreanQuadruples.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRayCastStructures.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderingCoreEnums.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTDxMotionEventInfo.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractMapper3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractPicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractVolumeMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkActor2DCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkActor2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkActorCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAssembly.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkBackgroundColorMonitor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkBillboardTextActor3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCameraActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCamera.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCameraInterpolator.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCellCenterDepthSort.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkColorTransferFunction.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCompositeDataDisplayAttributes.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCompositePolyDataMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCoordinate.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCullerCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCuller.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkDataSetMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkDiscretizableColorTransferFunction.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkDistanceToCamera.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkFollower.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkFrameBufferObjectBase.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkFrustumCoverageCuller.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkFXAAOptions.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGenericRenderWindowInteractor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGenericVertexAttributeMapping.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGlyph3DMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGPUInfo.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGPUInfoList.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGraphicsFactory.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGraphMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkGraphToGlyphs.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkHardwareSelector.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkHierarchicalPolyDataMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageMapper3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageProperty.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageSlice.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkImageSliceMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorEventRecorder.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorObserver.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLabeledContourMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLightActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLightCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLight.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLightKit.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLogLookupTable.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLookupTableWithEnabling.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkMapArrayValues.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkMapper2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkMapperCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkObserverMediator.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPolyDataMapper2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPolyDataMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProp3DCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProp3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProp3DFollower.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPropAssembly.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPropCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPropPicker3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProp.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProperty2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkProperty.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRendererCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderer.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRendererDelegate.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRendererSource.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderPass.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderState.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderTimerLog.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWindowCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWindow.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWindowInteractor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWindowInteractor3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkSelectVisiblePoints.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkShaderDeviceAdapter2.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkSkybox.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextActor3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTexture.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTexturedActor2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTransformCoordinateSystems.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTransformInterpolator.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTupleInterpolator.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkViewDependentErrorMetric.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkViewport.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkVisibilitySort.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkVolumeCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkVolume.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkVolumeProperty.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkWindowLevelLookupTable.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkWindowToImageFilter.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAssemblyNode.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAssemblyPath.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAssemblyPaths.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAreaPicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractPropPicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPropPicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPickingManager.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkLODProp3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkWorldPointPicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkCellPicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPointPicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderedAreaPicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkScenePicker.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorStyle.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorStyleSwitchBase.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkInteractorStyle3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTDxInteractorStyle.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTDxInteractorStyleCamera.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTDxInteractorStyleSettings.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkStringToImage.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextProperty.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextPropertyCollection.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkTextRenderer.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractInteractionDevice.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkAbstractRenderDevice.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkRenderWidget.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/vtkPointGaussianMapper.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/Core/vtkRenderingCoreModule.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Core/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingCore" ],
+		"name" : "vtkRenderingCore"
+	}
+}

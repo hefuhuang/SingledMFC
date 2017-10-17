@@ -1,0 +1,9 @@
+# Target labels
+ vtkIOExportOpenGL2
+# Source files and their labels
+F:/vtk/IO/ExportOpenGL2/vtkOpenGLGL2PSExporter.cxx
+F:/vtk/IO/ExportOpenGL2/vtkIOExportOpenGL2ObjectFactory.cxx
+F:/vtk/IO/ExportOpenGL2/vtkOpenGLGL2PSExporter.h
+F:/vtk/IO/ExportOpenGL2/vtkIOExportOpenGL2ObjectFactory.h
+F:/vtk/IO/ExportOpenGL2/vtkIOExportOpenGL2Module.h
+F:/vtk/IO/ExportOpenGL2/CMakeLists.txt

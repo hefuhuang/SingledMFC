@@ -1,0 +1,363 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkRTXMLPolyDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLCompositeDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLCompositeDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLDataSetWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLFileReadTester.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLGenericDataObjectReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHierarchicalBoxDataFileConverter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHierarchicalBoxDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHierarchicalBoxDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHierarchicalDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHyperOctreeReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHyperOctreeWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLImageDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLImageDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLMultiBlockDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLMultiBlockDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLMultiGroupDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPImageDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPolyDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPolyDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPPolyDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPRectilinearGridReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPStructuredDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPStructuredGridReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPUnstructuredDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPUnstructuredGridReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLRectilinearGridReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLRectilinearGridWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLStructuredDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLStructuredDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLStructuredGridReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLStructuredGridWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUniformGridAMRReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUniformGridAMRWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUnstructuredDataReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUnstructuredDataWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUnstructuredGridReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUnstructuredGridWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLWriterC.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkRTXMLPolyDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLCompositeDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLCompositeDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLDataSetWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLFileReadTester.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLGenericDataObjectReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHierarchicalBoxDataFileConverter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHierarchicalBoxDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHierarchicalBoxDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHierarchicalDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHyperOctreeReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLHyperOctreeWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLImageDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLImageDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLMultiBlockDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLMultiBlockDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLMultiGroupDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPImageDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPolyDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPolyDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPPolyDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPRectilinearGridReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPStructuredDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPStructuredGridReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPUnstructuredDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLPUnstructuredGridReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLRectilinearGridReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLRectilinearGridWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLStructuredDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLStructuredDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLStructuredGridReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLStructuredGridWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUniformGridAMRReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUniformGridAMRWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUnstructuredDataReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUnstructuredDataWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUnstructuredGridReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLUnstructuredGridWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLWriterC.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkXMLWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/vtkIOXMLModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/XML/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOXML" ],
+		"name" : "vtkIOXML"
+	}
+}

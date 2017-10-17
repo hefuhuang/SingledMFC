@@ -1,0 +1,155 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkGL2PSExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkIVExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkOBJExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkOOGLExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkPDFContextDevice2D.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkPDFExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkPOVExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkRIBExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkRIBLight.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkRIBProperty.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkVRMLExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3D.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3DExporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3DExporterFIWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3DExporterWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3DExporterXMLWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkGL2PSExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkIVExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkOBJExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkOOGLExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkPDFContextDevice2D.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkPDFExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkPOVExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkRIBExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkRIBLight.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkRIBProperty.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkVRMLExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3D.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3DExporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3DExporterFIWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3DExporterWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkX3DExporterXMLWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/vtkIOExportModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Export/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOExport" ],
+		"name" : "vtkIOExport"
+	}
+}

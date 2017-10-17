@@ -1,0 +1,123 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabeledDataMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabeledTreeMapDataMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyAlgorithm.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyCompositeIterator.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchy.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyIterator.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelPlacementMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelPlacer.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelRenderStrategy.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelSizeCalculator.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkFreeTypeLabelRenderStrategy.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkDynamic2DLabelMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkPointSetToLabelHierarchy.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabeledDataMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabeledTreeMapDataMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyAlgorithm.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyCompositeIterator.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchy.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelHierarchyIterator.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelPlacementMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelPlacer.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelRenderStrategy.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkLabelSizeCalculator.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkFreeTypeLabelRenderStrategy.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkDynamic2DLabelMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/vtkPointSetToLabelHierarchy.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/Label/vtkRenderingLabelModule.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Label/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingLabel" ],
+		"name" : "vtkRenderingLabel"
+	}
+}

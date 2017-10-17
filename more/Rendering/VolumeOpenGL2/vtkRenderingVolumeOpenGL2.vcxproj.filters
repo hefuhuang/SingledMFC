@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkMultiBlockVolumeMapper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLGPUVolumeRayCastMapper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLProjectedTetrahedraMapper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLRayCastImageDisplayHelper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkSmartVolumeMapper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkVolumeTexture.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\raycasterfs.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\raycastervs.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraVS.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\vtkglProjectedTetrahedraFS.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\vtk\Rendering\VolumeOpenGL2\vtkRenderingVolumeOpenGL2ObjectFactory.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkMultiBlockVolumeMapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLGPUVolumeRayCastMapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLProjectedTetrahedraMapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkOpenGLRayCastImageDisplayHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkSmartVolumeMapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\vtkVolumeTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\vtk\Rendering\VolumeOpenGL2\vtkRenderingVolumeOpenGL2ObjectFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\vtk\Rendering\VolumeOpenGL2\vtkRenderingVolumeOpenGL2Module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\VTK8.0\VTK\Rendering\VolumeOpenGL2\CMakeLists.txt" />
+    <CustomBuild Include="F:\vtk\CMakeFiles\fd6876f6190548c2d9617dcbee626cf0\raycasterfs.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\vtk\CMakeFiles\fd6876f6190548c2d9617dcbee626cf0\raycastervs.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\vtk\CMakeFiles\fd6876f6190548c2d9617dcbee626cf0\vtkglProjectedTetrahedraVS.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\vtk\CMakeFiles\fd6876f6190548c2d9617dcbee626cf0\vtkglProjectedTetrahedraFS.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{797F6FAB-C225-346D-8F45-B54B8994F519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{125DA297-9B08-34EA-A198-AED9CB8F7BC5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6C2E90FE-9A53-3398-9EBD-4139E56E5874}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

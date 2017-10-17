@@ -1,0 +1,107 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkMultiBlockVolumeMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkOpenGLGPUVolumeRayCastMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkOpenGLProjectedTetrahedraMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkOpenGLRayCastImageDisplayHelper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkSmartVolumeMapper.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkVolumeTexture.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/VolumeOpenGL2/raycasterfs.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/VolumeOpenGL2/raycastervs.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraVS.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/VolumeOpenGL2/vtkglProjectedTetrahedraFS.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/VolumeOpenGL2/vtkRenderingVolumeOpenGL2ObjectFactory.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkMultiBlockVolumeMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkOpenGLGPUVolumeRayCastMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkOpenGLProjectedTetrahedraMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkOpenGLRayCastImageDisplayHelper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkSmartVolumeMapper.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/vtkVolumeTexture.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/VolumeOpenGL2/vtkRenderingVolumeOpenGL2ObjectFactory.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/VolumeOpenGL2/vtkRenderingVolumeOpenGL2Module.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/VolumeOpenGL2/CMakeLists.txt"
+		},
+		
+		{
+			"file" : "F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycasterfs.cxx.rule"
+		},
+		
+		{
+			"file" : "F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/raycastervs.cxx.rule"
+		},
+		
+		{
+			"file" : "F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraVS.cxx.rule"
+		},
+		
+		{
+			"file" : "F:/vtk/CMakeFiles/fd6876f6190548c2d9617dcbee626cf0/vtkglProjectedTetrahedraFS.cxx.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingVolumeOpenGL2" ],
+		"name" : "vtkRenderingVolumeOpenGL2"
+	}
+}

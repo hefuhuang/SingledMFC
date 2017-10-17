@@ -1,0 +1,29 @@
+# Target labels
+ vtkIOSQL
+# Source files and their labels
+F:/vtk/IO/SQL/vtkDatabaseToTableReader.cxx
+F:/vtk/IO/SQL/vtkRowQuery.cxx
+F:/vtk/IO/SQL/vtkRowQueryToTable.cxx
+F:/vtk/IO/SQL/vtkSQLDatabase.cxx
+F:/vtk/IO/SQL/vtkSQLDatabaseSchema.cxx
+F:/vtk/IO/SQL/vtkSQLDatabaseTableSource.cxx
+F:/vtk/IO/SQL/vtkSQLQuery.cxx
+F:/vtk/IO/SQL/vtkTableToDatabaseWriter.cxx
+F:/vtk/IO/SQL/vtkSQLiteDatabase.cxx
+F:/vtk/IO/SQL/vtkSQLiteQuery.cxx
+F:/vtk/IO/SQL/vtkSQLiteToTableReader.cxx
+F:/vtk/IO/SQL/vtkTableToSQLiteWriter.cxx
+F:/vtk/IO/SQL/vtkDatabaseToTableReader.h
+F:/vtk/IO/SQL/vtkRowQuery.h
+F:/vtk/IO/SQL/vtkRowQueryToTable.h
+F:/vtk/IO/SQL/vtkSQLDatabase.h
+F:/vtk/IO/SQL/vtkSQLDatabaseSchema.h
+F:/vtk/IO/SQL/vtkSQLDatabaseTableSource.h
+F:/vtk/IO/SQL/vtkSQLQuery.h
+F:/vtk/IO/SQL/vtkTableToDatabaseWriter.h
+F:/vtk/IO/SQL/vtkSQLiteDatabase.h
+F:/vtk/IO/SQL/vtkSQLiteQuery.h
+F:/vtk/IO/SQL/vtkSQLiteToTableReader.h
+F:/vtk/IO/SQL/vtkTableToSQLiteWriter.h
+F:/vtk/IO/SQL/vtkIOSQLModule.h
+F:/vtk/IO/SQL/CMakeLists.txt

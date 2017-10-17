@@ -1,0 +1,63 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtk3DSImporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtkImporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtkVRMLImporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtkOBJImporter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtkOBJImporterInternals.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtk3DS.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtk3DSImporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtkImporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtkVRMLImporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtkOBJImporter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtkOBJImporterInternals.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/vtkIOImportModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Import/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOImport" ],
+		"name" : "vtkIOImport"
+	}
+}

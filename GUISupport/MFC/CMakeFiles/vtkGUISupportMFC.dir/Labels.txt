@@ -1,0 +1,6 @@
+# Target labels
+ vtkGUISupportMFC
+# Source files and their labels
+F:/VTK8.0/VTK/GUISupport/MFC/vtkMFCWindow.cpp
+F:/VTK8.0/MFC/GUISupport/MFC/vtkGUISupportMFCModule.h
+F:/VTK8.0/VTK/GUISupport/MFC/CMakeLists.txt

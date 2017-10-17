@@ -1,0 +1,207 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAnnotatedCubeActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkArcPlotter.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAxesActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAxisActor2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAxisActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAxisFollower.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkBarChartActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkCaptionActor2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkConvexHull2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkCornerAnnotation.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkCubeAxesActor2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkCubeAxesActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkGraphAnnotationLayersFilter.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkLeaderActor2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkLegendBoxActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkLegendScaleActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkParallelCoordinatesActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkPieChartActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkPolarAxesActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkProp3DAxisFollower.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkScalarBarActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkSpiderPlotActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkXYPlotActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkScalarBarActorInternal.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAnnotatedCubeActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkArcPlotter.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAxesActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAxisActor2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAxisActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkAxisFollower.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkBarChartActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkCaptionActor2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkConvexHull2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkCornerAnnotation.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkCubeAxesActor2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkCubeAxesActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkGraphAnnotationLayersFilter.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkLeaderActor2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkLegendBoxActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkLegendScaleActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkParallelCoordinatesActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkPieChartActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkPolarAxesActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkProp3DAxisFollower.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkScalarBarActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkSpiderPlotActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/vtkXYPlotActor.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/Annotation/vtkRenderingAnnotationModule.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Annotation/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingAnnotation" ],
+		"name" : "vtkRenderingAnnotation"
+	}
+}

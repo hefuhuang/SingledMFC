@@ -1,0 +1,35 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/GL2PSOpenGL2/vtkOpenGLGL2PSHelperImpl.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/GL2PSOpenGL2/vtkRenderingGL2PSOpenGL2ObjectFactory.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/GL2PSOpenGL2/vtkOpenGLGL2PSHelperImpl.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/GL2PSOpenGL2/vtkRenderingGL2PSOpenGL2ObjectFactory.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/GL2PSOpenGL2/vtkRenderingGL2PSOpenGL2Module.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/GL2PSOpenGL2/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingGL2PSOpenGL2" ],
+		"name" : "vtkRenderingGL2PSOpenGL2"
+	}
+}

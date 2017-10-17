@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="按钮">
+      <UniqueIdentifier>{a1453460-85a2-48a4-a7d7-fa32f3d78079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="参数设置">
+      <UniqueIdentifier>{b123d6c2-c593-4877-b211-60829d73a24a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vtkClient">
+      <UniqueIdentifier>{5d7bf7bd-26cc-4da9-b7fb-b97d434e0732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dock">
+      <UniqueIdentifier>{79ce39af-6c21-4ad8-8ce3-8cec9e7d476a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vtkmfc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vtkmfcDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vtkmfcView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vtkheader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrameSpliter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BUTTON_VIEW.h">
+      <Filter>按钮</Filter>
+    </ClInclude>
+    <ClInclude Include="PARAM_VIEW.h">
+      <Filter>参数设置</Filter>
+    </ClInclude>
+    <ClInclude Include="MyButtonSpliter.h">
+      <Filter>按钮</Filter>
+    </ClInclude>
+    <ClInclude Include="..\responsevtk\vtkClientServerInterpreterInternals.h">
+      <Filter>vtkClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dock\Cdockvedio.h">
+      <Filter>Dock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dock\DockCapturedDataSet.h">
+      <Filter>Dock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dock\DockDataSetParameter.h">
+      <Filter>Dock</Filter>
+    </ClInclude>
+    <ClInclude Include="SelfDefToolBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dock\DockBotton.h">
+      <Filter>Dock</Filter>
+    </ClInclude>
+    <ClInclude Include="DockButtonDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vtkmfc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vtkmfcDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vtkmfcView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrameSpliter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BUTTON_VIEW.cpp">
+      <Filter>按钮</Filter>
+    </ClCompile>
+    <ClCompile Include="PARAM_VIEW.cpp">
+      <Filter>参数设置</Filter>
+    </ClCompile>
+    <ClCompile Include="MyButtonSpliter.cpp">
+      <Filter>按钮</Filter>
+    </ClCompile>
+    <ClCompile Include="..\responsevtk\vtkClientServerInterpreterInternals.cpp">
+      <Filter>vtkClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dock\Cdockvedio.cpp">
+      <Filter>Dock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dock\DockCapturedDataSet.cpp">
+      <Filter>Dock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dock\DockDataSetParameter.cpp">
+      <Filter>Dock</Filter>
+    </ClCompile>
+    <ClCompile Include="SelfDefToolBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dock\DockBotton.cpp">
+      <Filter>Dock</Filter>
+    </ClCompile>
+    <ClCompile Include="DockButtonDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vtkmfc.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\file_view.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\file_view_hc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\class_view.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\class_view_hc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\fileview.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\fileview_hc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\classview.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\classview_hc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\explorer.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\explorer_hc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sort.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sort_hc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\menuimages.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\menuimages_hc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\output_wnd.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\output_wnd_hc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\properties_wnd.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\properties_wnd_hc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\properties.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\properties_hc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\vtkmfcDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\vtkmfc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="icon32x32.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\www.ico.la_5991de696f36ddc612f8a53036f5b103_48X48.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\ICO\bitmap\Button3D.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\ICO\bitmap\ButtonTwoscan.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\ICO\bitmap\scanButon.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\vtkmfc.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

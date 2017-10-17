@@ -1,0 +1,67 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLContextActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLContextBufferId.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLContextDevice2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLContextDevice3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLPropItem.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/ContextOpenGL2/vtkRenderingContextOpenGL2ObjectFactory.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLContextActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLContextBufferId.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLContextDevice2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLContextDevice3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/vtkOpenGLPropItem.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/ContextOpenGL2/vtkRenderingContextOpenGL2ObjectFactory.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/ContextOpenGL2/vtkRenderingContextOpenGL2Module.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/ContextOpenGL2/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingContextOpenGL2" ],
+		"name" : "vtkRenderingContextOpenGL2"
+	}
+}

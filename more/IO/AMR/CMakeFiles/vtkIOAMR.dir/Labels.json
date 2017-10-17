@@ -1,0 +1,91 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRDataSetCache.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRBaseParticlesReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRBaseReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMREnzoParticlesReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMREnzoReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMREnzoReaderInternal.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRFlashParticlesReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRFlashReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRFlashReaderInternal.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRDataSetCache.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRBaseParticlesReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRBaseReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMREnzoParticlesReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMREnzoReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMREnzoReaderInternal.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRFlashParticlesReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRFlashReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkAMRFlashReaderInternal.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/vtkIOAMRModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/AMR/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOAMR" ],
+		"name" : "vtkIOAMR"
+	}
+}

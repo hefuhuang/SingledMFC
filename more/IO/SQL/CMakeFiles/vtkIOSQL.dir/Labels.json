@@ -1,0 +1,115 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkDatabaseToTableReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkRowQuery.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkRowQueryToTable.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLDatabase.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLDatabaseSchema.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLDatabaseTableSource.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLQuery.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkTableToDatabaseWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLiteDatabase.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLiteQuery.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLiteToTableReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkTableToSQLiteWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkDatabaseToTableReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkRowQuery.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkRowQueryToTable.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLDatabase.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLDatabaseSchema.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLDatabaseTableSource.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLQuery.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkTableToDatabaseWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLiteDatabase.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLiteQuery.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkSQLiteToTableReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkTableToSQLiteWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/vtkIOSQLModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/SQL/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOSQL" ],
+		"name" : "vtkIOSQL"
+	}
+}

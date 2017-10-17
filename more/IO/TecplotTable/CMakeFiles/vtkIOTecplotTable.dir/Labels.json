@@ -1,0 +1,27 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/TecplotTable/vtkTecplotTableReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/TecplotTable/vtkTecplotTableReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/TecplotTable/vtkIOTecplotTableModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/TecplotTable/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOTecplotTable" ],
+		"name" : "vtkIOTecplotTable"
+	}
+}

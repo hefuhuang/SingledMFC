@@ -1,0 +1,299 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkBMPReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkBMPWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkDEMReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkDICOMImageReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkGESignaReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageExport.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageImport.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageImportExecutive.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageReader2.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageReader2Collection.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageReader2Factory.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkJPEGReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkJPEGWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkJSONImageWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMedicalImageProperties.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMedicalImageReader2.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMetaImageReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMetaImageWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkNIFTIImageHeader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkNIFTIImageReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkNIFTIImageWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkNrrdReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPNGReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPNGWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPNMReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPNMWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPostScriptWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkSLCReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkTIFFReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkTIFFWriter.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkVolume16Reader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkVolumeReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMRCReader.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkBMPReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkBMPWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkDEMReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkDICOMImageReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkGESignaReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageExport.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageImport.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageImportExecutive.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageReader2.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageReader2Collection.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageReader2Factory.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkImageWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkJPEGReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkJPEGWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkJSONImageWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMedicalImageProperties.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMedicalImageReader2.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMetaImageReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMetaImageWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkNIFTIImageHeader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkNIFTIImageReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkNIFTIImageWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkNrrdReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPNGReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPNGWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPNMReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPNMWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkPostScriptWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkSLCReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkTIFFReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkTIFFWriter.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkVolume16Reader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkVolumeReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkMRCReader.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/vtkIOImageModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Image/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOImage" ],
+		"name" : "vtkIOImage"
+	}
+}

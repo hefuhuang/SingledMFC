@@ -1,0 +1,11 @@
+# Target labels
+ vtkIOPLY
+# Source files and their labels
+F:/vtk/IO/PLY/vtkPLY.cxx
+F:/vtk/IO/PLY/vtkPLYReader.cxx
+F:/vtk/IO/PLY/vtkPLYWriter.cxx
+F:/vtk/IO/PLY/vtkPLY.h
+F:/vtk/IO/PLY/vtkPLYReader.h
+F:/vtk/IO/PLY/vtkPLYWriter.h
+F:/vtk/IO/PLY/vtkIOPLYModule.h
+F:/vtk/IO/PLY/CMakeLists.txt

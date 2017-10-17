@@ -1,0 +1,19 @@
+# Target labels
+ vtkIOEnSight
+# Source files and their labels
+F:/vtk/IO/EnSight/vtkEnSight6BinaryReader.cxx
+F:/vtk/IO/EnSight/vtkEnSight6Reader.cxx
+F:/vtk/IO/EnSight/vtkEnSightGoldBinaryReader.cxx
+F:/vtk/IO/EnSight/vtkEnSightGoldReader.cxx
+F:/vtk/IO/EnSight/vtkEnSightMasterServerReader.cxx
+F:/vtk/IO/EnSight/vtkEnSightReader.cxx
+F:/vtk/IO/EnSight/vtkGenericEnSightReader.cxx
+F:/vtk/IO/EnSight/vtkEnSight6BinaryReader.h
+F:/vtk/IO/EnSight/vtkEnSight6Reader.h
+F:/vtk/IO/EnSight/vtkEnSightGoldBinaryReader.h
+F:/vtk/IO/EnSight/vtkEnSightGoldReader.h
+F:/vtk/IO/EnSight/vtkEnSightMasterServerReader.h
+F:/vtk/IO/EnSight/vtkEnSightReader.h
+F:/vtk/IO/EnSight/vtkGenericEnSightReader.h
+F:/vtk/IO/EnSight/vtkIOEnSightModule.h
+F:/vtk/IO/EnSight/CMakeLists.txt

@@ -1,0 +1,35 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/vtk/IO/Video/vtkVideoSource.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Video/vtkWin32VideoSource.cxx"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Video/vtkVideoSource.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Video/vtkWin32VideoSource.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Video/vtkIOVideoModule.h"
+		},
+		
+		{
+			"file" : "F:/vtk/IO/Video/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkIOVideo" ],
+		"name" : "vtkIOVideo"
+	}
+}

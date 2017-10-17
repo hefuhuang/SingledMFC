@@ -1,0 +1,195 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkAbstractContextBufferId.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkAbstractContextItem.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkBlockItem.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkBrush.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContext2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContext3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextActor.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextClip.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextDevice2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextDevice3D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextItem.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextKeyEvent.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextMapper2D.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextMouseEvent.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextScene.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextTransform.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkImageItem.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkMarkerUtilities.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkPen.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkPolyDataItem.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkPropItem.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkTooltipItem.cxx"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkAbstractContextBufferId.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkAbstractContextItem.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkBlockItem.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkBrush.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContext2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContext3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextActor.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextClip.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextDevice2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextDevice3D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextItem.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextKeyEvent.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextMapper2D.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextMouseEvent.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextScene.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkContextTransform.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkImageItem.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkMarkerUtilities.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkPen.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkPolyDataItem.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkPropItem.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/vtkTooltipItem.h"
+		},
+		
+		{
+			"file" : "F:/vtk/Rendering/Context2D/vtkRenderingContext2DModule.h"
+		},
+		
+		{
+			"file" : "F:/VTK8.0/VTK/Rendering/Context2D/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "vtkRenderingContext2D" ],
+		"name" : "vtkRenderingContext2D"
+	}
+}

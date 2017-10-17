@@ -1,0 +1,9 @@
+# Target labels
+ vtkRenderingGL2PSOpenGL2
+# Source files and their labels
+F:/VTK8.0/VTK/Rendering/GL2PSOpenGL2/vtkOpenGLGL2PSHelperImpl.cxx
+F:/vtk/Rendering/GL2PSOpenGL2/vtkRenderingGL2PSOpenGL2ObjectFactory.cxx
+F:/VTK8.0/VTK/Rendering/GL2PSOpenGL2/vtkOpenGLGL2PSHelperImpl.h
+F:/vtk/Rendering/GL2PSOpenGL2/vtkRenderingGL2PSOpenGL2ObjectFactory.h
+F:/vtk/Rendering/GL2PSOpenGL2/vtkRenderingGL2PSOpenGL2Module.h
+F:/VTK8.0/VTK/Rendering/GL2PSOpenGL2/CMakeLists.txt

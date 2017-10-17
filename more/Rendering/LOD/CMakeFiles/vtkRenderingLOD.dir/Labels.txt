@@ -1,0 +1,9 @@
+# Target labels
+ vtkRenderingLOD
+# Source files and their labels
+F:/VTK8.0/VTK/Rendering/LOD/vtkLODActor.cxx
+F:/VTK8.0/VTK/Rendering/LOD/vtkQuadricLODActor.cxx
+F:/VTK8.0/VTK/Rendering/LOD/vtkLODActor.h
+F:/VTK8.0/VTK/Rendering/LOD/vtkQuadricLODActor.h
+F:/vtk/Rendering/LOD/vtkRenderingLODModule.h
+F:/VTK8.0/VTK/Rendering/LOD/CMakeLists.txt
