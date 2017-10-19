@@ -19,12 +19,19 @@ int Cdockvedio::OnCreate(LPCREATESTRUCT lpCreateStruct)
 {
 	if (CDockablePane::OnCreate(lpCreateStruct) == -1)
 		return -1;
-	// 在这儿创建控件
-	if (!_listBox.Create(WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, IDD_Param_FORMVIEW))
-	{
-		TRACE0("创建listbox失败");
-		return -1;
-	}
+
+	CRuntimeClass *pClass = RUNTIME_CLASS(Cdockvedio);
+	// calling constructor using IMPLEMENT_DYNCREATE macro
+	Cdockvedio *pView = (Cdockvedio*)pClass->CreateObject();
+
+	//if (!pView->Create(NULL, NULL, AFX_WS_DEFAULT_VIEW, CRect(0, 0, 0, 0), this, AFX_IDW_PANE_FIRST, NULL))
+	//{
+	//	return -1;
+	//}
+
+	CRichEditCtrl ctrl;
+	ctrl.Create(WS_CHILD, CRect(0, 0, 0, 0), this, 10991);
+
 	return 0;
 }
 

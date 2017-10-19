@@ -14,6 +14,7 @@ protected:
 
 public:
 	enum { IDD = IDD_Param_FORMVIEW };
+
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 #ifndef _WIN32_WCE
@@ -29,6 +30,9 @@ public:
 	CStatic m_Picture;
 
 	afx_msg void OnBnClickedRadio1();
+	afx_msg void OnNMCustomdrawSlider2(NMHDR *pNMHDR, LRESULT *pResult);
+	virtual void OnDraw(CDC* /*pDC*/);
+	afx_msg void OnNMCustomdrawSlider1(NMHDR *pNMHDR, LRESULT *pResult);
 };
 
 

@@ -68,7 +68,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\GUISupport\MFC;..\include;C:\Program Files\VTK\include\vtk-8.1;$(IncludePath)</IncludePath>
+    <IncludePath>..\vtkmfc;..\responsevtk;..\dock;..\buildView;..\GUISupport\MFC;..\include;C:\Program Files\VTK\include\vtk-8.1;$(IncludePath)</IncludePath>
     <LibraryPath>..\lib;..\vtkMFC\lib;C:\Program Files\VTK\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -178,6 +178,7 @@
     <ClInclude Include="PropertiesWnd.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SelfDefToolBar.h" />
+    <ClInclude Include="SetData.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="ViewTree.h" />
@@ -202,6 +203,7 @@
     <ClCompile Include="PARAM_VIEW.cpp" />
     <ClCompile Include="PropertiesWnd.cpp" />
     <ClCompile Include="SelfDefToolBar.cpp" />
+    <ClCompile Include="SetData.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

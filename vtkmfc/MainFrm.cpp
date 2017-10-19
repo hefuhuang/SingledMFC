@@ -248,6 +248,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	m_DataSet.ShowPane(TRUE,FALSE,TRUE);
 	m_DataSet.ShowWindow(1);  
 
+
 	CDockingManager::SetDockingMode(DT_SMART);
 	EnablePaneMenu(TRUE, ID_VIEW_CUSTOMIZE, strCustomize, ID_VIEW_TOOLBAR);
 	EnableAutoHidePanes(CBRS_ALIGN_ANY);

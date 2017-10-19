@@ -25,6 +25,9 @@
     <Filter Include="Dock">
       <UniqueIdentifier>{79ce39af-6c21-4ad8-8ce3-8cec9e7d476a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="FillWindow">
+      <UniqueIdentifier>{4c4b68e2-b295-4b9f-adb0-37c2649c21b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -99,6 +102,9 @@
     <ClInclude Include="..\dock\DockButtonDlg.h">
       <Filter>Dock</Filter>
     </ClInclude>
+    <ClInclude Include="SetData.h">
+      <Filter>FillWindow</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="vtkmfc.cpp">
@@ -160,6 +166,9 @@
     </ClCompile>
     <ClCompile Include="..\dock\DockButtonDlg.cpp">
       <Filter>Dock</Filter>
+    </ClCompile>
+    <ClCompile Include="SetData.cpp">
+      <Filter>FillWindow</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

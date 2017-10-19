@@ -100,7 +100,6 @@
 #define IDD_ButtonCtrolDIALOG           328
 #define IDD_DIALOG_BAR                  329
 #define IDD_DIALOG_DATA                 330
-#define IDD_DIALOG2                     331
 #define IDD_DIALOG_Param                331
 #define IDC_BUTTON_SCAN                 1000
 #define IDC_BUTTON_DYNAMIC              1002
@@ -120,6 +119,9 @@
 #define IDC_TREE1                       1026
 #define IDC_TREECTRL                    1026
 #define IDC_DOCKButtonWindow            1027
+#define IDC_HOTKEY1                     1027
+#define IDC_BUTTON_test                 1028
+#define IDC_RADIO_test                  1030
 
 // Next default values for new objects
 // 
@@ -127,7 +129,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        332
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1027
+#define _APS_NEXT_CONTROL_VALUE         1031
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif

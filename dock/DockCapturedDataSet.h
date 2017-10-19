@@ -1,5 +1,5 @@
 #pragma once
-#include "PARAM_VIEW.h" 
+#include "SetData.h"
 // DockCapturedDataSet
 
 class DockCapturedDataSet : public CDockablePane
@@ -13,6 +13,7 @@ public:
 	virtual BOOL CanBeClosed() const;    // 重载基类 隐藏关闭按钮  
 
 	CListBox _listBox;
+	SetData   m_SetData; 
 
 protected:
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
