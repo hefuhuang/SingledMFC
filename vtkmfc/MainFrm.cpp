@@ -287,7 +287,7 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 		return FALSE;
 
 	cs.style &= ~FWS_ADDTOTITLE;
-	cs.lpszName =_T("RegenOvO");
+	cs.lpszName =_T("SALARY");
 
 	// TODO:  在此处通过修改
 
