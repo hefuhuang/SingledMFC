@@ -40,7 +40,7 @@ int CDockBotton::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	GetDlgItem(IDC_BUTTON_3DSHOWPure)->EnableWindow(TRUE);
 	GetDlgItem(IDC_BUTTON_DPSHOWPure)->EnableWindow(TRUE);
 
-	m_vtkparam_X.SetRange(1, 100);
+	m_vtkparam_X.SetRange(1, 5000);
 	m_vtkParam_Y.SetRange(1, 100);
 	m_vtkParam_Z.SetRange(1, 100);
 	//DWORD style = TVS_HASLINES | TVS_HASBUTTONS | TVS_LINESATROOT |

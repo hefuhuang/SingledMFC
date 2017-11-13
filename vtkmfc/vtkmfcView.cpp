@@ -107,6 +107,7 @@ void CvtkmfcView::OnDraw(CDC* /*pDC*/)
 	renWin->MakeCurrent();
 	iren->Initialize();
 
+	//cube->Delete();
 
 #ifdef OCT3D
 
@@ -383,6 +384,21 @@ void CvtkmfcView::OnSize(UINT nType, int cx, int cy)
 LRESULT  CvtkmfcView::OnChangeXValue(WPARAM wParam, LPARAM lParam)
 {
 	this->m_Xvalue = static_cast<int>(wParam);
+
+	double planesArray[24];
+	camera->GetFrustumPlanes(1, planesArray);
+	vtkSmartPointer<vtkPlanes> planes = vtkSmartPointer<vtkPlanes>::New();
+	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
+	planes->SetFrustumPlanes(planesArray);
+	planes->SetBounds(0, m_Xvalue, 0, 5000, 0, 1000);
+
+	plane->SetOrigin(0, 0, 0);
+	plane->SetNormal(0, 0, 1);
+
+	cube->ShowLinesOff();
+	cube->SetPlanes(planes); 
+
+	renWin->Render();
 
 	return 0;
 
