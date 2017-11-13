@@ -31,6 +31,9 @@ BEGIN_MESSAGE_MAP(CvtkmfcView, CView)
 	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CvtkmfcView::OnFilePrintPreview)
+	ON_MESSAGE(WM_MSGXViewResponse, &OnChangeXValue) 
+	ON_MESSAGE(WM_MSGYViewResponse, &OnChangeYValue)
+	ON_MESSAGE(WM_MSGZViewResponse, &OnChangeZValue) 
 	ON_WM_CONTEXTMENU()
 	ON_WM_RBUTTONUP()
 	ON_WM_SIZE()
@@ -46,7 +49,11 @@ CvtkmfcView::CvtkmfcView()
 	renWin = vtkSmartPointer<vtkRenderWindow>::New();
 	ren = vtkSmartPointer<vtkRenderer>::New();
 	iren = vtkSmartPointer<vtkRenderWindowInteractor>::New();
-	camera = vtkSmartPointer<vtkCamera>::New();
+	camera = vtkSmartPointer<vtkCamera>::New(); 
+
+	 m_Xvalue=0;
+	 m_Yvalue=0;
+	 m_Zvalue=0;
 }
 
 CvtkmfcView::~CvtkmfcView()
@@ -64,6 +71,7 @@ BOOL CvtkmfcView::PreCreateWindow(CREATESTRUCT& cs)
 
 // CvtkmfcView 绘制
 
+
 void CvtkmfcView::OnDraw(CDC* /*pDC*/)      
 {
 	CvtkmfcDoc* pDoc = GetDocument();
@@ -73,14 +81,21 @@ void CvtkmfcView::OnDraw(CDC* /*pDC*/)
 	double planesArray[24];
 	camera->GetFrustumPlanes(1, planesArray);
 	vtkSmartPointer<vtkPlanes> planes =vtkSmartPointer<vtkPlanes>::New();
+	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
 	planes->SetFrustumPlanes(planesArray);
+	planes->SetBounds(0,20,0,500,0,500);
+
+	plane->SetOrigin(0,0,0);
+	plane->SetNormal(0,0,1);
 
 	cube->ShowLinesOff();
 	cube->SetPlanes(planes);
 	cube->Update();
-	cube->Update();
 
 	polyMapper->SetInputConnection(cube->GetOutputPort());
+	polyMapper->AddClippingPlane(plane);
+	//polyMapper->SetClippingPlanes(planes);
+
 	actor->SetMapper(polyMapper);
 	ren->AddActor(actor);
 	ren->SetBackground(0, 0, 0);
@@ -91,6 +106,7 @@ void CvtkmfcView::OnDraw(CDC* /*pDC*/)
 	renWin->Render();
 	renWin->MakeCurrent();
 	iren->Initialize();
+
 
 #ifdef OCT3D
 
@@ -286,7 +302,6 @@ void CvtkmfcView::OnDraw(CDC* /*pDC*/)
 		
 	if (!pDoc)
 		return;
-
 }
 
 
@@ -363,3 +378,26 @@ void CvtkmfcView::OnSize(UINT nType, int cx, int cy)
 	vtkwidth = cy;
 	// TODO:  在此处添加消息处理程序代码
 }
+
+
+LRESULT  CvtkmfcView::OnChangeXValue(WPARAM wParam, LPARAM lParam)
+{
+	this->m_Xvalue = static_cast<int>(wParam);
+
+	return 0;
+
+}
+LRESULT  CvtkmfcView::OnChangeYValue(WPARAM wParam, LPARAM lParam)
+{
+	this->m_Yvalue = static_cast<int>(wParam);
+
+	return 0;
+}
+LRESULT  CvtkmfcView::OnChangeZValue(WPARAM wParam, LPARAM lParam)
+{
+	this->m_Zvalue = static_cast<int>(wParam);
+
+
+	return 0;
+}
+

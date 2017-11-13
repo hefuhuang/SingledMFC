@@ -13,6 +13,9 @@
 // CvtkmfcApp:
 // 有关此类的实现，请参阅 vtkmfc.cpp
 //
+#define WM_MSGXViewResponse (WM_USER+1)
+#define WM_MSGYViewResponse (WM_USER+2)
+#define WM_MSGZViewResponse (WM_USER+3)
 
 class CvtkmfcApp : public CWinAppEx
 {

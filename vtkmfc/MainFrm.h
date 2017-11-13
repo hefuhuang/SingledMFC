@@ -54,12 +54,13 @@ public:
 	virtual void Dump(CDumpContext& dc) const;
 #endif
 
-protected:  // 控件条嵌入成员
+protected: 
 
 	int m_nshowCurrent;
+
 	DockButtonDlg     m_wndWorkSpace;
 
-	CDockBotton*       m_dockBotton ; 
+	CDockBotton*      m_dockBotton ; 
 
 	Cdockvedio        m_dockvedio;
 
@@ -101,7 +102,8 @@ protected:
 	BOOL CreateDockingWindows();
 	void SetDockingWindowIcons(BOOL bHiColorIcons);
     BOOL OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext); 
-	
+	void KillProcess(CString sExeName); 
+
 public:
 	afx_msg void OnSize(UINT nType, int cx, int cy);
 

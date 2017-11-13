@@ -578,28 +578,22 @@ void CMainFrame::AdjustDockingLayout(HDWP hdwp)
 void CMainFrame::OnClose()
 {
 	CFrameWndEx::OnClose(); 
-
-
-
+	this->KillProcess(_T("vtkmfc.exe"));
 }
  
-void KillProcess(CString sExeName)
+
+void CMainFrame::KillProcess(CString sExeName)
 {
 	HANDLE hSnapShot = ::CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
 	if (hSnapShot == 0)
 		return;
 	PROCESSENTRY32 thePE;
 	thePE.dwSize = sizeof(PROCESSENTRY32);
-
-
 	//遍历正在运行的第一个系统进程
-
 
 	bool Status = Process32First(hSnapShot, &thePE);
 	bool bHaveFlag = false;
 	DWORD ProcessID = 0;
-
-
 	while (Status)
 	{
 		//遍历正在运行的下一个系统进程  

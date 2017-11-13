@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "vtkmfc.h"
 #include "DockBotton.h"
+#include "MainFrm.h"
 
 
 // CDockBotton
@@ -39,6 +40,9 @@ int CDockBotton::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	GetDlgItem(IDC_BUTTON_3DSHOWPure)->EnableWindow(TRUE);
 	GetDlgItem(IDC_BUTTON_DPSHOWPure)->EnableWindow(TRUE);
 
+	m_vtkparam_X.SetRange(1, 100);
+	m_vtkParam_Y.SetRange(1, 100);
+	m_vtkParam_Z.SetRange(1, 100);
 	//DWORD style = TVS_HASLINES | TVS_HASBUTTONS | TVS_LINESATROOT |
 	//	WS_CHILD | WS_VISIBLE | TVS_SHOWSELALWAYS | TVS_FULLROWSELECT;
 	//CRect dump(0, 0, 0, 0);
@@ -94,6 +98,10 @@ BEGIN_MESSAGE_MAP(CDockBotton, CDockablePane)
 	ON_UPDATE_COMMAND_UI(IDC_BUTTON_3DSHOWPure, OnUpdateMyControl)
 	ON_UPDATE_COMMAND_UI(IDC_BUTTON_DPSHOWPure, OnUpdateMyControl)
 
+	ON_NOTIFY(NM_RELEASEDCAPTURE, IDC_SLIDER_Slice_X, OnNMCustomdrawSliderSliceX)
+	ON_NOTIFY(NM_RELEASEDCAPTURE, IDC_SLIDER_Slice_Y, OnNMCustomdrawSliderSliceY)
+	ON_NOTIFY(NM_RELEASEDCAPTURE, IDC_SLIDER_Slice_Z, OnNMCustomdrawSliderSliceZ)
+
 END_MESSAGE_MAP()
 
 void CDockBotton::OnUpdateMyControl(CCmdUI* pCmdUI)
@@ -135,3 +143,47 @@ void CDockBotton::OnBnClickedButtonDpshowpure()
 // CDockBotton 消息处理程序
 
 
+void CDockBotton::OnNMCustomdrawSliderSliceX(NMHDR *pNMHDR, LRESULT *pResult)
+{  
+	int m_valueX = m_vtkparam_X.GetPos();
+	CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
+	CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
+    PostMessageA(pView->m_hWnd, WM_MSGXViewResponse, WPARAM(m_valueX), 1); 
+
+	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
+	*pResult = 0;
+}
+
+
+void CDockBotton::OnNMCustomdrawSliderSliceY(NMHDR *pNMHDR, LRESULT *pResult)
+{
+	int m_valueY = m_vtkParam_Y.GetPos();
+	//CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
+	//CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
+	//PostMessageA(pView->m_hWnd, WM_MSGYViewResponse, WPARAM(m_valueY), 1);
+
+	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
+	*pResult = 0;
+}
+
+
+void CDockBotton::OnNMCustomdrawSliderSliceZ(NMHDR *pNMHDR, LRESULT *pResult)
+{ 
+	int m_valueZ = m_vtkParam_Z.GetPos(); 
+
+	//CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
+	//CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
+	//PostMessageA(pView->m_hWnd, WM_MSGZViewResponse, WPARAM(m_valueZ), 1);
+
+	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
+	*pResult = 0;
+}
+
+
+void CDockBotton::DoDataExchange(CDataExchange* pDX)
+{
+	CPaneDialog::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_SLIDER_Slice_X, m_vtkparam_X);
+	DDX_Control(pDX, IDC_SLIDER_Slice_Y, m_vtkParam_Y);
+	DDX_Control(pDX, IDC_SLIDER_Slice_Z, m_vtkParam_Z);
+}

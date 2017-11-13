@@ -122,6 +122,12 @@
 #define IDC_HOTKEY1                     1027
 #define IDC_BUTTON_test                 1028
 #define IDC_RADIO_test                  1030
+#define IDC_SLIDER_Slice_X              1031
+#define IDC_SLIDER_Slice_Y              1032
+#define IDC_SLIDER_Slice_Z              1033
+#define IDC_SPLIT_X                     1034
+#define IDC_SPLIT_Y                     1036
+#define IDC_SPLIT_X3                    1037
 
 // Next default values for new objects
 // 
@@ -129,7 +135,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        332
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1031
+#define _APS_NEXT_CONTROL_VALUE         1035
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif

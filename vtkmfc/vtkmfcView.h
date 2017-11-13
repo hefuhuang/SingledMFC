@@ -11,6 +11,7 @@
 #include <vtkFrustumSource.h>
 #include <vtkCamera.h>
 #include <vtkPlanes.h>
+#include <vtkPlane.h>
 
 #include "vtkheader.h"
 #include <vtkMultiThreader.h>
@@ -25,6 +26,7 @@
 
 #include "vtkMFCWindow.h"
 #include "vtkmfcDoc.h"
+
 
 VTK_MODULE_INIT(vtkRenderingFreeType);
 
@@ -53,6 +55,13 @@ public:
 	double vtklen;
 	double vtkwidth;
 
+	LRESULT  OnChangeXValue(WPARAM wParam, LPARAM lParam);
+	LRESULT  OnChangeYValue(WPARAM wParam, LPARAM lParam);
+	LRESULT  OnChangeZValue(WPARAM wParam, LPARAM lParam); 
+
+	int m_Xvalue;
+	int m_Yvalue;
+	int m_Zvalue;
 // 重写
 public:
 	virtual void OnDraw(CDC* pDC);  // 重写以绘制该视图
