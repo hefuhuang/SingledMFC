@@ -18,6 +18,7 @@
 #include "DockCapturedDataSet.h"
 #include "DockDataSetParameter.h"
 #include "DockBotton.h"
+#include "tlhelp32.h"
 
 class CMainFrame : public CFrameWndEx
 {
@@ -108,6 +109,7 @@ public:
 	virtual BOOL OnCloseDockingPane(CDockablePane* pWnd);
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
 	virtual void AdjustDockingLayout(HDWP hdwp = NULL);
+	afx_msg void OnClose();
 };
 
 

@@ -83,6 +83,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWndEx)
 	ON_WM_SETTINGCHANGE()
 	//ON_WM_SIZE()
 	ON_WM_TIMER()
+	ON_WM_CLOSE()
 END_MESSAGE_MAP()
 
 static UINT indicators[] =
@@ -558,7 +559,7 @@ void CMainFrame::OnTimer(UINT_PTR nIDEvent)
 	strTime = tm.Format("%y/%m/%d %X");   //格式化系统时间。即使系统时 间按照Format中设置的格式显示
 	 //m_wndStatusBar.SetPaneText(0, strTime);
 	m_wndStatusBar.SetPaneText(0, _T("一直被模仿，从未被超越！  ") + strTime);
-
+	 
 	CFrameWndEx::OnTimer(nIDEvent);
 }
 
@@ -571,4 +572,57 @@ void CMainFrame::AdjustDockingLayout(HDWP hdwp)
 	}*/
 
 	return CFrameWndEx::AdjustDockingLayout(hdwp);
+}
+
+
+void CMainFrame::OnClose()
+{
+	CFrameWndEx::OnClose(); 
+
+
+
+}
+ 
+void KillProcess(CString sExeName)
+{
+	HANDLE hSnapShot = ::CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+	if (hSnapShot == 0)
+		return;
+	PROCESSENTRY32 thePE;
+	thePE.dwSize = sizeof(PROCESSENTRY32);
+
+
+	//遍历正在运行的第一个系统进程
+
+
+	bool Status = Process32First(hSnapShot, &thePE);
+	bool bHaveFlag = false;
+	DWORD ProcessID = 0;
+
+
+	while (Status)
+	{
+		//遍历正在运行的下一个系统进程  
+		Status = Process32Next(hSnapShot, &thePE);
+		//找到相应的进程 **.exe
+		// if(0 == wcscmp(thePE.szExeFile,L""))
+		CString sFindName = thePE.szExeFile;
+		CString sTemp = sExeName.Mid(0, sFindName.GetLength());
+		if (sFindName == sTemp)
+		{
+			bHaveFlag = true;
+			ProcessID = thePE.th32ProcessID;
+			//结束指定的进程 ProcessID
+			if (!TerminateProcess(OpenProcess(PROCESS_TERMINATE || PROCESS_QUERY_INFORMATION, false, ProcessID), 0))
+			{
+				AfxMessageBox(L"无法终止指定的进程！", MB_ICONWARNING || MB_OK);
+			}
+			else
+			{
+				AfxMessageBox(L"进程结束！", MB_ICONWARNING || MB_OK);
+				break;
+			}
+		}
+	}
+	CloseHandle(hSnapShot);
 }
