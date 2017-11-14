@@ -83,7 +83,7 @@ void CvtkmfcView::OnDraw(CDC* /*pDC*/)
 	vtkSmartPointer<vtkPlanes> planes =vtkSmartPointer<vtkPlanes>::New();
 	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
 	planes->SetFrustumPlanes(planesArray);
-	planes->SetBounds(0,500,0,500,0,1000);
+	planes->SetBounds(0,500,0,500,0,500);
 	//plane->SetOrigin(0,0,0);
 	//plane->SetNormal(0,1,0);
 
@@ -386,13 +386,13 @@ void CvtkmfcView::OnSize(UINT nType, int cx, int cy)
 LRESULT  CvtkmfcView::OnChangeXValue(WPARAM wParam, LPARAM lParam)
 {
 	this->m_Xvalue = static_cast<int>(wParam);
-	m_Xvalue = m_Xvalue * 10;
+	m_Xvalue = m_Xvalue * 5;
 	volatile int xvalue = static_cast<int>(wParam);
 	volatile int  flag = static_cast<int>(lParam);
 	//double distance = m_Xvalue;
 	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
-	plane->SetOrigin(m_Xvalue, 1,1 );
-	plane->SetNormal(0, 0, -1);  //ÉèÖÃ
+	plane->SetOrigin(m_Xvalue, 0, 0);
+	plane->SetNormal(1, 0, 0);  //ÉèÖÃ
 	//plane->Push(distance);
 	polyMapper->RemoveAllClippingPlanes();
 	polyMapper->SetInputConnection(cube->GetOutputPort());
@@ -409,7 +409,7 @@ LRESULT  CvtkmfcView::OnChangeYValue(WPARAM wParam, LPARAM lParam)
 	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
 	plane->SetOrigin(0, m_Yvalue, 0);
 	plane->SetNormal(0, 1, 0);
-
+	polyMapper->RemoveAllClippingPlanes();
 	polyMapper->SetInputConnection(cube->GetOutputPort());
 	polyMapper->AddClippingPlane(plane);
 
@@ -418,7 +418,7 @@ LRESULT  CvtkmfcView::OnChangeYValue(WPARAM wParam, LPARAM lParam)
 	//polyMapper->SetClippingPlanes(planes);
 
 	renWin->Render();
-	
+
 	return 0;
 }
 LRESULT  CvtkmfcView::OnChangeZValue(WPARAM wParam, LPARAM lParam)
@@ -429,7 +429,7 @@ LRESULT  CvtkmfcView::OnChangeZValue(WPARAM wParam, LPARAM lParam)
 
 	plane->SetOrigin(0, 0, m_Zvalue);
 	plane->SetNormal(0, 0, 1);
-
+	polyMapper->RemoveAllClippingPlanes();
 	polyMapper->SetInputConnection(cube->GetOutputPort());
 	polyMapper->AddClippingPlane(plane);
 

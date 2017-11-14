@@ -98,9 +98,9 @@ BEGIN_MESSAGE_MAP(CDockBotton, CDockablePane)
 	ON_UPDATE_COMMAND_UI(IDC_BUTTON_3DSHOWPure, OnUpdateMyControl)
 	ON_UPDATE_COMMAND_UI(IDC_BUTTON_DPSHOWPure, OnUpdateMyControl)
 
-	ON_NOTIFY(NM_RELEASEDCAPTURE, IDC_SLIDER_Slice_X, OnNMCustomdrawSliderSliceX)
-	ON_NOTIFY(NM_RELEASEDCAPTURE, IDC_SLIDER_Slice_Y, OnNMCustomdrawSliderSliceY)
-	ON_NOTIFY(NM_RELEASEDCAPTURE, IDC_SLIDER_Slice_Z, OnNMCustomdrawSliderSliceZ)
+	ON_NOTIFY(NM_CUSTOMDRAW, IDC_SLIDER_Slice_X, OnNMCustomdrawSliderSliceX)
+	ON_NOTIFY(NM_CUSTOMDRAW, IDC_SLIDER_Slice_Y, OnNMCustomdrawSliderSliceY)
+	ON_NOTIFY(NM_CUSTOMDRAW, IDC_SLIDER_Slice_Z, OnNMCustomdrawSliderSliceZ)
 
 END_MESSAGE_MAP()
 
@@ -146,10 +146,13 @@ void CDockBotton::OnBnClickedButtonDpshowpure()
 void CDockBotton::OnNMCustomdrawSliderSliceX(NMHDR *pNMHDR, LRESULT *pResult)
 {  
    volatile int m_valueX = m_vtkparam_X.GetPos();
+   if (m_valueX!=0)
+   {
+  
 	CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
 	CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
 	PostMessageA(pView->m_hWnd, WM_MSGXViewResponse, WPARAM(m_valueX), (LPARAM)(m_valueX));
-
+   }
 	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
 	*pResult = 0;
 }
@@ -158,10 +161,12 @@ void CDockBotton::OnNMCustomdrawSliderSliceX(NMHDR *pNMHDR, LRESULT *pResult)
 void CDockBotton::OnNMCustomdrawSliderSliceY(NMHDR *pNMHDR, LRESULT *pResult)
 {
 	int m_valueY = m_vtkParam_Y.GetPos();
-	CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
-	CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
-	PostMessageA(pView->m_hWnd, WM_MSGYViewResponse, WPARAM(m_valueY), (LPARAM)(m_valueY));
-
+	if (m_valueY != 0)
+	{
+		CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
+		CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
+		PostMessageA(pView->m_hWnd, WM_MSGYViewResponse, WPARAM(m_valueY), (LPARAM)(m_valueY));
+	}
 	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
 	*pResult = 0;
 }
@@ -170,11 +175,12 @@ void CDockBotton::OnNMCustomdrawSliderSliceY(NMHDR *pNMHDR, LRESULT *pResult)
 void CDockBotton::OnNMCustomdrawSliderSliceZ(NMHDR *pNMHDR, LRESULT *pResult)
 { 
 	int m_valueZ = m_vtkParam_Z.GetPos(); 
-
-	CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
-	CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
-	PostMessageA(pView->m_hWnd, WM_MSGZViewResponse, WPARAM(m_valueZ), (LPARAM)(m_valueZ));
-
+	if (m_valueZ != 0)
+	{
+		CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
+		CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
+		PostMessageA(pView->m_hWnd, WM_MSGZViewResponse, WPARAM(m_valueZ), (LPARAM)(m_valueZ));
+	}
 	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
 	*pResult = 0;
 }
