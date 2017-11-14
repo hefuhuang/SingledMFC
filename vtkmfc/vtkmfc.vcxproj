@@ -141,6 +141,7 @@
       <AdditionalOptions>/D "_AFXDLL" %(AdditionalOptions)</AdditionalOptions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <AdditionalDependencies>vtkGUISupportMFC-8.1.lib;vtkCommonCore-8.1.lib;vtkRenderingCore-8.1.lib;vtkCommonSystem-8.1.lib;vtkFiltersGeometry-8.1.lib;vtkIOLegacy-8.1.lib;vtkRenderingLOD-8.1.lib;vtkCommonDataModel-8.1.lib;vtkFiltersCore-8.1.lib;vtkRenderingVolume-8.1.lib;vtkImagingHybrid-8.1.lib;vtkFiltersModeling-8.1.lib;vtkIOXML-8.1.lib;vtkIOXMLParser-8.1.lib;vtkFiltersFlowPaths-8.1.lib;vtkInteractionStyle-8.1.lib;vtkFiltersSources-8.1.lib;vtkCommonExecutionModel-8.1.lib;vtkRenderingVolumeOpenGL2-8.1.lib;vtkRenderingOpenGL2-8.1.lib;vtkInteractionImage-8.1.lib;vtkRenderingAnnotation-8.1.lib;vtkViewsCore-8.1.lib;vtkRenderingImage-8.1.lib;vtkImagingCore-8.1.lib;vtkIOImage-8.1.lib;vtkInteractionWidgets-8.1.lib;vtkGeovisCore-8.1.lib;vtkIOGeometry-8.1.lib;vtkFiltersGeneral-8.1.lib;vtkRenderingFreeType-8.1.lib;vtkFiltersGeneric-8.1.lib;%(AdditionalDependencies)</AdditionalDependencies>

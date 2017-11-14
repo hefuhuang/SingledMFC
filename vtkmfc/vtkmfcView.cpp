@@ -83,18 +83,20 @@ void CvtkmfcView::OnDraw(CDC* /*pDC*/)
 	vtkSmartPointer<vtkPlanes> planes =vtkSmartPointer<vtkPlanes>::New();
 	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
 	planes->SetFrustumPlanes(planesArray);
-	planes->SetBounds(0,20,0,500,0,500);
-
-	plane->SetOrigin(0,0,0);
-	plane->SetNormal(0,0,1);
+	planes->SetBounds(0,500,0,500,0,1000);
+	//plane->SetOrigin(0,0,0);
+	//plane->SetNormal(0,1,0);
 
 	cube->ShowLinesOff();
 	cube->SetPlanes(planes);
 	cube->Update();
+	//cube->GetReferenceCount();
+
 
 	polyMapper->SetInputConnection(cube->GetOutputPort());
-	polyMapper->AddClippingPlane(plane);
+	//polyMapper->AddClippingPlane(plane);
 	//polyMapper->SetClippingPlanes(planes);
+	double* bound[6];
 
 	actor->SetMapper(polyMapper);
 	ren->AddActor(actor);
@@ -105,7 +107,7 @@ void CvtkmfcView::OnDraw(CDC* /*pDC*/)
 	iren->SetRenderWindow(renWin);
 	renWin->Render();
 	renWin->MakeCurrent();
-	iren->Initialize();
+	iren->Initialize(); 
 
 	//cube->Delete();
 
@@ -384,20 +386,17 @@ void CvtkmfcView::OnSize(UINT nType, int cx, int cy)
 LRESULT  CvtkmfcView::OnChangeXValue(WPARAM wParam, LPARAM lParam)
 {
 	this->m_Xvalue = static_cast<int>(wParam);
-
-	double planesArray[24];
-	camera->GetFrustumPlanes(1, planesArray);
-	vtkSmartPointer<vtkPlanes> planes = vtkSmartPointer<vtkPlanes>::New();
+	m_Xvalue = m_Xvalue * 10;
+	volatile int xvalue = static_cast<int>(wParam);
+	volatile int  flag = static_cast<int>(lParam);
+	//double distance = m_Xvalue;
 	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
-	planes->SetFrustumPlanes(planesArray);
-	planes->SetBounds(0, m_Xvalue, 0, 5000, 0, 1000);
-
-	plane->SetOrigin(0, 0, 0);
-	plane->SetNormal(0, 0, 1);
-
-	cube->ShowLinesOff();
-	cube->SetPlanes(planes); 
-
+	plane->SetOrigin(m_Xvalue, 1,1 );
+	plane->SetNormal(0, 0, -1);  //ÉèÖÃ
+	//plane->Push(distance);
+	polyMapper->RemoveAllClippingPlanes();
+	polyMapper->SetInputConnection(cube->GetOutputPort());
+	polyMapper->AddClippingPlane(plane);
 	renWin->Render();
 
 	return 0;
@@ -406,14 +405,35 @@ LRESULT  CvtkmfcView::OnChangeXValue(WPARAM wParam, LPARAM lParam)
 LRESULT  CvtkmfcView::OnChangeYValue(WPARAM wParam, LPARAM lParam)
 {
 	this->m_Yvalue = static_cast<int>(wParam);
+	m_Yvalue = m_Yvalue * 5;
+	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
+	plane->SetOrigin(0, m_Yvalue, 0);
+	plane->SetNormal(0, 1, 0);
 
+	polyMapper->SetInputConnection(cube->GetOutputPort());
+	polyMapper->AddClippingPlane(plane);
+
+	//vtkSmartPointer<vtkPlanes> planes = vtkSmartPointer<vtkPlanes>::New();
+	//planes->SetBounds(0, m_Xvalue, 0, 100, 0, 100);
+	//polyMapper->SetClippingPlanes(planes);
+
+	renWin->Render();
+	
 	return 0;
 }
 LRESULT  CvtkmfcView::OnChangeZValue(WPARAM wParam, LPARAM lParam)
 {
 	this->m_Zvalue = static_cast<int>(wParam);
+	m_Zvalue = m_Zvalue * 5;
+	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
 
+	plane->SetOrigin(0, 0, m_Zvalue);
+	plane->SetNormal(0, 0, 1);
 
+	polyMapper->SetInputConnection(cube->GetOutputPort());
+	polyMapper->AddClippingPlane(plane);
+
+	renWin->Render();
 	return 0;
 }
 

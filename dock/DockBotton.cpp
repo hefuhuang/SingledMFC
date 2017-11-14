@@ -40,7 +40,7 @@ int CDockBotton::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	GetDlgItem(IDC_BUTTON_3DSHOWPure)->EnableWindow(TRUE);
 	GetDlgItem(IDC_BUTTON_DPSHOWPure)->EnableWindow(TRUE);
 
-	m_vtkparam_X.SetRange(1, 5000);
+	m_vtkparam_X.SetRange(1, 100);
 	m_vtkParam_Y.SetRange(1, 100);
 	m_vtkParam_Z.SetRange(1, 100);
 	//DWORD style = TVS_HASLINES | TVS_HASBUTTONS | TVS_LINESATROOT |
@@ -145,10 +145,10 @@ void CDockBotton::OnBnClickedButtonDpshowpure()
 
 void CDockBotton::OnNMCustomdrawSliderSliceX(NMHDR *pNMHDR, LRESULT *pResult)
 {  
-	int m_valueX = m_vtkparam_X.GetPos();
+   volatile int m_valueX = m_vtkparam_X.GetPos();
 	CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
 	CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
-    PostMessageA(pView->m_hWnd, WM_MSGXViewResponse, WPARAM(m_valueX), 1); 
+	PostMessageA(pView->m_hWnd, WM_MSGXViewResponse, WPARAM(m_valueX), (LPARAM)(m_valueX));
 
 	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
 	*pResult = 0;
@@ -158,9 +158,9 @@ void CDockBotton::OnNMCustomdrawSliderSliceX(NMHDR *pNMHDR, LRESULT *pResult)
 void CDockBotton::OnNMCustomdrawSliderSliceY(NMHDR *pNMHDR, LRESULT *pResult)
 {
 	int m_valueY = m_vtkParam_Y.GetPos();
-	//CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
-	//CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
-	//PostMessageA(pView->m_hWnd, WM_MSGYViewResponse, WPARAM(m_valueY), 1);
+	CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
+	CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
+	PostMessageA(pView->m_hWnd, WM_MSGYViewResponse, WPARAM(m_valueY), (LPARAM)(m_valueY));
 
 	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
 	*pResult = 0;
@@ -171,9 +171,9 @@ void CDockBotton::OnNMCustomdrawSliderSliceZ(NMHDR *pNMHDR, LRESULT *pResult)
 { 
 	int m_valueZ = m_vtkParam_Z.GetPos(); 
 
-	//CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
-	//CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
-	//PostMessageA(pView->m_hWnd, WM_MSGZViewResponse, WPARAM(m_valueZ), 1);
+	CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
+	CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
+	PostMessageA(pView->m_hWnd, WM_MSGZViewResponse, WPARAM(m_valueZ), (LPARAM)(m_valueZ));
 
 	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
 	*pResult = 0;
