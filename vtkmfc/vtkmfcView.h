@@ -58,10 +58,12 @@ public:
 	LRESULT  OnChangeXValue(WPARAM wParam, LPARAM lParam);
 	LRESULT  OnChangeYValue(WPARAM wParam, LPARAM lParam);
 	LRESULT  OnChangeZValue(WPARAM wParam, LPARAM lParam); 
-
+	LRESULT  On3DResponseFunction(WPARAM wParam, LPARAM lParam);
 	int m_Xvalue;
 	int m_Yvalue;
-	int m_Zvalue;
+	int m_Zvalue; 
+	int ScaleZoom; 
+	bool flag3d;
 // 重写
 public:
 	virtual void OnDraw(CDC* pDC);  // 重写以绘制该视图
@@ -70,7 +72,9 @@ protected:
 	virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
 	virtual void OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo);
 	virtual void OnEndPrinting(CDC* pDC, CPrintInfo* pInfo);
-
+	void DrawLine(CDC* pDC);
+	void showMatimage(HRESULT ret, CDC* pDc);
+	void showVtk();
 // 实现
 public:
 	virtual ~CvtkmfcView();

@@ -17,7 +17,7 @@ public:
 
 private:
 	CTreeCtrl m_wndTree;
-
+	bool flag3D;
 protected:
 
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);

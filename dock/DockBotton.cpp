@@ -13,6 +13,7 @@ IMPLEMENT_DYNAMIC(CDockBotton, CPaneDialog)
 
 CDockBotton::CDockBotton()
 {
+	flag3D = true;
 	
 }
 
@@ -127,9 +128,20 @@ void CDockBotton::OnBnClickedButtonDynamicpure()
 
 void CDockBotton::OnBnClickedButton3dshowpure()
 {
-	
-	AfxMessageBox(_T("youcliecked"));
+	if (flag3D)
+	{ 
+		this->SetDlgItemTextW(IDC_BUTTON_3DSHOWPure, _T("CLOSE"));
+		CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
+		CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
+		PostMessageA(pView->m_hWnd, WM_MSG3DShowMSG, WPARAM(flag3D), (LPARAM)(flag3D));
+		flag3D = !flag3D;
+	}
 
+	else
+	{
+		flag3D = !flag3D;
+		this->SetDlgItemTextW(IDC_BUTTON_3DSHOWPure, _T("3DSHOW"));
+	}
 }
 
 
@@ -148,7 +160,6 @@ void CDockBotton::OnNMCustomdrawSliderSliceX(NMHDR *pNMHDR, LRESULT *pResult)
    volatile int m_valueX = m_vtkparam_X.GetPos();
    if (m_valueX!=0)
    {
-  
 	CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
 	CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
 	PostMessageA(pView->m_hWnd, WM_MSGXViewResponse, WPARAM(m_valueX), (LPARAM)(m_valueX));

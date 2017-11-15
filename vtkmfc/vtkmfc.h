@@ -16,6 +16,7 @@
 #define WM_MSGXViewResponse (WM_USER+1)
 #define WM_MSGYViewResponse (WM_USER+2)
 #define WM_MSGZViewResponse (WM_USER+3)
+#define WM_MSG3DShowMSG (WM_USER+4)
 
 class CvtkmfcApp : public CWinAppEx
 {
