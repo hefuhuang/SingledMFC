@@ -35,8 +35,8 @@ BEGIN_MESSAGE_MAP(CvtkmfcView, CView)
 	ON_MESSAGE(WM_MSGYViewResponse, &OnChangeYValue)
 	ON_MESSAGE(WM_MSGZViewResponse, &OnChangeZValue) 
 	ON_MESSAGE(WM_MSG3DShowMSG, &On3DResponseFunction)
-	ON_WM_CONTEXTMENU()
-	ON_WM_RBUTTONUP()
+	//ON_WM_CONTEXTMENU()
+	//ON_WM_RBUTTONUP()
 	ON_WM_SIZE()
 
 END_MESSAGE_MAP()
@@ -288,11 +288,11 @@ void CvtkmfcView::showVtk()
 	vtkSmartPointer<vtkClientServerInterpreterInternals>client = vtkSmartPointer<vtkClientServerInterpreterInternals>::New();
 	vtkSmartPointer<vtkPlanes> planes = vtkSmartPointer<vtkPlanes>::New();
 	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
+	vtkSmartPointer<vtkGenericDataObjectReader> vtkreader = vtkSmartPointer<vtkGenericDataObjectReader>::New();
 	planes->SetFrustumPlanes(planesArray);
 	planes->SetBounds(0, 500, 0, 500, 0, 500);
 	//plane->SetOrigin(0,0,0);
 	//plane->SetNormal(0,1,0);
-
 	cube->ShowLinesOff();
 	cube->SetPlanes(planes);
 	cube->Update();
@@ -405,7 +405,10 @@ LRESULT CvtkmfcView::On3DResponseFunction(WPARAM wParam, LPARAM lParam)
 
 	myProCtrl = new CProgressCtrl;
 	myProCtrl->Create(WS_VISIBLE, ProRectWindow, this, 99); //创建位置、大小
+	myProCtrl->SendMessage(PBM_SETBARCOLOR, 0, RGB(255, 0, 0));
+	myProCtrl->SetBarColor(RGB(255,0,0));
 	myProCtrl->SetRange(0, 100);
+	myProCtrl->SetStep(1);
 	for (int i = 1; i < 100; i++)
 	{
 		myProCtrl->OffsetPos(i);

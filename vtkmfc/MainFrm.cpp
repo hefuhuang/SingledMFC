@@ -84,6 +84,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWndEx)
 	//ON_WM_SIZE()
 	ON_WM_TIMER()
 	ON_WM_CLOSE()
+
 END_MESSAGE_MAP()
 
 static UINT indicators[] =
