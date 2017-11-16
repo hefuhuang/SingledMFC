@@ -39,6 +39,7 @@ BEGIN_MESSAGE_MAP(CvtkmfcView, CView)
 	//ON_WM_RBUTTONUP()
 	ON_WM_SIZE()
 
+	ON_WM_CTLCOLOR()
 END_MESSAGE_MAP()
 
 // CvtkmfcView 构造/析构
@@ -75,12 +76,14 @@ BOOL CvtkmfcView::PreCreateWindow(CREATESTRUCT& cs)
 // CvtkmfcView 绘制
 
 
-void CvtkmfcView::OnDraw(CDC* /*pDC*/)      
+void CvtkmfcView::OnDraw(CDC* pDC)      
 {
 	CvtkmfcDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
 
-	//cube->Delete();
+	CRect winrect;
+	GetClientRect(&winrect); 
+	pDC->FillSolidRect(winrect,RGB(50,50,50));
 
 #ifdef OCT3D
 
@@ -393,8 +396,13 @@ void CvtkmfcView::OnSize(UINT nType, int cx, int cy)
 LRESULT CvtkmfcView::On3DResponseFunction(WPARAM wParam, LPARAM lParam)
 {  
 	this->flag3d= static_cast<int>(wParam); 
+	SetWindowPos(&wndTopMost, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
 	if (flag3d)
-	{
+   {
+	CDC* pDC = this->GetDC();
+	CRect winrect;
+	GetClientRect(&winrect);
+	pDC->FillSolidRect(winrect, RGB(50, 50, 50));
 	CProgressCtrl *myProCtrl;
 	CRect ProRectWindow, rectClient;
 	this->GetClientRect(&rectClient);
@@ -405,13 +413,14 @@ LRESULT CvtkmfcView::On3DResponseFunction(WPARAM wParam, LPARAM lParam)
 
 	myProCtrl = new CProgressCtrl;
 	myProCtrl->Create(WS_VISIBLE, ProRectWindow, this, 99); //创建位置、大小
-	myProCtrl->SendMessage(PBM_SETBARCOLOR, 0, RGB(255, 0, 0));
-	myProCtrl->SetBarColor(RGB(255,0,0));
+	//myProCtrl->SendMessage(PBM_SETBARCOLOR, 0, RGB(255, 0, 0));
+	//myProCtrl->SetBarColor(RGB(255,0,0));
 	myProCtrl->SetRange(0, 100);
 	myProCtrl->SetStep(1);
 	for (int i = 1; i < 100; i++)
 	{
-		myProCtrl->OffsetPos(i);
+		myProCtrl->SetPos(i);
+		myProCtrl->StepIt();
 		Sleep(100);
 	}
 	myProCtrl->OffsetPos(100);
@@ -457,7 +466,6 @@ LRESULT  CvtkmfcView::OnChangeYValue(WPARAM wParam, LPARAM lParam)
 	//polyMapper->SetClippingPlanes(planes);
 
 	renWin->Render();
-
 	return 0;
 }
 LRESULT  CvtkmfcView::OnChangeZValue(WPARAM wParam, LPARAM lParam)
@@ -475,12 +483,8 @@ LRESULT  CvtkmfcView::OnChangeZValue(WPARAM wParam, LPARAM lParam)
 	renWin->Render();
 	return 0;
 }
-
-
-
 void CvtkmfcView::showMatimage(HRESULT ret, CDC* pDc)
 {
-
 	CImage img;
 	CBitmap bitmap;
 	BITMAP bmap, bmaps;
@@ -1117,3 +1121,13 @@ void CMFC_OCTDlg::blackAndwhite()
 	iren->Start();//初始化并进行交互绘制
 }
 #endif
+
+HBRUSH CvtkmfcView::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+{
+	HBRUSH hbr = CView::OnCtlColor(pDC, pWnd, nCtlColor);
+
+	// TODO:  在此更改 DC 的任何特性
+
+	// TODO:  如果默认的不是所需画笔，则返回另一个画笔
+	return hbr;
+}
