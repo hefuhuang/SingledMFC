@@ -27,6 +27,7 @@ void DockButtonDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_SLIDER_Slice_X, vtkparam_X);
 	DDX_Control(pDX, IDC_SLIDER_Slice_Y, m_vtkParam_Y);
 	DDX_Control(pDX, IDC_SLIDER_Slice_Z, m_vtkParam_Z);
+	DDX_Control(pDX, IDC_COMBO_3DAutoScan, m_auto_clipping);
 }
 
 
@@ -42,6 +43,7 @@ BEGIN_MESSAGE_MAP(DockButtonDlg, CDialog)
 	ON_NOTIFY(NM_CUSTOMDRAW, IDC_SLIDER_Slice_Y, &DockButtonDlg::OnNMCustomdrawSliderSliceY)
 	ON_NOTIFY(NM_CUSTOMDRAW, IDC_SLIDER_Slice_Z, &DockButtonDlg::OnNMCustomdrawSliderSliceZ)
 	ON_NOTIFY(NM_RELEASEDCAPTURE, IDC_SLIDER_Slice_X, &DockButtonDlg::OnNMReleasedcaptureSliderSliceX)
+	ON_CBN_SELCHANGE(IDC_COMBO_3DAutoScan, &DockButtonDlg::OnCbnSelchangeCombo3dautoscan)
 END_MESSAGE_MAP()
 
 
@@ -53,6 +55,14 @@ BOOL DockButtonDlg::OnInitDialog()
 {
 	
 	CDialog::OnInitDialog();
+
+	m_auto_clipping.AddString(_T("Auto"));
+	m_auto_clipping.AddString(_T("Manual"));
+	m_auto_clipping.SetCurSel(0);
+	int index = m_auto_clipping.FindStringExact(0, _T("Manual"));
+
+	//m_auto_clipping.InsertString(0, _T("Auto"));
+	//m_auto_clipping.InsertString(1, _T("Manual"));
 
 	return TRUE;  // return TRUE unless you set the focus to a control
 	// 异常:  OCX 属性页应返回 FALSE
@@ -128,4 +138,13 @@ void DockButtonDlg::OnNMReleasedcaptureSliderSliceX(NMHDR *pNMHDR, LRESULT *pRes
 {
 	// TODO:  在此添加控件通知处理程序代码
 	*pResult = 0;
+}
+
+
+void DockButtonDlg::OnCbnSelchangeCombo3dautoscan()
+{
+	// TODO:  在此添加控件通知处理程序代码
+
+
+
 }

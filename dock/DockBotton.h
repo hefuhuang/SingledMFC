@@ -32,7 +32,8 @@ protected:
 	afx_msg void OnNMCustomdrawSliderSliceX(NMHDR *pNMHDR, LRESULT *pResult);
 	afx_msg void OnNMCustomdrawSliderSliceY(NMHDR *pNMHDR, LRESULT *pResult);
 	afx_msg void OnNMCustomdrawSliderSliceZ(NMHDR *pNMHDR, LRESULT *pResult);
- 
+	afx_msg void OnCbnSelchangeCombo3dautoscan();
+	CComboBox m_auto_clipping;
 	DECLARE_MESSAGE_MAP()
 
 	virtual void DoDataExchange(CDataExchange* pDX); 
@@ -41,6 +42,7 @@ public:
 	CSliderCtrl m_vtkparam_X;
 	CSliderCtrl m_vtkParam_Y;
 	CSliderCtrl m_vtkParam_Z; 
+
 
 };
 

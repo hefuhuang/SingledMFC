@@ -381,8 +381,6 @@ void CMainFrame::OnUpdateApplicationLook(CCmdUI* pCmdUI)
 
 BOOL CMainFrame::LoadFrame(UINT nIDResource, DWORD dwDefaultStyle, CWnd* pParentWnd, CCreateContext* pContext) 
 {
-	// 基类将执行真正的工作
-
 	if (!CFrameWndEx::LoadFrame(nIDResource, dwDefaultStyle, pParentWnd, pContext))
 	{
 		return FALSE;
@@ -452,7 +450,6 @@ void CMainFrame::OnSize(UINT nType, int cx, int cy)
 	AdjustDockingLayout();
 	m_dockBotton->SetWindowPos(NULL, 0, 0, cx, cy, SWP_NOACTIVATE | SWP_NOZORDER);
 	//this->setSplitLayout();
-
 
 	// TODO:  在此处添加消息处理程序代码
 }

@@ -40,6 +40,7 @@ BEGIN_MESSAGE_MAP(CvtkmfcView, CView)
 	ON_WM_SIZE()
 
 	ON_WM_CTLCOLOR()
+	ON_WM_TIMER()
 END_MESSAGE_MAP()
 
 // CvtkmfcView 构造/析构
@@ -85,6 +86,7 @@ void CvtkmfcView::OnDraw(CDC* pDC)
 	GetClientRect(&winrect); 
 	pDC->FillSolidRect(winrect,RGB(50,50,50));
 
+	SetTimer(1,1000,NULL);
 #ifdef OCT3D
 
 	vtkObject::GlobalWarningDisplayOff();
@@ -483,7 +485,37 @@ LRESULT  CvtkmfcView::OnChangeZValue(WPARAM wParam, LPARAM lParam)
 	renWin->Render();
 	return 0;
 }
-void CvtkmfcView::showMatimage(HRESULT ret, CDC* pDc)
+
+void CvtkmfcView::SetBackGround(CDC *pDC)
+{
+	CPaintDC    dc(this);
+	CRect rect;
+	CDC memDC;
+	GetClientRect(rect);
+	CBitmap memBitmap;
+	memDC.CreateCompatibleDC(NULL);
+	memBitmap.CreateCompatibleBitmap(pDC, rect.Width(), rect.Height());
+	memDC.SetBkMode(TRANSPARENT);
+	memDC.SelectObject(&memBitmap);
+	COLORREF bkColor = ::GetSysColor(COLOR_3DFACE);//得到系统颜色    
+	memDC.FillSolidRect(rect.left, rect.top, rect.Width(), rect.Height(), bkColor);//绘制背景    
+	memDC.FillSolidRect(rect.left, rect.bottom - 40, rect.Width(), rect.Height(), RGB(80, 80, 80));
+	int r1 = 147, g1 = 198, b1 = 198;
+	int r2 = 25, g2 = 56, b2 = 56;
+	for (int i = 0; i < rect.Width(); i++) {
+		int r, g, b;
+		r = r1 + (i * (r2 - r1) / rect.Width());
+		g = g1 + (i * (g2 - g1) / rect.Width());
+		b = b1 + (i * (b2 - b1) / rect.Width());
+		memDC.FillSolidRect(i, 0, 1, rect.Height(), RGB(r, g, b));
+	}
+	pDC->BitBlt(rect.left, rect.top, rect.Width(), rect.Height(), &memDC, 0, 0, SRCCOPY);
+	ReleaseDC(pDC);
+}
+
+
+#ifdef HRESULTSHow
+void CvtkmfcView::showMatimage(HRESULT ret,CDC* pDc)
 {
 	CImage img;
 	CBitmap bitmap;
@@ -549,6 +581,73 @@ void CvtkmfcView::showMatimage(HRESULT ret, CDC* pDc)
 	mdc->DeleteDC();
 	memdcs.DeleteDC();
 	memdc.DeleteDC();
+	img.Destroy();
+
+}
+#endif
+
+
+void CvtkmfcView::showMatimage(CDC* pDc)
+{
+	CImage img;
+	img.Load(_T("../sys/synCreate.png"));
+	CBitmap bitmap;
+	BITMAP bmap, bmaps;
+	CDC memdc, memdcs;
+	CDC*mdc = this->GetDC();
+	CRect mrect, rslider_rect;
+	this->GetClientRect(&mrect);
+	HBITMAP hbitmap;
+	if (!img.IsNull())
+	{
+		hbitmap = img.Detach();
+		bitmap.Attach(hbitmap);
+		memdc.CreateCompatibleDC(mdc);
+		memdc.SelectObject(hbitmap);
+		bitmap.GetBitmap(&bmap);
+		bitmap.Detach();
+	}
+	if (!img.IsNull())
+		img.Destroy();
+	img.Load(_T("../sys/synCreate.png"));//加载图片,S_OK:成功，E_FAIL:加载失败 
+	if (!img.IsNull())
+	{
+		hbitmap = img.Detach();//获得位图句柄，用以转换  
+		bitmap.Attach(hbitmap);//转换为CBITMAP对象  
+		memdcs.CreateCompatibleDC(mdc);
+		memdcs.SelectObject(hbitmap);
+		bitmap.GetBitmap(&bmaps);
+		bitmap.DeleteTempMap();
+		DeleteObject(hbitmap);
+		DeleteObject(bitmap);
+		CRect rect;
+		GetClientRect(rect);//rc为控件的大小。
+		if (memdc != NULL)
+		{  //加载到同一个内存DC中  
+			memdc.StretchBlt(rslider_rect.left*bmap.bmWidth / mrect.Width(), rslider_rect.top*bmap.bmHeight / mrect.Height(), rslider_rect.Width()*bmap.bmWidth / mrect.Width(),
+				rslider_rect.Height()*bmap.bmHeight / mrect.Height(), &memdcs, 0, 0, bmaps.bmWidth, bmaps.bmHeight, SRCCOPY);
+		}
+		mdc->SetStretchBltMode(HALFTONE);
+		::SetStretchBltMode(memdc, HALFTONE);
+		::SetBrushOrgEx(memdc, 0, 0, NULL);
+		double mZoom = 2.79*ScaleZoom;
+		double mZoomy = 2.79 / ScaleZoom;
+		int Weight = static_cast<int>((rect.right - (bmap.bmWidth * (mZoom))) / 2);
+		int Height = static_cast<int>((rect.bottom - (bmap.bmHeight / mZoomy)) / 2);
+		mdc->StretchBlt(Weight, Height, static_cast<int>((bmap.bmWidth * mZoom) > rect.right ? (rect.right - Weight) : (bmap.bmWidth * mZoom)),
+			static_cast<int>((bmap.bmHeight / mZoomy) > rect.bottom ? (rect.bottom - Height) : (bmap.bmHeight / mZoomy)),
+			&memdc, 0, 0, bmap.bmWidth, bmap.bmHeight, SRCCOPY);
+		bitmap.Detach();
+	}
+	bitmap.DeleteTempMap();
+	DeleteObject(hbitmap);
+	DeleteObject(bitmap);
+
+	mdc->DeleteDC();
+	memdcs.DeleteDC();
+	memdc.DeleteDC();
+	//img.ReleaseDC();
+	img.ReleaseGDIPlus();
 	img.Destroy();
 
 }
@@ -1130,4 +1229,13 @@ HBRUSH CvtkmfcView::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 
 	// TODO:  如果默认的不是所需画笔，则返回另一个画笔
 	return hbr;
+}
+
+
+void CvtkmfcView::OnTimer(UINT_PTR nIDEvent)
+{
+	// TODO:  在此添加消息处理程序代码和/或调用默认值
+	CDC * pDC = this->GetDC();
+	showMatimage(pDC);
+	CView::OnTimer(nIDEvent);
 }

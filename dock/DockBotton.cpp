@@ -19,8 +19,6 @@ CDockBotton::CDockBotton()
 
 CDockBotton::~CDockBotton()
 {
-	
-
 }
 
 
@@ -43,7 +41,18 @@ int CDockBotton::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	m_vtkparam_X.SetRange(1, 100);
 	m_vtkParam_Y.SetRange(1, 100);
-	m_vtkParam_Z.SetRange(1, 100);
+	m_vtkParam_Z.SetRange(1, 100); 
+
+
+	m_auto_clipping.AddString(_T("Auto"));
+	m_auto_clipping.AddString(_T("Manual"));
+
+	//m_auto_clipping.InsertString(0, _T("Auto"));
+	//m_auto_clipping.InsertString(1, _T("Manual")); 
+
+	m_auto_clipping.SetCurSel(0); 
+	int index = m_auto_clipping.FindStringExact(0, _T("Manual"));
+
 	//DWORD style = TVS_HASLINES | TVS_HASBUTTONS | TVS_LINESATROOT |
 	//	WS_CHILD | WS_VISIBLE | TVS_SHOWSELALWAYS | TVS_FULLROWSELECT;
 	//CRect dump(0, 0, 0, 0);
@@ -103,6 +112,7 @@ BEGIN_MESSAGE_MAP(CDockBotton, CDockablePane)
 	ON_NOTIFY(NM_CUSTOMDRAW, IDC_SLIDER_Slice_Y, OnNMCustomdrawSliderSliceY)
 	ON_NOTIFY(NM_CUSTOMDRAW, IDC_SLIDER_Slice_Z, OnNMCustomdrawSliderSliceZ)
 
+	ON_CBN_SELCHANGE(IDC_COMBO_3DAutoScan, &OnCbnSelchangeCombo3dautoscan)
 END_MESSAGE_MAP()
 
 void CDockBotton::OnUpdateMyControl(CCmdUI* pCmdUI)
@@ -203,4 +213,15 @@ void CDockBotton::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_SLIDER_Slice_X, m_vtkparam_X);
 	DDX_Control(pDX, IDC_SLIDER_Slice_Y, m_vtkParam_Y);
 	DDX_Control(pDX, IDC_SLIDER_Slice_Z, m_vtkParam_Z);
+	DDX_Control(pDX, IDC_COMBO_3DAutoScan, m_auto_clipping);
 }
+
+void CDockBotton::OnCbnSelchangeCombo3dautoscan()
+{
+	m_auto_clipping.SetCurSel(0);
+	int index;
+	CString csValue;
+	index = m_auto_clipping.GetCurSel();
+}
+
+

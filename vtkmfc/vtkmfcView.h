@@ -51,7 +51,7 @@ public:
 	vtkSmartPointer<vtkRenderWindow> renWin;
 	vtkSmartPointer<vtkRenderWindowInteractor> iren;
 	vtkSmartPointer<vtkCamera> camera;
-		
+	void SetBackGround(CDC *pDC);
 	double vtklen;
 	double vtkwidth;
 
@@ -73,7 +73,7 @@ protected:
 	virtual void OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo);
 	virtual void OnEndPrinting(CDC* pDC, CPrintInfo* pInfo);
 	void DrawLine(CDC* pDC);
-	void showMatimage(HRESULT ret, CDC* pDc);
+	void showMatimage(CDC* pDc);
 	void showVtk();
 // 实现
 public:
@@ -95,6 +95,7 @@ protected:
 public:
 	afx_msg void OnSize(UINT nType, int cx, int cy);
 	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 };
 
 #ifndef _DEBUG  // vtkmfcView.cpp 中的调试版本

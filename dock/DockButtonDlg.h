@@ -1,5 +1,6 @@
 #pragma once
 #include "afxcmn.h"
+#include "afxwin.h"
 
 
 // DockButtonDlg ¶Ô»°¿ò
@@ -38,4 +39,6 @@ public:
 	CSliderCtrl m_vtkParam_Y;
 	CSliderCtrl m_vtkParam_Z;
 	afx_msg void OnNMReleasedcaptureSliderSliceX(NMHDR *pNMHDR, LRESULT *pResult);
+	CComboBox m_auto_clipping;
+	afx_msg void OnCbnSelchangeCombo3dautoscan();
 };
