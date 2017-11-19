@@ -333,7 +333,7 @@ void CvtkmfcView::OnFilePrintPreview()
 
 BOOL CvtkmfcView::OnPreparePrinting(CPrintInfo* pInfo)
 {
-	// 默认准备
+	
 	return DoPreparePrinting(pInfo);
 }
 
@@ -651,6 +651,43 @@ void CvtkmfcView::showMatimage(CDC* pDc)
 	img.Destroy();
 
 }
+
+void  CvtkmfcView::readStllFunction(std::string path)
+{
+	vtkSmartPointer<vtkSTLReader> reader =
+		vtkSmartPointer<vtkSTLReader>::New();
+	reader->SetFileName(path.c_str());
+	reader->Update();
+
+	// Visualize
+	vtkSmartPointer<vtkPolyDataMapper> mapper =
+		vtkSmartPointer<vtkPolyDataMapper>::New();
+	mapper->SetInputConnection(reader->GetOutputPort());
+
+	vtkSmartPointer<vtkActor> actor =
+		vtkSmartPointer<vtkActor>::New();
+	actor->SetMapper(mapper);
+
+	vtkSmartPointer<vtkRenderer> renderer =
+		vtkSmartPointer<vtkRenderer>::New();
+	vtkSmartPointer<vtkRenderWindow> renderWindow =
+		vtkSmartPointer<vtkRenderWindow>::New();
+	renderWindow->AddRenderer(renderer);
+	vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor =
+		vtkSmartPointer<vtkRenderWindowInteractor>::New();
+	renderWindowInteractor->SetRenderWindow(renderWindow);
+
+	renderer->AddActor(actor);
+	renderer->SetBackground(.3, .6, .3); // Background color green
+
+	renderWindow->Render();
+	renderWindowInteractor->Start();
+
+
+
+}
+
+
 
 
 void CvtkmfcView::DrawLine(CDC* pDC)
@@ -1224,18 +1261,14 @@ void CMFC_OCTDlg::blackAndwhite()
 HBRUSH CvtkmfcView::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 {
 	HBRUSH hbr = CView::OnCtlColor(pDC, pWnd, nCtlColor);
-
-	// TODO:  在此更改 DC 的任何特性
-
-	// TODO:  如果默认的不是所需画笔，则返回另一个画笔
 	return hbr;
 }
 
 
 void CvtkmfcView::OnTimer(UINT_PTR nIDEvent)
 {
-	// TODO:  在此添加消息处理程序代码和/或调用默认值
 	CDC * pDC = this->GetDC();
 	showMatimage(pDC);
 	CView::OnTimer(nIDEvent);
+
 }

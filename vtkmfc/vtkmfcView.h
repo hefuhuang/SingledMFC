@@ -26,6 +26,7 @@
 
 #include "vtkMFCWindow.h"
 #include "vtkmfcDoc.h"
+#include "vtkSTLReader.h"
 
 
 VTK_MODULE_INIT(vtkRenderingFreeType);
@@ -74,7 +75,8 @@ protected:
 	virtual void OnEndPrinting(CDC* pDC, CPrintInfo* pInfo);
 	void DrawLine(CDC* pDC);
 	void showMatimage(CDC* pDc);
-	void showVtk();
+	void showVtk(); 
+	void readStllFunction(std::string path);
 // й╣ож
 public:
 	virtual ~CvtkmfcView();

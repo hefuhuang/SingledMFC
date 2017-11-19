@@ -123,7 +123,20 @@ void CDockBotton::OnUpdateMyControl(CCmdUI* pCmdUI)
 
 void CDockBotton::OnBnClickedButtonScanpure()
 {
+// 交换数值 
+	volatile unsigned int a = 3, b = 4;
+	a = a ^ b;
+	b = a ^ b;
+	a = a ^ b;
+
+//变量置零 a^0 a ; a^a=0;
 	
+//  特定位反转  
+	unsigned int mask = 1 << 6;   // 
+
+
+
+
 	AfxMessageBox(_T("youcliecked"));
 }
 
