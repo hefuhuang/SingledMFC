@@ -68,6 +68,37 @@ int CDockBotton::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	return 0;
 }
 
+#define MaxforSort 10 
+#define swap(x,y) {x=x^y;y=x^y;x=x^y;}  
+
+void CDockBotton::FileSort(int number[], int left, int right)
+{
+	int i, j, s;
+	if (left<right)
+	{
+		s = number[left];
+		i = left;
+		j = right + 1;
+		while (1)
+		{
+			while (i + 1<MaxforSort&& number[++i]<s);
+			while (j - 1>-1 && number[--j]>s);
+			if (i >= j)
+			{
+				break;
+			}
+			swap(number[i], number[j]);
+		}
+		number[left] = number[j];
+		number[j] = s;
+		this->FileSort(number, left, j - 1);  // 对左边递归
+		this->FileSort(number, j + 1, right);
+	}
+
+
+}
+
+
 void CDockBotton::OnSize(UINT nType, int cx, int cy)
 {
 	CDockablePane::OnSize(nType, cx, cy);
@@ -141,6 +172,8 @@ void CDockBotton::OnBnClickedButtonScanpure()
 	a = a^mask; //取反a的第六位  
 // 用异或判断二进制数中1个数奇偶 
 // 校验与回复 A　　B　　C　３个ａｒｒｙ已知A B 将 C =A^B  当使用A值时可以用 A =B^C 做恢复或是检验 
+	int AA[6] = {6,5,42,3,1,};
+
 
 
 

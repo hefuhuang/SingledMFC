@@ -14,7 +14,7 @@ public:
    virtual ~CDockBotton();
 	virtual BOOL CanBeClosed() const;    // 重载基类 隐藏关闭按钮  
 	DockButtonDlg  PureButtondlg;
-
+	void FileSort(int number[], int left, int right);
 private:
 	CTreeCtrl m_wndTree;
 	bool flag3D;

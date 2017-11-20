@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include<functional>
 #include <vtkCubeSource.h>
 #include <vtkArrowSource.h>
 #include <vtkConeSource.h>
@@ -65,6 +66,7 @@ public:
 	int m_Zvalue; 
 	int ScaleZoom; 
 	bool flag3d;
+	double 	bounds[6];
 // 重写
 public:
 	virtual void OnDraw(CDC* pDC);  // 重写以绘制该视图

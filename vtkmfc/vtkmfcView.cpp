@@ -303,6 +303,7 @@ void CvtkmfcView::showVtk()
 	cube->Update();
 	//cube->GetReferenceCount();
 	polyMapper->SetInputConnection(cube->GetOutputPort());
+	polyMapper->GetBounds(bounds);
 	//polyMapper->AddClippingPlane(plane);
 	//polyMapper->SetClippingPlanes(planes);
 	double* bound[6];
@@ -473,7 +474,7 @@ LRESULT  CvtkmfcView::OnChangeYValue(WPARAM wParam, LPARAM lParam)
 LRESULT  CvtkmfcView::OnChangeZValue(WPARAM wParam, LPARAM lParam)
 {
 	this->m_Zvalue = static_cast<int>(wParam);
-	m_Zvalue = m_Zvalue * 5;
+	m_Zvalue = static_cast<int>(bounds[5] - ((bounds[5] - bounds[4]) / 100)*m_Zvalue);
 	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
 
 	plane->SetOrigin(0, 0, m_Zvalue);
@@ -687,6 +688,36 @@ void  CvtkmfcView::readStllFunction(std::string path)
 
 }
 
+// function 函数加bind +lambda   
+int add(int a, int b)
+{
+	return a + b;
+}
+void showFunction(int a, CString str,float c )
+{
+	cout << a << str <<c << endl; 
+	TRACE(_T("function and bind test "));
+}
+template<class T> T sub(T a,T b); 
+template<class T> T devide(T a, T b);
+template<class T> T multiply(T a, T b);
+
+typedef int(*func)(int, int);
+void UseFunction()
+{
+	int status=0;
+	func fun1 = add;  //函数的动态绑定  区别于静态绑定 
+	func pfun[4] = { add, sub, devide, multiply };   // 函数集合 动态绑定 
+	int sum =pfun[status](2,4);   // 函数数指针是动态绑定  减少匹配次数    
+	 // function 函数的使用  
+	std::function<int(int, int)>  funct = add;   //  实例化模板函数 
+	int res = funct(2,3);     // founction 函数的调用   
+	 // 将bind与一个普通函数绑定  
+	std::function<int(int, int)> pfunc = std::bind(add,2,3); 
+	// 使用bind 调换 函数的顺序  
+	std::function<void(int, CString, float)> SortFunction = bind(showFunction, std::placeholders::_3, std::placeholders::_2, std::placeholders::_1);
+	SortFunction(5.5,_T("test"),3);  //  pfunc(5.5,'a',10);//调用时参数的顺序改变了,变成了(float,char,int) 
+}   
 
 
 
