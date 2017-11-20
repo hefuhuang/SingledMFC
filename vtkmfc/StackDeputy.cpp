@@ -2,7 +2,7 @@
 #include "StackDeputy.h"
 
 
-template<class T > StackDeputy::StackDeputy()
+template<class T > StackDeputy<T>::StackDeputy()
 {
 	m_maxSize = 100;
 	m_size = 0;
@@ -10,7 +10,7 @@ template<class T > StackDeputy::StackDeputy()
 }
 
 
-template<class T > StackDeputy::~StackDeputy()
+template<class T > StackDeputy<T>::~StackDeputy()
 {
 
 	delete[] m_pT;

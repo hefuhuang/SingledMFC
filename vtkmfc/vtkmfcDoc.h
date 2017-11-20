@@ -1,11 +1,6 @@
 
 // vtkmfcDoc.h : CvtkmfcDoc 类的接口
-//
-
-
 #pragma once
-
-
 class CvtkmfcDoc : public CDocument
 {
 protected: // 仅从序列化创建
@@ -17,6 +12,7 @@ public:
 
 // 操作
 public:
+	void FileSort(int number[], int left, int right);
 
 // 重写
 public:

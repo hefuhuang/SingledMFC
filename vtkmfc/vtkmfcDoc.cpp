@@ -136,11 +136,11 @@ void CvtkmfcDoc::Dump(CDumpContext& dc) const
 
 void CvtkmfcDoc::OnFileOpen()
 {
-	CString szFilters = _T("所有文件(*.*)|*.stl; *.vtk;|RAW文件(*.raw)|*.raw|");
+	CString szFilters = _T("stl文档(*.stl)|*.stl|vtk文档(*.vtk)|*.vtk|所有文档(*.*)|*.*|");
 
-	CFileDialog OpenDlg(TRUE, _T("*.stl"), NULL, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, szFilters);
+	CFileDialog OpenDlg(TRUE, _T("*.stl"),NULL, OFN_HIDEREADONLY, szFilters);
 	OpenDlg.m_ofn.lpstrTitle = (LPCTSTR) _T("Open File");
-	OpenDlg.m_ofn.lpstrFilter = (LPCTSTR)szFilters;
+	
 
 	if (IDOK == OpenDlg.DoModal())
 	{  
@@ -157,13 +157,16 @@ void CvtkmfcDoc::OnFileOpen()
 		str= OpenDlg.GetPathName();
 		return;
 	}
+
 }
+
+
 
 
 #define MaxforSort 10 
 #define swap(x,y) {x=x^y;y=x^y;x=x^y;}  
 
-void FileSort(int number[], int left, int right)
+void CvtkmfcDoc::FileSort(int number[], int left, int right)
 {
 	int i, j, s;
 	if (left<right)

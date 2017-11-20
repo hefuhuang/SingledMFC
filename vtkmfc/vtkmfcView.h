@@ -4,6 +4,10 @@
 
 #pragma once
 #include<functional>
+#include <windows.h>
+#include <tchar.h>
+#include <stdio.h> 
+
 #include <vtkCubeSource.h>
 #include <vtkArrowSource.h>
 #include <vtkConeSource.h>
