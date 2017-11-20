@@ -65,6 +65,7 @@ public:
 	LRESULT  OnChangeYValue(WPARAM wParam, LPARAM lParam);
 	LRESULT  OnChangeZValue(WPARAM wParam, LPARAM lParam); 
 	LRESULT  On3DResponseFunction(WPARAM wParam, LPARAM lParam);
+	LRESULT  On3DSTLResponseFunction(WPARAM wParam, LPARAM lParam);
 	int m_Xvalue;
 	int m_Yvalue;
 	int m_Zvalue; 

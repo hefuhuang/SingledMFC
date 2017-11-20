@@ -13,7 +13,7 @@ public:
 // ²Ù×÷
 public:
 	void FileSort(int number[], int left, int right);
-
+	bool judgeStlFile(CString str);
 // ÖØÐ´
 public:
 	virtual BOOL OnNewDocument();

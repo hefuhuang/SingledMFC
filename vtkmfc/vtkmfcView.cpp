@@ -31,10 +31,11 @@ BEGIN_MESSAGE_MAP(CvtkmfcView, CView)
 	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CvtkmfcView::OnFilePrintPreview)
-	ON_MESSAGE(WM_MSGXViewResponse, &OnChangeXValue) 
+	ON_MESSAGE(WM_MSGXViewResponse, &OnChangeXValue)
 	ON_MESSAGE(WM_MSGYViewResponse, &OnChangeYValue)
-	ON_MESSAGE(WM_MSGZViewResponse, &OnChangeZValue) 
+	ON_MESSAGE(WM_MSGZViewResponse, &OnChangeZValue)
 	ON_MESSAGE(WM_MSG3DShowMSG, &On3DResponseFunction)
+	ON_MESSAGE(WM_MSG3DSHowSTLMSG,&On3DSTLResponseFunction)
 	//ON_WM_CONTEXTMENU()
 	//ON_WM_RBUTTONUP()
 	ON_WM_SIZE()
@@ -395,6 +396,16 @@ void CvtkmfcView::OnSize(UINT nType, int cx, int cy)
 	vtkwidth = cy;
 	// TODO:  在此处添加消息处理程序代码
 }
+LRESULT CvtkmfcView::On3DSTLResponseFunction(WPARAM wParam, LPARAM lParam)
+{ 
+
+	CString str;
+	str.Format(_T("%s"), (CHAR*)wParam);
+	std::string path = CT2A(str);
+		//(LPCSTR)str.GetBuffer(str.GetLength());
+	this->readStllFunction(path);
+	return 0;
+}
 
 LRESULT CvtkmfcView::On3DResponseFunction(WPARAM wParam, LPARAM lParam)
 {  
@@ -656,7 +667,8 @@ void CvtkmfcView::showMatimage(CDC* pDc)
 }
 
 void  CvtkmfcView::readStllFunction(std::string path)
-{
+{ 
+	vtkObject::GlobalWarningDisplayOff();
 	vtkSmartPointer<vtkSTLReader> reader =
 		vtkSmartPointer<vtkSTLReader>::New();
 	reader->SetFileName(path.c_str());
@@ -675,13 +687,15 @@ void  CvtkmfcView::readStllFunction(std::string path)
 		vtkSmartPointer<vtkRenderer>::New();
 	vtkSmartPointer<vtkRenderWindow> renderWindow =
 		vtkSmartPointer<vtkRenderWindow>::New();
+	renderWindow->SetParentId(this->m_hWnd);
+	renderWindow->SetSize(vtklen, vtkwidth);
 	renderWindow->AddRenderer(renderer);
 	vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor =
 		vtkSmartPointer<vtkRenderWindowInteractor>::New();
 	renderWindowInteractor->SetRenderWindow(renderWindow);
 
 	renderer->AddActor(actor);
-	renderer->SetBackground(.3, .6, .3); // Background color green
+	renderer->SetBackground(.1, .1, .1); // Background color green
 
 	renderWindow->Render();
 	renderWindowInteractor->Start();

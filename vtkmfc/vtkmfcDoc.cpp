@@ -1,16 +1,15 @@
 
 // vtkmfcDoc.cpp : CvtkmfcDoc 类的实现
 //
-
+#include<string>
 #include "stdafx.h"
 // SHARED_HANDLERS 可以在实现预览、缩略图和搜索筛选器句柄的
 // ATL 项目中进行定义，并允许与该项目共享文档代码。
 #ifndef SHARED_HANDLERS
 #include "vtkmfc.h"
 #endif
-
 #include "vtkmfcDoc.h"
-
+#include "MainFrm.h"
 #include <propkey.h>
 
 #ifdef _DEBUG
@@ -152,9 +151,19 @@ void CvtkmfcDoc::OnFileOpen()
 		{
 			CString strErr;
 			strErr.Format(_T("File could not be opened %d\n"), e.m_cause);
-			
+		   
 		}
 		str= OpenDlg.GetPathName();
+		char *strChar = (char*)str.GetBuffer(str.GetLength()+1);
+		str.ReleaseBuffer();
+		
+		CString str1 ;
+		str1.Format(_T("%s"), strChar);
+		//CString suffixStr = str.substr(str.fin('.') + 1);//获取文件后缀  
+		CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
+		CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
+		SendMessage(pView->m_hWnd, WM_MSG3DSHowSTLMSG, WPARAM(str1.GetBuffer(str1.GetLength() + 1)), (LPARAM)(str1.GetBuffer(str1.GetLength() + 1)));
+		str1.ReleaseBuffer();
 		return;
 	}
 
