@@ -104,6 +104,7 @@ CMainFrame::CMainFrame() : m_iIndex(0)
 	m_wndSplitterLR = new CSplitterWnd;
 	m_dockBotton = new CDockBotton;
 	theApp.m_nAppLook = theApp.GetInt(_T("ApplicationLook"), ID_VIEW_APPLOOK_VS_2008);
+
 }
 
 CMainFrame::~CMainFrame()

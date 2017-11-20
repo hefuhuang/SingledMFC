@@ -123,6 +123,12 @@ void CDockBotton::OnUpdateMyControl(CCmdUI* pCmdUI)
 
 void CDockBotton::OnBnClickedButtonScanpure()
 {
+
+//  数字的存储格式为补码 
+#define cmp(a,b) (((a)-(b))&(1<<31))==1?-1:1;
+//#define cmp(a,b) (((a)-(b))&(0x80000000))==1?-1:1; 
+//#define cmp(a,b) (((b) - (a) & (0x1 << 31)) >> 31)
+#define maxself(a,b) (((fabs((a)-(b)))==((a)-(b)))?(a):(b))
 // 交换数值 
 	volatile unsigned int a = 3, b = 4;
 	a = a ^ b;
@@ -130,10 +136,11 @@ void CDockBotton::OnBnClickedButtonScanpure()
 	a = a ^ b;
 
 //变量置零 a^0 a ; a^a=0;
-	
 //  特定位反转  
-	unsigned int mask = 1 << 6;   // 
-
+	unsigned int mask = 1 << 6;   // 左移六位 
+	a = a^mask; //取反a的第六位  
+// 用异或判断二进制数中1个数奇偶 
+// 校验与回复 A　　B　　C　３个ａｒｒｙ已知A B 将 C =A^B  当使用A值时可以用 A =B^C 做恢复或是检验 
 
 
 

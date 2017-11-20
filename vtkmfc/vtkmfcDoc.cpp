@@ -22,6 +22,7 @@
 IMPLEMENT_DYNCREATE(CvtkmfcDoc, CDocument)
 
 BEGIN_MESSAGE_MAP(CvtkmfcDoc, CDocument)
+	ON_COMMAND(ID_FILE_OPEN, &CvtkmfcDoc::OnFileOpen)
 END_MESSAGE_MAP()
 
 
@@ -131,6 +132,46 @@ void CvtkmfcDoc::Dump(CDumpContext& dc) const
 	CDocument::Dump(dc);
 }
 #endif //_DEBUG
+// CvtkmfcDoc 
 
+void CvtkmfcDoc::OnFileOpen()
+{
+	char szFilters[] =
+		"Stl File(*.stl)\0*.stl\0"\
+		"All Typle(*.*)\0*.*\0" \
+		"\0";
 
-// CvtkmfcDoc 命令
+	CFileDialog OpenDlg(TRUE);
+	OpenDlg.m_ofn.lpstrTitle = (LPCTSTR) _T("Open File");
+	OpenDlg.m_ofn.lpstrFilter = (LPCTSTR)szFilters;
+
+	if (IDOK == OpenDlg.DoModal())
+	{
+		CFile File;
+		CFileException e;
+		//构造文件，同时增加异常处理  
+		if (!File.Open(OpenDlg.GetPathName(), CFile::modeRead, &e))
+		{
+			CString strErr;
+			strErr.Format(_T("File could not be opened %d\n"), e.m_cause);
+			//MessageBox(strErr);
+		}
+		//创建指定大小的Buffer  
+		DWORD  dwFileLenth = (DWORD)File.GetLength();
+		//初始化buffer， 增加一个/0空间  
+		char *pBuf = new char[dwFileLenth + 1];
+		memset(pBuf, 0, dwFileLenth + 1);
+
+		if (pBuf != NULL)
+		{
+			//读取文件内容  
+			File.Read(pBuf, dwFileLenth);
+			File.Close();
+			//显示文件内容  
+			//MessageBox(pBuf);
+			//删除bufer，避免内存泄漏  
+			delete[] pBuf;
+			pBuf = NULL;
+		}
+	}
+}

@@ -22,6 +22,7 @@ BEGIN_MESSAGE_MAP(CvtkmfcApp, CWinAppEx)
 	ON_COMMAND(ID_FILE_OPEN, &CWinAppEx::OnFileOpen)
 	// 标准打印设置命令
 	ON_COMMAND(ID_FILE_PRINT_SETUP, &CWinAppEx::OnFilePrintSetup)
+	ON_COMMAND(ID_FILE_OPEN, &CvtkmfcApp::OnFileOpen)
 END_MESSAGE_MAP()
 
 
@@ -217,5 +218,10 @@ void CvtkmfcApp::SaveCustomState()
 
 // CvtkmfcApp 消息处理程序
 
-
-
+void CvtkmfcApp::OnFileOpen()
+{
+	CString strOpenFilter = "所有文件(*.*)| *.Stl文件";
+	CFileDialog FileDlg(TRUE, _T("*.stl"), NULL, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, strOpenFilter);
+	if (FileDlg.DoModal() == IDOK)
+		OpenDocumentFile(FileDlg.m_ofn.lpstrFile);
+}

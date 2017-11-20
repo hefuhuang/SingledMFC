@@ -56,7 +56,6 @@ int CFileView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		TRACE0("未能创建文件视图\n");
 		return -1;      // 未能创建
 	}
-
 	// 加载视图图像: 
 	m_FileViewImages.Create(IDB_FILE_VIEW, 16, 0, RGB(255, 0, 255));
 	m_wndFileView.SetImageList(&m_FileViewImages, TVSIL_NORMAL);
@@ -92,9 +91,7 @@ void CFileView::FillFileView()
 {
 	HTREEITEM hRoot = m_wndFileView.InsertItem(_T("FakeApp 文件"), 0, 0);
 	m_wndFileView.SetItemState(hRoot, TVIS_BOLD, TVIS_BOLD);
-
 	HTREEITEM hSrc = m_wndFileView.InsertItem(_T("FakeApp 源文件"), 0, 0, hRoot);
-
 	m_wndFileView.InsertItem(_T("FakeApp.cpp"), 1, 1, hSrc);
 	m_wndFileView.InsertItem(_T("FakeApp.rc"), 1, 1, hSrc);
 	m_wndFileView.InsertItem(_T("FakeAppDoc.cpp"), 1, 1, hSrc);
@@ -158,7 +155,6 @@ void CFileView::AdjustLayout()
 	{
 		return;
 	}
-
 	CRect rectClient;
 	GetClientRect(rectClient);
 
@@ -176,7 +172,43 @@ void CFileView::OnProperties()
 
 void CFileView::OnFileOpen()
 {
-	// TODO:  在此处添加命令处理程序代码
+	char szFilters[] =
+		"Stl File(*.stl)\0*.stl\0"\
+		"All Typle(*.*)\0*.*\0" \
+		"\0";
+	CFileDialog OpenDlg(TRUE);
+	OpenDlg.m_ofn.lpstrTitle = (LPCTSTR) _T("Open File");
+	OpenDlg.m_ofn.lpstrFilter = (LPCTSTR)szFilters;
+
+	if (IDOK == OpenDlg.DoModal())
+	{
+		CFile File;
+		CFileException e;
+		//构造文件，同时增加异常处理  
+		if (!File.Open(OpenDlg.GetPathName(), CFile::modeRead, &e))
+		{
+			CString strErr;
+			strErr.Format(_T("File could not be opened %d\n"), e.m_cause);
+			MessageBox(strErr);
+		}
+		//创建指定大小的Buffer  
+		DWORD  dwFileLenth = (DWORD)File.GetLength();
+		//初始化buffer， 增加一个/0空间  
+		char *pBuf = new char[dwFileLenth + 1];
+		memset(pBuf, 0, dwFileLenth + 1);
+
+		if (pBuf != NULL)
+		{
+			//读取文件内容  
+			File.Read(pBuf, dwFileLenth);
+			File.Close();
+			//显示文件内容  
+			MessageBox((LPCTSTR)pBuf);
+			//删除bufer，避免内存泄漏  
+			delete[] pBuf;
+			pBuf = NULL;
+		}
+	}
 }
 
 void CFileView::OnFileOpenWith()
@@ -207,11 +239,9 @@ void CFileView::OnEditClear()
 void CFileView::OnPaint()
 {
 	CPaintDC dc(this); // 用于绘制的设备上下文
-
 	CRect rectTree;
 	m_wndFileView.GetWindowRect(rectTree);
 	ScreenToClient(rectTree);
-
 	rectTree.InflateRect(1, 1);
 	dc.Draw3dRect(rectTree, ::GetSysColor(COLOR_3DSHADOW), ::GetSysColor(COLOR_3DSHADOW));
 }
@@ -227,11 +257,8 @@ void CFileView::OnChangeVisualStyle()
 {
 	m_wndToolBar.CleanUpLockedImages();
 	m_wndToolBar.LoadBitmap(theApp.m_bHiColorIcons ? IDB_EXPLORER_24 : IDR_EXPLORER, 0, 0, TRUE /* 锁定*/);
-
 	m_FileViewImages.DeleteImageList();
-
 	UINT uiBmpId = theApp.m_bHiColorIcons ? IDB_FILE_VIEW_24 : IDB_FILE_VIEW;
-
 	CBitmap bmp;
 	if (!bmp.LoadBitmap(uiBmpId))
 	{
@@ -239,18 +266,46 @@ void CFileView::OnChangeVisualStyle()
 		ASSERT(FALSE);
 		return;
 	}
-
 	BITMAP bmpObj;
 	bmp.GetBitmap(&bmpObj);
-
 	UINT nFlags = ILC_MASK;
-
 	nFlags |= (theApp.m_bHiColorIcons) ? ILC_COLOR24 : ILC_COLOR4;
-
 	m_FileViewImages.Create(16, bmpObj.bmHeight, nFlags, 0, 0);
 	m_FileViewImages.Add(&bmp, RGB(255, 0, 255));
-
 	m_wndFileView.SetImageList(&m_FileViewImages, TVSIL_NORMAL);
 }
 
 
+void CFileView::OnWriteFile()
+{
+	//格式：过滤器描述符（显示作用）+ \0 + 文件扩展名称（过滤作用）  
+	//多个扩展名称之间用（;）分隔，两个过滤字符串之间以\0分隔  
+	//最后的过滤器需要以两个\0\0结尾  
+	char szFilters[] =
+		"Stl File(*.txt)\0*.txt\0"\
+		"All Typle(*.*)\0*.*\0" \
+		"\0";
+	//当过滤器或者默认构造参数赋值较少情况下，  
+	//使用构造函数修改对话框初始状态可能更好，这过滤器较多  
+	CFileDialog FileDlg(false, _T("Stl"), _T("Test"));
+	FileDlg.m_ofn.lpstrTitle = (LPCTSTR)"Save File";
+	FileDlg.m_ofn.lpstrFilter = (LPCTSTR)szFilters;
+
+	//通过以下两个参数修改对话框初始状态，程序奔溃，使用默认构造形式正常  
+	//环境：VS2008编译器+Wind7系统  
+	//FileDlg.m_ofn.lpstrDefExt = "txt";  
+	//FileDlg.m_ofn.lpstrFile = "test";  
+
+	if (IDOK == FileDlg.DoModal())
+	{
+		CFile File(FileDlg.GetPathName(), CFile::modeCreate | CFile::modeReadWrite);
+
+		char szBufData[100] = { "hello word!" };
+		//写入文件内容,不包含/0  
+		File.Write(szBufData, strlen(szBufData));
+		//立即写入，不缓冲  
+		File.Flush();
+		//文件操作结束关闭  
+		File.Close();
+	}
+}
