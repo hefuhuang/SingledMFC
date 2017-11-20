@@ -683,9 +683,6 @@ void  CvtkmfcView::readStllFunction(std::string path)
 
 	renderWindow->Render();
 	renderWindowInteractor->Start();
-
-
-
 }
 
 // function º¯Êý¼Óbind +lambda   
@@ -698,11 +695,21 @@ void showFunction(int a, CString str,float c )
 	cout << a << str <<c << endl; 
 	TRACE(_T("function and bind test "));
 }
-template<class T> T sub(T a,T b); 
-template<class T> T devide(T a, T b);
-template<class T> T multiply(T a, T b);
+template<class T> T sub(T a, T b)
+{
+	return a - b;
+}
+template<class T> T devide(T a, T b)
+{
+	return a / b;
+}
+template<class T> T multiply(T a, T b)
+{
+	return a*b;
+}
 
 typedef int(*func)(int, int);
+
 void UseFunction()
 {
 	int status=0;

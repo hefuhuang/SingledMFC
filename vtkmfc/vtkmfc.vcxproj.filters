@@ -105,6 +105,9 @@
     <ClInclude Include="SetData.h">
       <Filter>FillWindow</Filter>
     </ClInclude>
+    <ClInclude Include="StackDeputy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="vtkmfc.cpp">
@@ -169,6 +172,9 @@
     </ClCompile>
     <ClCompile Include="SetData.cpp">
       <Filter>FillWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="StackDeputy.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

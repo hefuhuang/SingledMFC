@@ -181,6 +181,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SelfDefToolBar.h" />
     <ClInclude Include="SetData.h" />
+    <ClInclude Include="StackDeputy.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="ViewTree.h" />
@@ -206,6 +207,7 @@
     <ClCompile Include="PropertiesWnd.cpp" />
     <ClCompile Include="SelfDefToolBar.cpp" />
     <ClCompile Include="SetData.cpp" />
+    <ClCompile Include="StackDeputy.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
