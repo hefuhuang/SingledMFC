@@ -137,9 +137,8 @@ void CvtkmfcDoc::OnFileOpen()
 {
 	CString szFilters = _T("stl文档(*.stl)|*.stl|vtk文档(*.vtk)|*.vtk|所有文档(*.*)|*.*|");
 
-	CFileDialog OpenDlg(TRUE, _T("*.stl"),NULL, OFN_HIDEREADONLY, szFilters);
+	CFileDialog OpenDlg(TRUE, _T("*.stl"), NULL,OFN_NOCHANGEDIR, szFilters);
 	OpenDlg.m_ofn.lpstrTitle = (LPCTSTR) _T("Open File");
-	
 
 	if (IDOK == OpenDlg.DoModal())
 	{  
@@ -153,17 +152,20 @@ void CvtkmfcDoc::OnFileOpen()
 			strErr.Format(_T("File could not be opened %d\n"), e.m_cause);
 		   
 		}
-		str= OpenDlg.GetPathName();
+		str = OpenDlg.GetPathName();
+
 		char *strChar = (char*)str.GetBuffer(str.GetLength()+1);
 		str.ReleaseBuffer();
 		
 		CString str1 ;
 		str1.Format(_T("%s"), strChar);
+		File.Close();
 		//CString suffixStr = str.substr(str.fin('.') + 1);//获取文件后缀  
 		CMainFrame *pMain = (CMainFrame*)AfxGetApp()->m_pMainWnd;
 		CvtkmfcView *pView = (CvtkmfcView *)pMain->GetActiveView();
 		SendMessage(pView->m_hWnd, WM_MSG3DSHowSTLMSG, WPARAM(str1.GetBuffer(str1.GetLength() + 1)), (LPARAM)(str1.GetBuffer(str1.GetLength() + 1)));
 		str1.ReleaseBuffer();
+		OpenDlg.CloseWindow();
 		return;
 	}
 

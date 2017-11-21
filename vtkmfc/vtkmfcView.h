@@ -7,6 +7,7 @@
 #include <windows.h>
 #include <tchar.h>
 #include <stdio.h> 
+#include <string>
 
 #include <vtkCubeSource.h>
 #include <vtkArrowSource.h>
@@ -17,7 +18,7 @@
 #include <vtkCamera.h>
 #include <vtkPlanes.h>
 #include <vtkPlane.h>
-
+#include  "afx.h"
 #include "vtkheader.h"
 #include <vtkMultiThreader.h>
 #include <vtkCallbackCommand.h>
@@ -83,7 +84,8 @@ protected:
 	void DrawLine(CDC* pDC);
 	void showMatimage(CDC* pDc);
 	void showVtk(); 
-	void readStllFunction(std::string path);
+	void readStllFunction(std::string& path);
+	void stringReplace(std::string &str1, std::string &str2, std::string &str3);
 // й╣ож
 public:
 	virtual ~CvtkmfcView();

@@ -412,10 +412,21 @@ void CvtkmfcView::OnSize(UINT nType, int cx, int cy)
 LRESULT CvtkmfcView::On3DSTLResponseFunction(WPARAM wParam, LPARAM lParam)
 { 
 
-	CString str;
-	str.Format(_T("%s"), (CHAR*)wParam);
-	std::string path = CT2A(str);
-		//(LPCSTR)str.GetBuffer(str.GetLength());
+	CString Cstr;
+	Cstr.Format(_T("%s"), (char*)lParam);
+
+	char cData[1024];
+	char *pBuff = (char*)Cstr.GetBuffer(Cstr.GetLength());
+	char one = pBuff[0];
+	char two = pBuff[1];
+	int i = 0;
+	for (; i < Cstr.GetLength(); i++)
+	{
+		cData[i] = pBuff[i * 2];
+	}
+	cData[i] = '\0';
+
+	std::string path(cData);
 	this->readStllFunction(path);
 	return 0;
 }
@@ -679,21 +690,29 @@ void CvtkmfcView::showMatimage(CDC* pDc)
 
 }
 
-void  CvtkmfcView::readStllFunction(std::string path)
+
+void  CvtkmfcView::readStllFunction(std::string& path)
 { 
 	vtkObject::GlobalWarningDisplayOff();
 	vtkSmartPointer<vtkSTLReader> reader =
 		vtkSmartPointer<vtkSTLReader>::New();
 	vtkSmartPointer<vtkAxesActor> axes = vtkSmartPointer<vtkAxesActor>::New();
 	vtkSmartPointer<vtkOrientationMarkerWidget> widget = vtkSmartPointer<vtkOrientationMarkerWidget>::New(); 
-
-	path = "sys/volume.stl";
-
+	vtkSmartPointer<vtkClientServerInterpreterInternals>client = vtkSmartPointer<vtkClientServerInterpreterInternals>::New();
+	std::string str1 = "\\";
+	std::string str2 = "//";
+	stringReplace(path, str1, str2); 
+	str1 = " ";
+	str2 = "";
+	stringReplace(path, str1, str2);
+	 str1 = ":/";
+	 str2 = "://";
+	stringReplace(path, str1, str2);
+	std::string path1("C://Users/HHF/Desktop/Vtkdata/vtkMFC/sys/volume.stl");
 	reader->SetFileName(path.c_str());
 	reader->Update();
-
+	std::string GetStr = reader->GetFileName();
 	// Visualize
-
 	polyMapper->SetInputConnection(reader->GetOutputPort());
 	actor->SetMapper(polyMapper);
 
@@ -713,10 +732,31 @@ void  CvtkmfcView::readStllFunction(std::string path)
 	widget->SetOrientationMarker(axes);
 	widget->SetInteractor(iren);
 	widget->SetViewport(0, 0, 0.2, 0.2);
-	widget->SetEnabled(true); 
+	widget->SetEnabled(true);
 
-	iren->Start();
+	iren->AddObserver(vtkCommand::RightButtonPressEvent, client);
+    iren->Start();
 }
+
+//string s2 = "###ip##";
+//string s1 = "http://123###ip##678.com";
+//string s3 = "192";
+
+void CvtkmfcView::stringReplace(std::string &str1, std::string &str2, std::string &str3)
+{
+    std::string::size_type pos = 0;
+	std::string::size_type a = str2.size();
+	std::string::size_type b = str3.size();
+	while ((pos = str1.find(str2, pos)) != std::string::npos)
+	{
+		str1.replace(pos, a, str3);
+		pos += b;
+	}
+	
+}
+
+
+
 
 // function º¯Êý¼Óbind +lambda   
 int add(int a, int b)
