@@ -295,6 +295,9 @@ void CvtkmfcView::showVtk()
 	vtkSmartPointer<vtkPlanes> planes = vtkSmartPointer<vtkPlanes>::New();
 	vtkSmartPointer<vtkPlane> plane = vtkSmartPointer<vtkPlane>::New();
 	vtkSmartPointer<vtkGenericDataObjectReader> vtkreader = vtkSmartPointer<vtkGenericDataObjectReader>::New();
+	vtkSmartPointer<vtkAxesActor> axes = vtkSmartPointer<vtkAxesActor>::New();
+	vtkSmartPointer<vtkOrientationMarkerWidget> widget = vtkSmartPointer<vtkOrientationMarkerWidget>::New(); 
+
 	planes->SetFrustumPlanes(planesArray);
 	planes->SetBounds(0, 500, 0, 500, 0, 500);
 	//plane->SetOrigin(0,0,0);
@@ -319,6 +322,16 @@ void CvtkmfcView::showVtk()
 	renWin->Render();
 	renWin->MakeCurrent();
 	iren->Initialize();
+
+	axes->SetXAxisLabelText("X");
+	axes->SetYAxisLabelText("Y");
+	axes->SetZAxisLabelText("Z");
+	widget->SetOutlineColor(0.9300, 0.5700, 0.1300);
+	widget->SetOrientationMarker(axes);
+	widget->SetInteractor(iren);
+	widget->SetViewport(0, 0, 0.2, 0.2);
+	widget->SetEnabled(true);
+
 	iren->AddObserver(vtkCommand::KeyPressEvent, client);
 	iren->Start();
 }
@@ -671,34 +684,38 @@ void  CvtkmfcView::readStllFunction(std::string path)
 	vtkObject::GlobalWarningDisplayOff();
 	vtkSmartPointer<vtkSTLReader> reader =
 		vtkSmartPointer<vtkSTLReader>::New();
+	vtkSmartPointer<vtkAxesActor> axes = vtkSmartPointer<vtkAxesActor>::New();
+	vtkSmartPointer<vtkOrientationMarkerWidget> widget = vtkSmartPointer<vtkOrientationMarkerWidget>::New(); 
+
+	path = "sys/volume.stl";
+
 	reader->SetFileName(path.c_str());
 	reader->Update();
 
 	// Visualize
-	vtkSmartPointer<vtkPolyDataMapper> mapper =
-		vtkSmartPointer<vtkPolyDataMapper>::New();
-	mapper->SetInputConnection(reader->GetOutputPort());
 
-	vtkSmartPointer<vtkActor> actor =
-		vtkSmartPointer<vtkActor>::New();
-	actor->SetMapper(mapper);
+	polyMapper->SetInputConnection(reader->GetOutputPort());
+	actor->SetMapper(polyMapper);
 
-	vtkSmartPointer<vtkRenderer> renderer =
-		vtkSmartPointer<vtkRenderer>::New();
-	vtkSmartPointer<vtkRenderWindow> renderWindow =
-		vtkSmartPointer<vtkRenderWindow>::New();
-	renderWindow->SetParentId(this->m_hWnd);
-	renderWindow->SetSize(vtklen, vtkwidth);
-	renderWindow->AddRenderer(renderer);
-	vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor =
-		vtkSmartPointer<vtkRenderWindowInteractor>::New();
-	renderWindowInteractor->SetRenderWindow(renderWindow);
+	renWin->SetParentId(this->m_hWnd);
+	renWin->SetSize(vtklen, vtkwidth);
+	renWin->AddRenderer(ren);
+	iren->SetRenderWindow(renWin);
 
-	renderer->AddActor(actor);
-	renderer->SetBackground(.1, .1, .1); // Background color green
+	ren->AddActor(actor);
+	ren->SetBackground(.1, .1, .1); // Background color green
+	renWin->Render();
 
-	renderWindow->Render();
-	renderWindowInteractor->Start();
+	axes->SetXAxisLabelText("X");
+	axes->SetYAxisLabelText("Y");
+	axes->SetZAxisLabelText("Z");
+	widget->SetOutlineColor(0.9300, 0.5700, 0.1300);
+	widget->SetOrientationMarker(axes);
+	widget->SetInteractor(iren);
+	widget->SetViewport(0, 0, 0.2, 0.2);
+	widget->SetEnabled(true); 
+
+	iren->Start();
 }
 
 // function º¯Êý¼Óbind +lambda   
