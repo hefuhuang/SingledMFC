@@ -1,7 +1,8 @@
 
 // vtkmfcView.cpp : CvtkmfcView 类的实现
 //
-
+#include <utility>
+#include <set>
 #include "stdafx.h"
 // SHARED_HANDLERS 可以在实现预览、缩略图和搜索筛选器句柄的
 // ATL 项目中进行定义，并允许与该项目共享文档代码。
@@ -11,6 +12,9 @@
 
 #include "vtkmfcDoc.h"
 #include "vtkmfcView.h"
+
+using  namespace std;
+
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -69,14 +73,8 @@ CvtkmfcView::~CvtkmfcView()
 
 BOOL CvtkmfcView::PreCreateWindow(CREATESTRUCT& cs)
 {
-	// TODO:  在此处通过修改
-	//  CREATESTRUCT cs 来修改窗口类或样式
-
 	return CView::PreCreateWindow(cs);
 }
-
-// CvtkmfcView 绘制
-
 
 void CvtkmfcView::OnDraw(CDC* pDC)      
 {
@@ -344,6 +342,7 @@ void CvtkmfcView::OnFilePrintPreview()
 #ifndef SHARED_HANDLERS
 	AFXPrintPreview(this);
 #endif
+
 }
 
 BOOL CvtkmfcView::OnPreparePrinting(CPrintInfo* pInfo)
@@ -435,7 +434,6 @@ LRESULT CvtkmfcView::On3DResponseFunction(WPARAM wParam, LPARAM lParam)
 {  
 	this->flag3d= static_cast<int>(wParam); 
 	SetWindowPos(&wndTopMost, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE); 
- 
 
 	if (flag3d)
    {
@@ -469,6 +467,7 @@ LRESULT CvtkmfcView::On3DResponseFunction(WPARAM wParam, LPARAM lParam)
 	this->showVtk();
 	}
 	return 0;
+
 }
 
 LRESULT  CvtkmfcView::OnChangeXValue(WPARAM wParam, LPARAM lParam)
@@ -486,10 +485,9 @@ LRESULT  CvtkmfcView::OnChangeXValue(WPARAM wParam, LPARAM lParam)
 	polyMapper->SetInputConnection(cube->GetOutputPort());
 	polyMapper->AddClippingPlane(plane);
 	renWin->Render();
-
 	return 0;
-
 }
+
 LRESULT  CvtkmfcView::OnChangeYValue(WPARAM wParam, LPARAM lParam)
 {
 	this->m_Yvalue = static_cast<int>(wParam);
@@ -508,6 +506,7 @@ LRESULT  CvtkmfcView::OnChangeYValue(WPARAM wParam, LPARAM lParam)
 	renWin->Render();
 	return 0;
 }
+
 LRESULT  CvtkmfcView::OnChangeZValue(WPARAM wParam, LPARAM lParam)
 {
 	this->m_Zvalue = static_cast<int>(wParam);
@@ -1592,12 +1591,10 @@ VOID DemoCleanupPersistentWorkTimer()
 	goto main_cleanup;
 
 main_cleanup:
-	//
+
 	// Clean up any individual pieces manually
 	// Notice the fall-through structure of the switch.
 	// Clean up in reverse order.
-	//
-
 	switch (rollback) {
 	case 4:
 	case 3:
@@ -1648,29 +1645,17 @@ VOID  DemoNewRegisterWait()
 			GetLastError());
 		goto new_wait_cleanup;
 	}
-
 	rollback = 2; // CreateThreadpoolWait succeeded
-
-	//
 	// Need to re-register the event with the wait object
 	// each time before signaling the event to trigger the wait callback.
-	//
 	for (i = 0; i < 5; i++) {
 		SetThreadpoolWait(Wait,
 			hEvent,
 			NULL);
-
 		SetEvent(hEvent);
-
-		//
 		// Delay for the waiter thread to act if necessary.
-		//
 		Sleep(500);
-
-		//
 		// Block here until the callback function is done executing.
-		//
-
 		WaitForThreadpoolWaitCallbacks(Wait, FALSE);
 	}
 
@@ -1692,3 +1677,8 @@ new_wait_cleanup:
 	}
 	return;
 }
+
+
+
+
+

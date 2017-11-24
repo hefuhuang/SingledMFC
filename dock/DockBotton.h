@@ -42,8 +42,25 @@ public:
 	CSliderCtrl m_vtkparam_X;
 	CSliderCtrl m_vtkParam_Y;
 	CSliderCtrl m_vtkParam_Z; 
+};  
 
 
+template <class _A, class _B, class _compare = less<_A>>
+class MMap :public set<pair<_A, _B>, _Compare>
+{
+public:
+	MMap() :set<pair<_A, _B>, _Compare>(){};
+	~MMap(){};
+	template<typename Inpair>
+	struct MMapComp{
+		bool operator()(Inpair a, Inpair b)
+		{
+			if (a.first == b, first0) return a.seconed > b.seconed;
+			else
+				return a.first < b.first;
+		}
+
+	};
 };
 
 

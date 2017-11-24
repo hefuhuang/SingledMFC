@@ -208,7 +208,6 @@ void CClassView::AdjustLayout()
 	{
 		return;
 	}
-
 	CRect rectClient;
 	GetClientRect(rectClient);
 

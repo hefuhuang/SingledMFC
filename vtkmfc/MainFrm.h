@@ -4,6 +4,7 @@
 #include <vtkSmartPointer.h>
 #include <vtkRenderer.h>
 
+#include "CiniFile.h"
 #include "FileView.h"
 #include "ClassView.h"
 #include "PropertiesWnd.h"

@@ -549,6 +549,9 @@ BOOL CMainFrame::SetStyleToolbar()
 	return TRUE;
 }
 
+
+
+
 void CMainFrame::OnTimer(UINT_PTR nIDEvent)
 {
 	
@@ -557,8 +560,11 @@ void CMainFrame::OnTimer(UINT_PTR nIDEvent)
 	tm = CTime::GetCurrentTime();         //获取当前系统时间
 	strTime = tm.Format("%y/%m/%d %X");   //格式化系统时间。即使系统时 间按照Format中设置的格式显示
 	 //m_wndStatusBar.SetPaneText(0, strTime);
-	m_wndStatusBar.SetPaneText(0, _T("一直被模仿，从未被超越！  ") + strTime);
-	 
+	m_wndStatusBar.SetPaneText(0, _T("test  test   ") + strTime);
+	CString path =_T("..\\sys\\system.ini"); 
+	CIniFile  m_system(path); 
+	
+
 	CFrameWndEx::OnTimer(nIDEvent);
 }
 

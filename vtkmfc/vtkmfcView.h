@@ -112,5 +112,30 @@ public:
 #ifndef _DEBUG  // vtkmfcView.cpp 中的调试版本
 inline CvtkmfcDoc* CvtkmfcView::GetDocument() const
    { return reinterpret_cast<CvtkmfcDoc*>(m_pDocument); }
+
+
+
+typedef struct LINE
+{ 
+	int end;
+	int weight;
+	struct LINE*  next;   
+}LINE;
+
+typedef struct _VECT
+{ 
+
+
+}VECT;
+typedef struct _PATH
+{
+	int start;
+	int end;
+	int length;
+	LINE* neighbor;
+
+}PATH;
+
+
 #endif
 
