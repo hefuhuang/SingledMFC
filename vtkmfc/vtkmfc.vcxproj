@@ -172,8 +172,11 @@
     <ClInclude Include="..\responsevtk\vtkClientServerInterpreterInternals.h" />
     <ClInclude Include="BUTTON_VIEW.h" />
     <ClInclude Include="ChildFrameSpliter.h" />
+    <ClInclude Include="CiniFile.h" />
     <ClInclude Include="ClassView.h" />
+    <ClInclude Include="deQueue.h" />
     <ClInclude Include="FileView.h" />
+    <ClInclude Include="ListNode.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="MyButtonSpliter.h" />
     <ClInclude Include="PARAM_VIEW.h" />
@@ -200,8 +203,11 @@
     <ClCompile Include="..\responsevtk\vtkClientServerInterpreterInternals.cpp" />
     <ClCompile Include="BUTTON_VIEW.cpp" />
     <ClCompile Include="ChildFrameSpliter.cpp" />
+    <ClCompile Include="CiniFile.cpp" />
     <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="deQueue.cpp" />
     <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="MyButtonSpliter.cpp" />
     <ClCompile Include="PARAM_VIEW.cpp" />

@@ -46,6 +46,21 @@ BEGIN_MESSAGE_MAP(CvtkmfcView, CView)
 
 	ON_WM_CTLCOLOR()
 	ON_WM_TIMER()
+	ON_COMMAND(ID_256ToGrey, &CvtkmfcView::On256togrey)
+	ON_COMMAND(ID_WalshChange, &CvtkmfcView::OnWalshchange)
+	ON_COMMAND(ID_binaryTransform, &CvtkmfcView::Onbinarytransform)
+	ON_COMMAND(ID_thresholdTransformation, &CvtkmfcView::Onthresholdtransformation)
+	ON_COMMAND(ID_FFT, &CvtkmfcView::OnFft)
+	ON_COMMAND(ID_DiscreteCosinTransform, &CvtkmfcView::OnDiscretecosintransform)
+	ON_COMMAND(ID_gussTransform, &CvtkmfcView::Ongusstransform)
+	ON_COMMAND(ID_Translation, &CvtkmfcView::OnTranslation)
+	ON_COMMAND(ID_ImagingScaling, &CvtkmfcView::OnImagingscaling)
+	ON_COMMAND(ID_PictureOrientation, &CvtkmfcView::OnPictureorientation)
+	ON_COMMAND(ID_Sobel, &CvtkmfcView::OnSobel)
+	ON_COMMAND(ID_Rebert, &CvtkmfcView::OnRebert)
+	ON_COMMAND(ID_LaPlacian, &CvtkmfcView::OnLaplacian)
+	ON_COMMAND(ID_difference, &CvtkmfcView::Ondifference)
+	ON_COMMAND(ID_Prewitt, &CvtkmfcView::OnPrewitt)
 END_MESSAGE_MAP()
 
 // CvtkmfcView 构造/析构
@@ -1678,7 +1693,98 @@ new_wait_cleanup:
 	return;
 }
 
+/*
+
+图片处理功能函数区
+
+*/
 
 
+void CvtkmfcView::On256togrey()    
+{
+	// TODO:  在此添加命令处理程序代码
+}
 
 
+void CvtkmfcView::OnWalshchange()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::Onbinarytransform()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::Onthresholdtransformation()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::OnFft()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::OnDiscretecosintransform()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::Ongusstransform()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::OnTranslation()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::OnImagingscaling()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::OnPictureorientation()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::OnSobel()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::OnRebert()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::OnLaplacian()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::Ondifference()
+{
+	// TODO:  在此添加命令处理程序代码
+}
+
+
+void CvtkmfcView::OnPrewitt()
+{
+	// TODO:  在此添加命令处理程序代码
+}

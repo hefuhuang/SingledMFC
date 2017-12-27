@@ -129,13 +129,45 @@
 #define IDC_SPLIT_Y                     1036
 #define IDC_SPLIT_X3                    1037
 #define IDC_COMBO_3DAutoScan            1039
+#define ID_Menu                         32771
+#define ID_32772                        32772
+#define ID_32773                        32773
+#define ID_32774                        32774
+#define ID_32775                        32775
+#define ID_32776                        32776
+#define ID_32777                        32777
+#define ID_32778                        32778
+#define ID_32779                        32779
+#define ID_32780                        32780
+#define ID_32781                        32781
+#define ID_32782                        32782
+#define ID_32783                        32783
+#define ID_Menu32784                    32784
+#define ID_32785                        32785
+#define ID_32786                        32786
+#define ID_Sobel                        32787
+#define ID_Rebert                       32788
+#define ID_LaPlacian                    32789
+#define ID_                             32790
+#define ID_difference                   32791
+#define ID_Prewitt                      32792
+#define ID_256ToGrey                    32793
+#define ID_WalshChange                  32794
+#define ID_binaryTransform              32795
+#define ID_thresholdTransformation      32796
+#define ID_FFT                          32797
+#define ID_DiscreteCosinTransform       32798
+#define ID_gussTransform                32799
+#define ID_Translation                  32800
+#define ID_ImagingScaling               32801
+#define ID_PictureOrientation           32802
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        332
-#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_COMMAND_VALUE         32803
 #define _APS_NEXT_CONTROL_VALUE         1040
 #define _APS_NEXT_SYMED_VALUE           310
 #endif

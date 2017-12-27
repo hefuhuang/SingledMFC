@@ -45,6 +45,8 @@ public:
 	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 	virtual BOOL LoadFrame(UINT nIDResource, DWORD dwDefaultStyle = WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE, CWnd* pParentWnd = NULL, CCreateContext* pContext = NULL);
 
+	void FunctionForEach();
+
 // 实现
 public:
 	virtual ~CMainFrame();
@@ -115,4 +117,26 @@ public:
 	afx_msg void OnClose();
 };
 
+struct  Play
+{
+	Play()
+	{
+		OutputDebugString(_T("构造结构")); 
+	} 
+	Play(const Play&)
+	{
+		OutputDebugString(_T("copy a new struct"));
+	}
+	void operator() (int i)
+	{
+		OutputDebugString(_T("实际操作"));
+		++i;
+	} 
+
+	~Play()
+	{
+		OutputDebugString(_T("虚构结构体"));
+	}
+
+};
 

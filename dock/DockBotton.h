@@ -44,6 +44,7 @@ public:
 	CSliderCtrl m_vtkParam_Z; 
 };  
 
+#ifdef MAPP 
 
 template <class _A, class _B, class _compare = less<_A>>
 class MMap :public set<pair<_A, _B>, _Compare>
@@ -62,5 +63,6 @@ public:
 
 	};
 };
+#endif
 
 

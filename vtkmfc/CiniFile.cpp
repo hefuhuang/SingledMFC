@@ -45,7 +45,6 @@ double CIniFile::GetFloat(LPTSTR szSection, LPTSTR pszEntry, float dDefault)
 }
 
 
-
 void CIniFile::WriteFloat(LPTSTR szSection, LPTSTR pszEntry, float dDefault, LPTSTR szFormat)
 {
 	TCHAR buf[MAX_PATH] = { 0 };

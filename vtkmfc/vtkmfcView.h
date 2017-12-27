@@ -107,6 +107,21 @@ public:
 	afx_msg void OnSize(UINT nType, int cx, int cy);
 	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	afx_msg void On256togrey();
+	afx_msg void OnWalshchange();
+	afx_msg void Onbinarytransform();
+	afx_msg void Onthresholdtransformation();
+	afx_msg void OnFft();
+	afx_msg void OnDiscretecosintransform();
+	afx_msg void Ongusstransform();
+	afx_msg void OnTranslation();
+	afx_msg void OnImagingscaling();
+	afx_msg void OnPictureorientation();
+	afx_msg void OnSobel();
+	afx_msg void OnRebert();
+	afx_msg void OnLaplacian();
+	afx_msg void Ondifference();
+	afx_msg void OnPrewitt();
 };
 
 #ifndef _DEBUG  // vtkmfcView.cpp 中的调试版本

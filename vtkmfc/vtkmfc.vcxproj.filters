@@ -28,6 +28,9 @@
     <Filter Include="FillWindow">
       <UniqueIdentifier>{4c4b68e2-b295-4b9f-adb0-37c2649c21b2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="FIleReadAndWrite">
+      <UniqueIdentifier>{74d5c0a4-0c51-44bb-88ea-87fb019bb785}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -111,6 +114,15 @@
     <ClInclude Include="ThreadPool.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CiniFile.h">
+      <Filter>FIleReadAndWrite</Filter>
+    </ClInclude>
+    <ClInclude Include="deQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="vtkmfc.cpp">
@@ -180,6 +192,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ThreadPool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CiniFile.cpp">
+      <Filter>FIleReadAndWrite</Filter>
+    </ClCompile>
+    <ClCompile Include="deQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

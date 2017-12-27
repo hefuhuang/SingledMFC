@@ -74,7 +74,6 @@ void vtkClientServerInterpreterInternals::Execute(vtkObject* caller,unsigned lon
 		break;
 	}
 
-
 	//if (0 ==strcmp(clickevent,"D"))
 	//{
 	//	iren = static_cast<vtkRenderWindowInteractor*>(caller);

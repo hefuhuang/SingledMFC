@@ -5,6 +5,12 @@
 #include "stdafx.h"
 #include "vtkmfc.h"
 #include "MainFrm.h"
+#include<iostream>
+#include<deque>
+#include<vector>
+#include<algorithm>
+#include<typeinfo>
+#include<functional>
 #include <shlwapi.h>
 
 #ifdef _DEBUG
@@ -550,8 +556,6 @@ BOOL CMainFrame::SetStyleToolbar()
 }
 
 
-
-
 void CMainFrame::OnTimer(UINT_PTR nIDEvent)
 {
 	
@@ -563,11 +567,35 @@ void CMainFrame::OnTimer(UINT_PTR nIDEvent)
 	m_wndStatusBar.SetPaneText(0, _T("test  test   ") + strTime);
 	CString path =_T("..\\sys\\system.ini"); 
 	CIniFile  m_system(path); 
-	
+	auto function = [](){
+		OutputDebugString(_T("lambda 函数标记 "));
+	};
 
+	//  For each 
+	int array[] = {1,2,3}; 
+	int m_Total = 0;
+	std::vector<int> vect(array,array+sizeof(array)/sizeof(int));
+	for (std::vector<int>::iterator itor = vect.begin(); itor != vect.end();++itor)
+	{
+		OutputDebugString(_T("调试信息输出:")); 
+	}
+	std::for_each(std::begin(vect), std::end(vect), [&m_Total](int x){ 
+		x = 1;
+		m_Total += x; 
+	});
+   // Proceduer Based Object Oriented generics 三种paradigm 与for_each做搭配  
+	//std::for_each(std::begin(vect), std::end(vect), FunctionForEach); // 直接的函数实现 
 	CFrameWndEx::OnTimer(nIDEvent);
 }
 
+void  CMainFrame::FunctionForEach()
+{
+	int a = 1, b = 2, c = 3;
+	c = a;
+	a = a^b;
+	b = a^b;
+	a = a^b;
+}
 
 void CMainFrame::AdjustDockingLayout(HDWP hdwp)
 {
@@ -575,7 +603,6 @@ void CMainFrame::AdjustDockingLayout(HDWP hdwp)
 		CRect rectUsable = m_dockManager.GetClientAreaBounds();
 		m_View.MoveWindow(rectUsable);
 	}*/
-
 	return CFrameWndEx::AdjustDockingLayout(hdwp);
 }
 

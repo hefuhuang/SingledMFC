@@ -209,6 +209,27 @@ BEGIN
     BEGIN
         MENUITEM "关于 vtkmfc(&A)...",            ID_APP_ABOUT
     END
+    POPUP "图片处理"
+    BEGIN
+        MENUITEM "256色转灰度图",                    ID_256ToGrey
+        MENUITEM "walsh变换",                     ID_WalshChange
+        MENUITEM "二值化变化",                       ID_binaryTransform
+        MENUITEM "阈值变换",                        ID_thresholdTransformation
+        MENUITEM "傅里叶变换",                       ID_FFT
+        MENUITEM "离散余弦变换",                      ID_DiscreteCosinTransform
+        MENUITEM "高斯平滑",                        ID_gussTransform
+        MENUITEM "图像平移",                        ID_Translation
+        MENUITEM "图像缩放",                        ID_ImagingScaling
+        MENUITEM "图像旋转",                        ID_PictureOrientation
+    END
+    POPUP "边缘提取算法"
+    BEGIN
+        MENUITEM "Sobel算子",                     ID_Sobel
+        MENUITEM "Robert算子",                    ID_Rebert
+        MENUITEM "Laplacian算子",                 ID_LaPlacian
+        MENUITEM "差分对角",                        ID_difference
+        MENUITEM "Prewitt算子",                   ID_Prewitt
+    END
 END
 
 IDR_POPUP_EDIT MENU
