@@ -1699,16 +1699,85 @@ new_wait_cleanup:
 
 */
 using namespace cv;
+void CvtkmfcView::MergeImage(cv::Mat& dst, cv::Mat& Src1, cv::Mat& src2)
+{
+	int rows = Src1.rows + 5 + src2.rows;
+	int cols = Src1.cols + 5 + src2.cols;
+	CV_Assert(Src1.type() == src2.type());
+	dst.create(rows, cols, Src1.type());
+	Src1.copyTo(dst(Rect(0, 0, Src1.cols, Src1.rows)));
+	src2.copyTo(dst(Rect(Src1.cols + 5, 0, src2.cols, src2.rows)));
+
+}
+
 void CvtkmfcView::On256togrey()    
 {    
 	cv::namedWindow("Imagewindow", CV_WINDOW_AUTOSIZE);
-	const char* Path= "../ImageProcess.png";
-	cv::Mat img = cv::imread("../sys/ImageProcess.png", CV_LOAD_IMAGE_ANYDEPTH | CV_LOAD_IMAGE_ANYCOLOR);
-	if (img.empty())
+	const char* Path = "../sys/ImageProcess.png";
+	
+	cv::Mat img = cv::imread(Path, CV_LOAD_IMAGE_ANYDEPTH | CV_LOAD_IMAGE_ANYCOLOR);
+	cv::Mat OutImage;
+	if (OutImage.empty())
 	{
 		return ;
 	}
-	cv::imshow("Imagewindow",img);
+
+	IplImage *src = cvLoadImage(Path, 0);;
+	IplImage *dst = cvCreateImage(cvGetSize(src), 8, 1);
+	
+	float prewittx[9] =
+	{
+		-1, 0, 1,
+		-1, 0, 1,
+		-1, 0, 1
+	};
+	float prewitty[9] =
+	{
+		1, 1, 1,
+		0, 0, 0,
+	   -1,-1,-1
+	};
+
+	CvMat px;
+	px = cvMat(3, 3, CV_32F, prewittx);
+	CvMat py;
+	py = cvMat(3, 3, CV_32F, prewitty);
+
+	IplImage *dstx = cvCreateImage(cvGetSize(src), 8, 1);
+	IplImage *dsty = cvCreateImage(cvGetSize(src), 8, 1);
+
+	//对图像使用模板，自动填充边界  
+	cvFilter2D(src, dstx, &px, cvPoint(-1, -1));
+	cvFilter2D(src, dsty, &py, cvPoint(-1, -1));
+
+	//计算梯度，  
+	int i, j, temp;
+	float tempx, tempy;  //定义为浮点型是为了避免sqrt函数引起歧义  
+	uchar* ptrx = (uchar*)dstx->imageData;
+	uchar* ptry = (uchar*)dsty->imageData;
+	for (i = 0; i<src->width; i++)
+	{
+		for (j = 0; j<src->height; j++)
+		{
+			tempx = ptrx[i + j*dstx->widthStep];   //tempx,tempy表示的是指针所指向的像素  
+			tempy = ptry[i + j*dsty->widthStep];
+			temp = (int)sqrt(tempx*tempx + tempy*tempy);
+			dst->imageData[i + j*dstx->widthStep] = temp;
+		}
+	}
+	double min_val = 0, max_val = 0;//取图并显示像中的最大最小像素值  
+	cvMinMaxLoc(dst, &min_val, &max_val);
+	printf("max_val = %f\nmin_val = %f\n", max_val, min_val);
+
+	const char* Path2 = "../sys/PrewittImg.jpg";
+	cvSaveImage(Path2, dst);//把图像存入文件  
+	cvReleaseImage(&dstx);
+	cvReleaseImage(&dsty);
+
+	Mat img2 = cv::imread(Path2, CV_LOAD_IMAGE_ANYDEPTH | CV_LOAD_IMAGE_ANYCOLOR);
+	MergeImage(OutImage, img,img2);
+	cv::imshow("Imagewindow", OutImage);
+	cvResizeWindow("Imagewindow", 800, 600);
 
 }
 
@@ -1716,82 +1785,242 @@ void CvtkmfcView::On256togrey()
 void CvtkmfcView::OnWalshchange()
 {
 	// TODO:  在此添加命令处理程序代码
+
 }
 
 
 void CvtkmfcView::Onbinarytransform()
 {
 	// TODO:  在此添加命令处理程序代码
+
 }
 
 
 void CvtkmfcView::Onthresholdtransformation()
 {
 	// TODO:  在此添加命令处理程序代码
+
 }
 
 
 void CvtkmfcView::OnFft()
 {
 	// TODO:  在此添加命令处理程序代码
+
 }
 
 
 void CvtkmfcView::OnDiscretecosintransform()
 {
 	// TODO:  在此添加命令处理程序代码
+
 }
 
 
 void CvtkmfcView::Ongusstransform()
 {
 	// TODO:  在此添加命令处理程序代码
+
 }
 
 
 void CvtkmfcView::OnTranslation()
 {
 	// TODO:  在此添加命令处理程序代码
+
 }
 
 
 void CvtkmfcView::OnImagingscaling()
 {
 	// TODO:  在此添加命令处理程序代码
+
 }
 
 
 void CvtkmfcView::OnPictureorientation()
 {
 	// TODO:  在此添加命令处理程序代码
+
 }
 
 
 void CvtkmfcView::OnSobel()
 {
-	// TODO:  在此添加命令处理程序代码
+	const char* Path = "../sys/ImageProcess.png";
+	IplImage *src = cvLoadImage(Path, 0);;
+	IplImage *dst = cvCreateImage(cvGetSize(src), 8, 1);
+
+	IplImage *pSobelImg_dx = cvCreateImage(cvGetSize(src), 32, 1);
+	IplImage *pSobelImg_dy = cvCreateImage(cvGetSize(src), 32, 1);
+	IplImage *pSobelImg_dxdy = cvCreateImage(cvGetSize(src), 32, 1);
+
+	//用sobel算子计算两个方向的微分  
+	cvSobel(src, pSobelImg_dx, 1, 0, 3);
+	cvSobel(src, pSobelImg_dy, 0, 1, 3);
+
+	int i, j;
+	double v1, v2, v;
+	for (i = 0; i<src->height; i++)
+	{
+		for (j = 0; j<src->width; j++)
+		{
+			v1 = cvGetReal2D(pSobelImg_dx, i, j);
+			v2 = cvGetReal2D(pSobelImg_dy, i, j);
+			v = sqrt(v1*v1 + v2*v2);
+			/*  if(v>100) v = 255;
+			else v = 0;*/
+			cvSetReal2D(pSobelImg_dxdy, i, j, v);
+		}
+	}
+	cvConvertScale(pSobelImg_dxdy, dst);   //将图像转化为8位  
+	double min_val = 0, max_val = 0;//取图并显示像中的最大最小像素值  
+	cvMinMaxLoc(pSobelImg_dxdy, &min_val, &max_val);
+	printf("max_val = %f\nmin_val = %f\n", max_val, min_val);
+
+	//归一化  
+	cvNormalize(dst, dst, 0, 255, CV_MINMAX, 0);
+
+	cvReleaseImage(&pSobelImg_dx);
+	cvReleaseImage(&pSobelImg_dy);
+	cvReleaseImage(&pSobelImg_dxdy);
+	cvSaveImage("SobelImg.jpg", dst);//把图像存入文件  
+	cvNamedWindow("【效果图】sobel算子", 1);
+	cvShowImage("【效果图】sobel算子", dst);
+
 }
 
 
 void CvtkmfcView::OnRebert()
 {
-	// TODO:  在此添加命令处理程序代码
+	const char* Path = "../sys/ImageProcess.png"; 
+	IplImage *src = cvLoadImage(Path, 0);;
+	IplImage *dst = cvCreateImage(cvGetSize(src), 8, 1);
+
+	dst = cvCloneImage(src);
+	int x, y, i, w, h;
+	int temp, temp1;
+
+	uchar* ptr = (uchar*)(dst->imageData);
+	int ptr1[4] = { 0 };
+	int indexx[4] = { 0, 1, 1, 0 };
+	int indexy[4] = { 0, 0, 1, 1 };
+	w = dst->width;
+	h = dst->height;
+	for (y = 0; y<h - 1; y++)
+	for (x = 0; x<w - 1; x++)
+	{
+
+		for (i = 0; i<4; i++)    //取每个2*2矩阵元素的指针      0 | 1  
+		{                   //                             3 | 2  
+			ptr1[i] = *(ptr + (y + indexy[i])*dst->widthStep + x + indexx[i]);
+
+		}
+		temp = abs(ptr1[0] - ptr1[2]);    //计算2*2矩阵中0和2位置的差，取绝对值temp  
+		temp1 = abs(ptr1[1] - ptr1[3]);   //计算2*2矩阵中1和3位置的差，取绝对值temp1  
+		temp = (temp>temp1 ? temp : temp1); //若temp1>temp,则以temp1的值替换temp  
+		temp = (int)sqrt(float(temp*temp) + float(temp1*temp1));  //输出值  
+		*(ptr + y*dst->widthStep + x) = temp;       //将输出值存放于dst像素的对应位置  
+	}
+	double min_val = 0, max_val = 0;//取图并显示像中的最大最小像素值  
+	cvMinMaxLoc(dst, &min_val, &max_val);
+	printf("max_val = %f\nmin_val = %f\n", max_val, min_val);
+	cvSaveImage("RobertsImg.jpg", dst);
+	cvNamedWindow("【效果图】robert算子", 1);
+	cvShowImage("【效果图】robert算子", dst);
 }
 
 
 void CvtkmfcView::OnLaplacian()
 {
-	// TODO:  在此添加命令处理程序代码
+	const char* Path = "../sys/ImageProcess.png";
+	IplImage *src = cvLoadImage(Path, 0);
+	IplImage *dst32 = cvCreateImage(cvGetSize(src), 32, 1);
+	IplImage *dst = cvCreateImage(cvGetSize(src), 8, 1);
+
+	double min_val = 0, max_val = 0;//取图并显示像中的最大最小像素值  
+	cvLaplace(src, dst32, 5);
+	cvConvertScale(dst32, dst);   //将图像转化为8位  
+	cvMinMaxLoc(dst, &min_val, &max_val);
+	printf("max_val = %f\nmin_val = %f\n", max_val, min_val);
+	cvNormalize(dst, dst, 0, 255, CV_MINMAX, 0);
+	cvNamedWindow("【效果图】laplacian算子", 1);
+	cvShowImage("【效果图】laplacian算子", dst);
+	cvSaveImage("LaplaceImg.jpg", dst);//把图像存入文件  
+	cvReleaseImage(&dst);
+
 }
 
 
 void CvtkmfcView::Ondifference()
 {
-	// TODO:  在此添加命令处理程序代码
+	const char* Path = "../sys/ImageProcess.png";
+	IplImage *src = cvLoadImage(Path, 0);;
+	IplImage *dst = cvCreateImage(cvGetSize(src), 8, 1);
+
+	cvCanny(src, dst, 100, 150, 3),
+		cvNamedWindow("【效果图】差分（对角）", 1);
+	cvShowImage("【效果图】差分（对角）", dst);
+	cvSaveImage("CannyImg.jpg", dst);//把图像存入文件  
+	cvReleaseImage(&dst);
 }
 
 
 void CvtkmfcView::OnPrewitt()
 {
-	// TODO:  在此添加命令处理程序代码
+	const char* Path = "../sys/ImageProcess.png";
+	IplImage *src = cvLoadImage(Path, 0);;
+	IplImage *dst = cvCreateImage(cvGetSize(src), 8, 1);
+
+	float prewittx[9] =
+	{
+		-1, 0, 1,
+		-1, 0, 1,
+		-1, 0, 1
+	};
+	float prewitty[9] =
+	{
+		1, 1, 1,
+		0, 0, 0,
+		-1, -1, -1
+	};
+
+	CvMat px;
+	px = cvMat(3, 3, CV_32F, prewittx);
+	CvMat py;
+	py = cvMat(3, 3, CV_32F, prewitty);
+
+	IplImage *dstx = cvCreateImage(cvGetSize(src), 8, 1);
+	IplImage *dsty = cvCreateImage(cvGetSize(src), 8, 1);
+
+	//对图像使用模板，自动填充边界  
+	cvFilter2D(src, dstx, &px, cvPoint(-1, -1));
+	cvFilter2D(src, dsty, &py, cvPoint(-1, -1));
+
+	//计算梯度，  
+	int i, j, temp;
+	float tempx, tempy;  //定义为浮点型是为了避免sqrt函数引起歧义  
+	uchar* ptrx = (uchar*)dstx->imageData;
+	uchar* ptry = (uchar*)dsty->imageData;
+	for (i = 0; i<src->width; i++)
+	{
+		for (j = 0; j<src->height; j++)
+		{
+			tempx = ptrx[i + j*dstx->widthStep];   //tempx,tempy表示的是指针所指向的像素  
+			tempy = ptry[i + j*dsty->widthStep];
+			temp = (int)sqrt(tempx*tempx + tempy*tempy);
+			dst->imageData[i + j*dstx->widthStep] = temp;
+		}
+	}
+	double min_val = 0, max_val = 0;//取图并显示像中的最大最小像素值  
+	cvMinMaxLoc(dst, &min_val, &max_val);
+	printf("max_val = %f\nmin_val = %f\n", max_val, min_val);
+
+	const char* Path2 = "../sys/PrewittImg.jpg";
+	cvSaveImage(Path2, dst);//把图像存入文件  
+	cvReleaseImage(&dstx);
+	cvReleaseImage(&dsty);
+
+	cvNamedWindow("【效果图】prewitt算子", 1);
+	cvShowImage("【效果图】prewitt算子", dst);
 }

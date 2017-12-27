@@ -71,8 +71,6 @@ public:
 	int ScaleZoom; 
 	bool flag3d;
 	double 	bounds[6]; 
-
-
 // 重写
 public:
 	virtual void OnDraw(CDC* pDC);  // 重写以绘制该视图
@@ -85,7 +83,9 @@ protected:
 	void showMatimage(CDC* pDc);
 	void showVtk(); 
 	void readStllFunction(std::string& path);
-	void stringReplace(std::string &str1, std::string &str2, std::string &str3);
+	void stringReplace(std::string &str1, std::string &str2, std::string &str3); 
+	void MergeImage(cv::Mat& dst,cv::Mat& Src1,cv::Mat& src2);
+
 // 实现
 public:
 	virtual ~CvtkmfcView();

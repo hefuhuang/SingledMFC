@@ -84,8 +84,6 @@ protected:
 	CSplitterWnd 	*m_wndSplitterLTB;
 
 	CSplitterWnd 	*m_wndSplitterLR; 
-
-
 // 生成的消息映射函数
 private:
 
