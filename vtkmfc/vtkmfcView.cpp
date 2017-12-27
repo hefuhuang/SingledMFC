@@ -770,8 +770,7 @@ void CvtkmfcView::stringReplace(std::string &str1, std::string &str2, std::strin
 }
 
 
-
-
+#ifdef FunctionLamba
 // function 函数加bind +lambda   
 int add(int a, int b)
 {
@@ -797,6 +796,7 @@ template<class T> T multiply(T a, T b)
 
 typedef int(*func)(int, int);
 
+
 void UseFunction()
 {
 	int status=0;
@@ -813,7 +813,7 @@ void UseFunction()
 	SortFunction(5.5,_T("test"),3);  //  pfunc(5.5,'a',10);//调用时参数的顺序改变了,变成了(float,char,int) 
 }   
 
-
+#endif
 
 void CvtkmfcView::DrawLine(CDC* pDC)
 {
@@ -1698,11 +1698,18 @@ new_wait_cleanup:
 图片处理功能函数区
 
 */
-
-
+using namespace cv;
 void CvtkmfcView::On256togrey()    
-{
-	// TODO:  在此添加命令处理程序代码
+{    
+	cv::namedWindow("Imagewindow", CV_WINDOW_AUTOSIZE);
+	const char* Path= "../ImageProcess.png";
+	cv::Mat img = cv::imread("../sys/ImageProcess.png", CV_LOAD_IMAGE_ANYDEPTH | CV_LOAD_IMAGE_ANYCOLOR);
+	if (img.empty())
+	{
+		return ;
+	}
+	cv::imshow("Imagewindow",img);
+
 }
 
 
