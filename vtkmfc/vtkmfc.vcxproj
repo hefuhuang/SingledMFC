@@ -176,6 +176,7 @@
     <ClInclude Include="ClassView.h" />
     <ClInclude Include="deQueue.h" />
     <ClInclude Include="FileView.h" />
+    <ClInclude Include="ImageProcess.h" />
     <ClInclude Include="ListNode.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="MyButtonSpliter.h" />
@@ -207,6 +208,7 @@
     <ClCompile Include="ClassView.cpp" />
     <ClCompile Include="deQueue.cpp" />
     <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="ImageProcess.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="MyButtonSpliter.cpp" />

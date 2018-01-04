@@ -15,7 +15,6 @@ public:
 	double GetFloat(LPTSTR szSection, LPTSTR pszEntry, float dDefault);
 
 
-
 	void WriteBool(LPTSTR szSection, LPTSTR pszEntry, BOOL f);
 	void WriteInt(LPTSTR szSection, LPTSTR pszEntry, DWORD dw);
 	void WriteStr(LPTSTR szSection, LPTSTR pszEntry, LPTSTR pszData);

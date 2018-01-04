@@ -161,13 +161,21 @@
 #define ID_Translation                  32800
 #define ID_ImagingScaling               32801
 #define ID_PictureOrientation           32802
+#define ID_32803                        32803
+#define ID_HistAverage                  32804
+#define ID_Menu32805                    32805
+#define ID_AverageWaveFilter            32806
+#define ID_32807                        32807
+#define ID_MediumFilter                 32808
+#define ID_32809                        32809
+#define ID_GussFilter                   32810
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        332
-#define _APS_NEXT_COMMAND_VALUE         32803
+#define _APS_NEXT_COMMAND_VALUE         32811
 #define _APS_NEXT_CONTROL_VALUE         1040
 #define _APS_NEXT_SYMED_VALUE           310
 #endif

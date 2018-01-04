@@ -90,7 +90,6 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWndEx)
 	//ON_WM_SIZE()
 	ON_WM_TIMER()
 	ON_WM_CLOSE()
-
 END_MESSAGE_MAP()
 
 static UINT indicators[] =
@@ -296,7 +295,7 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 		return FALSE;
 
 	cs.style &= ~FWS_ADDTOTITLE;
-	cs.lpszName =_T("SALARY");
+	cs.lpszName =_T("HELLO");
 
 	// TODO:  在此处通过修改
 
@@ -477,7 +476,6 @@ void CMainFrame::setSplitLayout()
 	//m_wndSplitter->SetColumnInfo(1, 4*x / 5, 0);
 	//m_wndSplitter->SetColumnInfo(2, x / 5, 0);
 
-		
 	//m_wndSplitterLR->SetRowInfo(0, ry, 0);
 	//m_wndSplitterLR->SetRowInfo(1, ry, 0);
 	//m_wndSplitterLR->SetRowInfo(2, ry, 0);
@@ -554,7 +552,6 @@ BOOL CMainFrame::SetStyleToolbar()
 	}
 	return TRUE;
 }
-
 
 void CMainFrame::OnTimer(UINT_PTR nIDEvent)
 {

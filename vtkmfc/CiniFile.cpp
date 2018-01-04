@@ -22,7 +22,7 @@ DWORD CIniFile::GetInt(LPTSTR szSection, LPTSTR pszEntry, DWORD dwDefault)
 
 BOOL CIniFile::GetStr(LPTSTR szSection, LPTSTR pszEntry, LPTSTR pszDefault, LPTSTR pszRet)
 {
-	int     cch;
+	int  cch;
 	cch = GetPrivateProfileString(szSection, pszEntry, pszDefault, pszRet, MAX_PATH, m_szFileName);
 	if (cch == 0)
 	{
@@ -33,7 +33,6 @@ BOOL CIniFile::GetStr(LPTSTR szSection, LPTSTR pszEntry, LPTSTR pszDefault, LPTS
 	}
 	return TRUE;
 }
-
 
 double CIniFile::GetFloat(LPTSTR szSection, LPTSTR pszEntry, float dDefault)
 {
@@ -49,7 +48,6 @@ void CIniFile::WriteFloat(LPTSTR szSection, LPTSTR pszEntry, float dDefault, LPT
 {
 	TCHAR buf[MAX_PATH] = { 0 };
 	static TCHAR *szFormat0 = _T("%lf");
-
 
 	if (szFormat == NULL)
 		szFormat = szFormat0;

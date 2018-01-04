@@ -85,7 +85,9 @@ protected:
 	void readStllFunction(std::string& path);
 	void stringReplace(std::string &str1, std::string &str2, std::string &str3); 
 	void MergeImage(cv::Mat& dst,cv::Mat& Src1,cv::Mat& src2);
-
+	void myShowHist(IplImage* image1, IplImage* image2);
+	IplImage* cvShowHist(IplImage* src);
+	
 // 实现
 public:
 	virtual ~CvtkmfcView();
@@ -96,7 +98,6 @@ public:
 #endif
 
 protected:
-
 	afx_msg void OnFilePrintPreview();
 	afx_msg void OnRButtonUp(UINT nFlags, CPoint point);
 	afx_msg void OnContextMenu(CWnd* pWnd, CPoint point);
@@ -121,6 +122,10 @@ public:
 	afx_msg void OnLaplacian();
 	afx_msg void Ondifference();
 	afx_msg void OnPrewitt();
+	afx_msg void OnHistaverage();
+	afx_msg void OnAveragewavefilter();
+	afx_msg void OnMediumfilter();
+	afx_msg void OnGussfilter();
 };
 
 #ifndef _DEBUG  // vtkmfcView.cpp 中的调试版本

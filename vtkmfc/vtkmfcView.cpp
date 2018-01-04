@@ -61,6 +61,10 @@ BEGIN_MESSAGE_MAP(CvtkmfcView, CView)
 	ON_COMMAND(ID_LaPlacian, &CvtkmfcView::OnLaplacian)
 	ON_COMMAND(ID_difference, &CvtkmfcView::Ondifference)
 	ON_COMMAND(ID_Prewitt, &CvtkmfcView::OnPrewitt)
+	ON_COMMAND(ID_HistAverage, &CvtkmfcView::OnHistaverage)
+	ON_COMMAND(ID_AverageWaveFilter, &CvtkmfcView::OnAveragewavefilter)
+	ON_COMMAND(ID_MediumFilter, &CvtkmfcView::OnMediumfilter)
+	ON_COMMAND(ID_GussFilter, &CvtkmfcView::OnGussfilter)
 END_MESSAGE_MAP()
 
 // CvtkmfcView 构造/析构
@@ -1844,7 +1848,42 @@ void CvtkmfcView::OnPictureorientation()
 
 }
 
+/*
+Laplacian 算子是n维欧几里德空间中的一个二阶微分算子，定义为梯度grad（）的散度div（）。
+因此如果f是二阶可微的实函数，则f的拉普拉斯算子定义为：(1) f的拉普拉斯算子也是笛卡儿坐标系xi中的所有非混合二阶偏导数求和：
+(2) 作为一个二阶微分算子，拉普拉斯算子把C函数映射到C函数，对于k ≥ 2。表达式(1)（或(2)）定义了一个算子Δ : C(R) → C(R)，
+或更一般地，定义了一个算子Δ : C(Ω) → C(Ω)，对于任何开集Ω。
 
+Roberts算子是一种最简单的算子，是一种利用局部差分算子寻找边缘的算子，他采用对角线方向相邻两象素之差近似梯度幅值检测边缘。
+
+Prewitt算子是一种一阶微分算子的边缘检测，利用像素点上下、左右邻点的灰度差，在边缘处达到极值检测边缘，去掉部分伪边缘，
+对噪声具有平滑作用 。其原理是在图像空间利用两个方向模板与图像进行邻域卷积来完成的，这两个方向模板一个检测水平边缘，
+一个检测垂直边缘。对数字图像f(x，y)，Prewitt算子的定义如下：
+
+G(i)=|[f(i-1,j-1)+f(i-1,j)+f(i-1，j+1)]-[f(i+1,j-1)+f(i+1，j)+f(i+1，j+1)]|
+
+G(j)=|[f(i-1,j+1)+f(i,j+1)+f(i+1，j+1)]-[f(i-1,j-1)+f(i,j-1)+f(i+1，j-1)]|
+
+则 P(i,j)=max[G(i),G(j)]或 P(i,j)=G(i)+G(j)
+
+经典Prewitt算子认为：凡灰度新值大于或等于阈值的像素点都是边缘点。即选择适当的阈值T，若P(i,j)≥T，则(i,j)为边缘点，
+P(i,j)为边缘图像。这种判定是欠合理的，会造成边缘点的误判，因为许多噪声点的灰度值也很大，而且对于幅值较小的边缘点，
+其边缘反而丢失了。
+
+Sobel 算子有两个，一个是检测水平边缘的 ；另一个是检测垂直边缘的 。与Prewitt算子相比，Sobel算子对于象素的位置的影响做
+了加权，可以降低边缘模糊程度，因此效果更好。该算子包含两组3x3的矩阵，分别为横向及纵向，将之与图像作平面卷积，即可分别得
+出横向及纵向的亮度差分近似值。如果以A代表原始图像，Gx及Gy分别代表经纵向及横向边缘检测的图像，其公式如下:
+
+图像的每一个像素的横向及纵向梯度近似值可用以下的公式结合，来计算梯度的大小。
+然后可用以下公式计算梯度方向。
+
+在以上例子中，如果上述角度Θ等于零，即代表图像该处拥有纵向边缘，左方较右方暗。
+Canny 算子的目标是找到一个最优的边缘检测算法，Canny 使用了变分法（calculus of variations），这是一种寻找优化特定功能的
+函数的方法。最优检测使用四个指数函数项表示，但是它非常近似于高斯函数的一阶导数。Canny边缘检测算法可以分为以下5个步骤：
+1.应用高斯滤波来平滑图像，目的是去除噪声。 2.找寻图像的强度梯度（intensity gradients）。3.应用非最大抑制（non-maximum
+suppression）技术来消除边误检（本来不是但检测出来是）。4.应用双阈值的方法来决定可能的（潜在的）边界。5.利用滞后技术来跟
+踪边界。
+*/
 void CvtkmfcView::OnSobel()
 {
 	const char* Path = "../sys/ImageProcess.png";
@@ -1887,9 +1926,7 @@ void CvtkmfcView::OnSobel()
 	cvSaveImage("SobelImg.jpg", dst);//把图像存入文件  
 	cvNamedWindow("【效果图】sobel算子", 1);
 	cvShowImage("【效果图】sobel算子", dst);
-
 }
-
 
 void CvtkmfcView::OnRebert()
 {
@@ -2023,4 +2060,152 @@ void CvtkmfcView::OnPrewitt()
 
 	cvNamedWindow("【效果图】prewitt算子", 1);
 	cvShowImage("【效果图】prewitt算子", dst);
+}
+
+#define cvQueryHistValue_2D( hist, idx0, idx1 )   cvGetReal2D( (hist)->bins, (idx0), (idx1) )
+
+void CvtkmfcView::OnHistaverage()
+{  
+	const char* Path2 = "../sys/ImageProcess.png";
+	IplImage * image = cvLoadImage(Path2);
+	IplImage* eqlimage = cvCreateImage(cvGetSize(image), image->depth, 3);
+	//信道分离  
+	IplImage* redImage = cvCreateImage(cvGetSize(image), image->depth, 1);
+	IplImage* greenImage = cvCreateImage(cvGetSize(image), image->depth, 1);
+	IplImage* blueImage = cvCreateImage(cvGetSize(image), image->depth, 1);
+	//用 cvSplit 函数分解图像到单个色彩通道上  
+	cvSplit(image, blueImage, greenImage, redImage, NULL);
+	//用cvEqualizeHist函数分别均衡化每个信道  
+	cvEqualizeHist(redImage, redImage);
+	cvEqualizeHist(greenImage, greenImage);
+	cvEqualizeHist(blueImage, blueImage);
+	//将信道合并  
+	cvMerge(blueImage, greenImage, redImage, NULL, eqlimage);
+
+	cvNamedWindow("原始彩色图像", 1);
+	cvShowImage("原始彩色图像", image);
+	cvNamedWindow("均衡化后图像", 1);
+	cvShowImage("均衡化后图像", eqlimage);
+	cvSaveImage("均衡化后图像.bmp", eqlimage);
+
+	myShowHist(image, eqlimage);
+	cvWaitKey(0);
+	cvDestroyWindow("source");
+	cvDestroyWindow("result");
+	cvReleaseImage(&image);
+	cvReleaseImage(&eqlimage);
+}
+
+
+void CvtkmfcView::OnAveragewavefilter()
+{
+	Mat g_srcImage, g_dstImage2;
+	const char* Path2 = "../sys/ImageProcess.png";
+	g_srcImage = imread(Path2, 1);
+	int g_nMeanBlurValue = 3;  //均值滤波参数值  
+	g_dstImage2 = g_srcImage.clone();
+
+	blur(g_srcImage, g_dstImage2, Size(g_nMeanBlurValue + 1, g_nMeanBlurValue + 1), Point(-1, -1));
+	//显示窗口  
+	imshow("【<2>超限邻域平均法滤波】", g_dstImage2);
+}
+
+
+void CvtkmfcView::OnMediumfilter()
+{
+	Mat g_srcImage, g_dstImage1;//存储图片的Mat类型  
+	int g_nBoxFilterValue = 3;  //超限中值滤波参数值 
+	const char* Path2 = "../sys/ImageProcess.png";
+	g_srcImage = imread(Path2, 1);
+
+	if (g_nBoxFilterValue % 2 == 0)
+	{
+		g_nBoxFilterValue++;
+	}
+	//方框滤波操作  
+	medianBlur(g_srcImage, g_dstImage1, g_nBoxFilterValue);   //g_nBoxFilterValue值必须为奇数  
+	//显示窗口  
+	imshow("【<1>超限中值滤波】", g_dstImage1);
+
+}
+
+
+void CvtkmfcView::OnGussfilter()
+{
+	Mat g_srcImage,g_dstImage3; 
+	int g_nGaussianBlurValue = 10;  //高斯滤波器滤波参数值
+	const char* Path2 = "../sys/ImageProcess.png";
+	g_srcImage = imread(Path2, 1);
+	g_dstImage3 = g_srcImage.clone();
+	GaussianBlur(g_srcImage, g_dstImage3, Size(g_nGaussianBlurValue * 2 + 1, g_nGaussianBlurValue * 2 + 1), 0, 0);
+	//显示窗口  
+	imshow("【<3>高斯滤波器滤波】", g_dstImage3);
+
+}
+
+IplImage* CvtkmfcView::cvShowHist(IplImage* src)
+{
+	IplImage* hsv = cvCreateImage(cvGetSize(src), 8, 3);
+	IplImage* h_plane = cvCreateImage(cvGetSize(src), 8, 1);
+	IplImage* s_plane = cvCreateImage(cvGetSize(src), 8, 1);
+	IplImage* v_plane = cvCreateImage(cvGetSize(src), 8, 1);
+	IplImage* planes[] = { h_plane, s_plane };
+
+	int h_bins = 16, s_bins = 8;
+	int hist_size[] = { h_bins, s_bins };
+	float h_ranges[] = { 0, 180 };
+
+	float s_ranges[] = { 0, 255 };
+	float* ranges[] = { h_ranges, s_ranges };
+
+	//输入图像转换到HSV颜色空间  
+	cvCvtColor(src, hsv, CV_BGR2HSV);
+	cvSplit(hsv, h_plane, s_plane, v_plane, 0);
+
+	CvHistogram * hist = cvCreateHist(2, hist_size, CV_HIST_ARRAY, ranges, 1);
+	cvCalcHist(planes, hist, 0, 0);
+
+	float max_value;
+	cvGetMinMaxHistValue(hist, 0, &max_value, 0, 0);
+
+	int height = 240;
+	int width = (h_bins*s_bins * 6);
+	IplImage* hist_img = cvCreateImage(cvSize(width, height), 8, 3);
+	cvZero(hist_img);
+	IplImage * hsv_color = cvCreateImage(cvSize(1, 1), 8, 3);
+	IplImage * rgb_color = cvCreateImage(cvSize(1, 1), 8, 3);
+	int bin_w = width / (h_bins * s_bins);
+	for (int h = 0; h < h_bins; h++)
+	{
+		for (int s = 0; s < s_bins; s++)
+		{
+			int i = h*s_bins + s;
+			float bin_val = cvQueryHistValue_2D(hist, h, s);
+			int intensity = cvRound(bin_val*height / max_value);
+
+			cvSet2D(hsv_color, 0, 0, cvScalar(h*180.f / h_bins, s*255.f / s_bins, 255, 0));
+			cvCvtColor(hsv_color, rgb_color, CV_HSV2BGR);
+			CvScalar color = cvGet2D(rgb_color, 0, 0);
+
+			cvRectangle(hist_img, cvPoint(i*bin_w, height),
+				cvPoint((i + 1)*bin_w, height - intensity),
+				color, -1, 8, 0);
+		}
+	}
+	return hist_img;
+}
+
+void CvtkmfcView::myShowHist(IplImage* image1, IplImage* image2)
+{
+	IplImage* hist_image1 = cvShowHist(image1);
+	IplImage* hist_image2 = cvShowHist(image2);
+
+	cvNamedWindow("原始直方图", 1);
+	cvShowImage("原始直方图", hist_image1);
+
+	cvNamedWindow("均衡化直方图", 1);
+	cvShowImage("均衡化直方图", hist_image2);
+
+	cvSaveImage("原始直方图.jpg", hist_image1);
+	cvSaveImage("均衡化直方图.jpg", hist_image2);
 }

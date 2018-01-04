@@ -221,6 +221,10 @@ BEGIN
         MENUITEM "图像平移",                        ID_Translation
         MENUITEM "图像缩放",                        ID_ImagingScaling
         MENUITEM "图像旋转",                        ID_PictureOrientation
+        MENUITEM "直方图均衡化",                      ID_HistAverage
+        MENUITEM "均值滤波",                        ID_AverageWaveFilter
+        MENUITEM "中值滤波",                        ID_MediumFilter
+        MENUITEM "高斯滤波",                        ID_GussFilter
     END
     POPUP "边缘提取算法"
     BEGIN

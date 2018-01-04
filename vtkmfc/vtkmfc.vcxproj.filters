@@ -123,6 +123,9 @@
     <ClInclude Include="ListNode.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ImageProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="vtkmfc.cpp">
@@ -201,6 +204,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ListNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcess.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
