@@ -1,9 +1,7 @@
 x64/*
-lib/*
 */bin/
 /x64
 x64/
-lib/
 bin/
 ICO/*
 Themes/*
